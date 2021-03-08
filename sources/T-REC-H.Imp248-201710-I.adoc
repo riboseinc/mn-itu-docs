@@ -1,0 +1,675 @@
+= Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")
+:bureau: T
+:docnumber: H.248 Sub-series Implementors Guide
+:series: H: Audiovisual and Multimedia Systems
+:series1: Infrastructure of audiovisual services – Communication procedures
+:published-date: 2017-10-27
+:copyright-year: 2017
+:status: in-force
+:recommendationnumber: ITU-T H.248
+:group: 16
+:grouptype: study-group
+:keywords:
+:imagesdir: images
+:doctype: implementers-guide
+:docfile: T-REC-H.Imp248-201710-I.adoc
+:fullname: Patrick Luthi
+:affiliation: IEEE
+:address: Switzerland
+:role: rapporteur
+:email: pluthi@ieee.org
+:fullname_2: Christian Groves
+:affiliation_2:
+:address_2: Australia
+:role_2: editor
+:phone_2: +61 3 9391 3457
+:email_2: cngroves.std@gmail.com
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+This document is a compilation of reported defects identified in the ITU-T H.248 sub-series of Recommendations currently in force. It must be read in conjunction with the Recommendations to serve as an additional authoritative source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248 sub-series Recommendations.
+
+This edition contains all updates submitted up to and including those at Study Group 16 meeting in Macao, China, 16-27 October 2017.
+
+This Implementors' Guide was approved by ITU-T Study Group 16 on 27 October 2017 and obsoletes the earlier version of this implementers' guide approved on 23 October 2015.
+
+NOTE: The Implementors' Guides for H.248.1 Version 1 and Version 2 are published as separate documents. (ITU-T H.248.1 is currently in its version 3.)
+
+[preface]
+== Change Log
+
+(All changes that were included in corrigenda, amendments or revisions to the Recommendations in the H.248 subseries are omitted here.)
+
+.V1 (Geneva, 23 October 2015)
+|===
+| New H.248.1 section a| 6.1 Usage of DOT in digitmaps +
+6.2 Updated ABNF reference +
+6.3 Reserve Properties clarifications
+| New H.248.9 section | 7.1 Updated ABNF reference
+| New H.248.40 section | 8.1 Packet types subject to detection logic
+| New H.248.53 section | 9.1 Rate policing clarifications
+| New H.248.69 section | 10.1 Superfluous reference
+| New H.248.80 section | 11.1 Updated reference
+| New H.248.83 section | 12.1 Incorrect reference
+| New H.248.87 section | 13.1 Updated reference
+|===
+
+.V2 (Macao, China, 27 October 2017)
+|===
+| New H.248.88 section | 14.1 Updated reference
+|===
+
+== Scope
+
+This guide resolves defects in the following categories:
+
+* editorial errors
+* technical errors, such as omissions and inconsistencies
+* ambiguities
+
+In addition, the Implementors' Guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.
+
+This Guide will not address proposed additions, deletions, or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to the ITU-T.
+
+== Introduction
+
+The H.248 Implementors' Guide is a compilation of reported defects for all versions of the H.248.x sub-series of Recommendations, except H.248.1 Version 1 (03/2002) and H.248.1 Version 2 (05/2002) Corrigendum 1 (03/2004). _For the defects in Version 1, see the H.248.1 Version 1 Implementors' Guide. For the defects in Version 2, see the H.248.1 Version 2 Implementors' Guide._
+
+In this edition of the Guide, reported defects identified as of 23 October 2015 are given for:
+
+* H.248.1 (03/2013)
+* H.248.9 (12/2009)
+* H.248.40 (03/2013)
+* H.248.53 (03/2009)
+* H.248.69 (03/2009)
+* H.248.80 (01/2014)
+* H.248.83 (02/2012)
+* H.248.87 (01/2014)
+* H.248.88 (01/2014)
+
+The Guide must be read in conjunction with the H.248.x sub-series of Recommendations to serve as an additional source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248.x Recommendations.
+
+== Defect Resolution Procedure
+
+Upon discovering technical defects with any components of the H.248.x Sub-series Recommendations, please provide a written description directly to the editors of the affected Recommendations with a copy to the Q.3/16 Rapporteur. The template for a defect report is located at the end of the Guide. Contact information for these parties is included at the front of the document. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.
+
+[bibliography]
+== References
+
+This document refers to the following H.248.x sub-series Recommendations:
+
+* [[[h248-1,ITU-T H.248.1:2013]]] 
+
+* [[[h248-9,ITU-T H.248.9]]]
+
+* [[[h248-40,ITU-T H.248.40]]]
+
+* [[[h248-53,ITU-T H.248.53]]]
+
+* [[[h248-69,ITU-T H.248.69]]]
+
+* [[[h248-80,ITU-T H.248.80]]]
+
+* [[[h248-83,ITU-T H.248.83]]]
+
+* [[[h248-87,ITU-T H.248.87]]]
+
+* [[[h248-88,ITU-T H.248.88]]]
+
+== Nomenclature
+
+In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:
+
+[%unnumbered]
+[cols="^,<"]
+|===
+h| Symbol ^h| Description
+| *_&#91;Begin Correction]_* | Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_&#91;End Correction]_* | Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_..._* | Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.
+| _--- SPECIAL INSTRUCTIONS --- {instructions}_ | Indicates a set of special editing instructions to be followed.
+|===
+
+== Technical and Editorial Corrections to H.248.1 (03/2013)
+
+=== Usage of DOT in digitmaps
+
+[%unnumbered]
+|===
+h| Issue: a| Digit maps allow the specification of a "." DOT in a digit map. This DOT indicates that the preceding element may be repeated zero or more times. +
+The example in 7.1.14.9/[ITU-T H.248.1] shows its usage: +
+9011 + up to 15 digits is denoted by "9011x." +
+However there has been some confusion over whether the preceding element to the DOT has to be matched for a successful digit map completion. I.e. for the above example is "9011" a successful match? +
+This question has been posted to the IETF Megaco mailing list on two previous occasions previously: (29/09/2008, "Megaco question about interpretation of dot in a digitmap") and (16/05/2007, "DOT in H.248 Digit map syntax"). +
+The reply on both those occasions was the key word is "repetitions" and that there must be at least occurrence of the preceding element. I.e. In the above example "90112" would result in a successful match but "9011" would not.
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4448.zip[AVD-4448]
+|===
+
+[align=center]
+*_&#91;Begin Correction]_*
+
+*7.1.14.3 DigitMap syntax*
+
+The formal syntax of the DigitMap is described by the DigitMap rule in the formal syntax description of the protocol (see Annexes A and B). A DigitMap, according to this syntax, is defined either by a string or by a list of strings. Each string in the list is an alternative event sequence, specified either as a sequence of DigitMap symbols or as a regular expression of DigitMap symbols. These DigitMap symbols, the digits "0" through "9" and letters "A" through a maximum value depending on the signalling system concerned, but never exceeding "K", correspond to specified events within a package which has been designated in the Events Descriptor on the termination to which the DigitMap is being applied. (The mapping between events and DigitMap symbols is defined in the documentation for packages associated with channel-associated signalling systems such as DTMF, MF, or R2. Digits "0" through "9" must be mapped to the corresponding digit events within the signalling system concerned. Letters should be allocated in logical fashion, facilitating the use of range notation for alternative events.)
+
+The letter "x" is used as a wildcard, designating any event corresponding to symbols in the range "0"-"9". The string may also contain explicit ranges and, more generally, explicit sets of symbols, designating alternative events any one of which satisfies that position of the DigitMap. Finally, the dot symbol "." stands for [underline]#one occurrence and# zero or more repetitions of the event selector (event, range of events, set of alternative events, or wildcard) that precedes it. As a consequence of the third timing rule above, inter-event timing while matching a terminal dot symbol uses the short timer by default.
+
+In addition to these event symbols, the string may contain "S" and "L" inter-event timing specifiers and the "Z" duration modifier. "S" and "L" respectively indicate that the MG should use the short (S) timer or the long (L) timer for subsequent events, overriding the timing rules described above. If an explicit timing specifier is in effect in one alternative event sequence, but none is given in any other candidate alternative, the timer value set by the explicit timing specifier must be used. If all sequences with explicit timing controls are dropped from the candidate set, timing reverts to the default rules given above. If used inside a range notation, the S and L specifiers shall be ignored. Finally, if conflicting timing specifiers are in effect in different alternative sequences, the long timer shall be used.
+
+A "Z" designates a long duration event: placed in front of the symbol(s) designating the event(s) which satisfy a given digit position, it indicates that that position is satisfied only if the duration of the event exceeds the long-duration threshold. The value of this threshold is assumed to be provisioned in the MG, but, like the T, L, and S timers, can be overridden by specification within the DigitMap. If the Z specifier is not followed by a digit (0-9 or A-K), then the MG shall reject the digitmap as invalid procedure. When used in a range notation, the Z specifier applies solely to the immediately following digit. When used immediately prior to a range, the Z modifier applies to all digits in the range (thereby requiring a match in the range to be long duration).
+
+[align=center]
+*_&#91;End Correction]_*
+
+=== Updated ABNF reference
+
+[%unnumbered]
+|===
+h| Issue: a| H.248.1 contains a reference to RFC2234 for ABNF syntax. This RFC has been obsoleted. The latest definition of ABNF is RFC 5234 which is also known as STD 68. The updates to the RFC are mainly with regards to its use with email. There are no changes that effect H.248 encoding.
+h| Reference: | Discussions resulting from H.248.66 (http://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-0351[COM16-C.351]).
+|===
+
+[align=center]
+*_&#91;Begin Correction]_*
+
+*2 References*
+
+The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
+
+[align=center]
+*_..._*
+
+[strike]#[IETF RFC 2234] IETF RFC 2234 (1997), _Augmented BNF for Syntax Specifications: ABNF_.#
+
+[align=center]
+*_..._*
+
+[underline]#[IETF RFC 5234] IETF RFC 5234 (2008), _Augmented BNF for Syntax Specifications: ABNF_.#
+
+[align=center]
+*_&#91;End Correction]_*
+
+NOTE: For brevity, the changes to the references inside H.248.1 have not been included. The references to [IETF RFC 2234] in clauses 7.2.10, A.3 and B.2 shall be changed to [IETF RFC 5234].
+
+=== Reserve Properties clarifications
+
+[%unnumbered]
+|===
+h| Issue: | There has been some confusion with regards to the behaviour of property overspecification and the use of ReserveValue and ReserveGroup. Clarifying text is added to clause 7.1.7 on the relation between the concepts. The note in clause 7.1.8.2.3.2 is related to ReserveGroup=True and thus should be placed in clause 7.1.8.2.3.3.
+h| Reference: | http://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-0686[COM16-C.686]
+|===
+
+[align=center]
+*_&#91;Begin Correction]_*
+
+*7.1.7 LocalControl Descriptor*
+
+. *Overview* +
+The LocalControl Descriptor contains the Mode Property, the ReserveGroup and ReserveValue Properties and properties of a termination (defined in packages) that are stream specific, and are of interest between the MG and the MGC. Values of properties may be specified as in clause 7.1.1.
+
+. *Mode Property (for directionality control)* +
+The allowed values for the Mode Property are "SendOnly", "RecvOnly", "SendRecv", "Inactive" and "LoopBack". "SendOnly", "RecvOnly" and "LoopBack" are with respect to the exterior of the context, so that, for example, a stream set to mode = "SendOnly" does not pass received media into the context. When a stream is set to "LoopBack" on a termination, media received (Local Descriptor) on the termination will be looped back to the sending side (Remote Descriptor) of the termination and no media is passed between that termination and other terminations in the context. The looped back media shall be sent according to the Remote Descriptor. The default value for the Mode Property is "Inactive". Signals and events are not affected by the Mode Property. Statistics may or may not be affected by the Mode property depending on the semantic of the statistic. For example: if the Mode was set to "SendOnly" and the Octet Received Statistic was set, then the statistic would not be affected. If the Octet Sent Statistic was set, then it would be affected by the mode. The LocalControl Mode Property takes precedence over any mode specified in the Local and Remote Descriptors. However, duplication and use of mode information in the SDP should be avoided. Due to the default of LocalControl Mode Property being "Inactive", if mode information was added to the Local and Remote Descriptor SDP and the LocalControl Mode was not explicitly sent, the effective mode would still be inactive.
+
+. *Reserve Properties (for resource handling control)*
++
+--
+The boolean-valued Reserve Properties, ReserveValue and ReserveGroup, of a termination indicate what the MG is expected to do when it receives a Local and/or Remote Descriptor.
+
+If the value of a Reserve Property is "True", the MG shall reserve resources for all alternatives specified in the Local and/or Remote Descriptors for which it currently has resources available. It shall respond with the alternatives for which it reserves resources. If it cannot support any of the alternatives, it shall respond with a reply to the MGC that contains empty Local and/or Remote Descriptors. If media begins to flow while more than a single alternative is reserved, media packets may be sent or received on any of the alternatives and must be processed, although only a single alternative may be active at any given time.
+
+If the value of a Reserve Property is False, the MG shall choose one of the alternatives specified in the Local Descriptor (if present) and one of the alternatives specified in the Remote Descriptor (if present)[strike]#.# [underline]#as per the behaviour associated with "overspecification" (see clause 7.1.1, list item 3).# If the MG has not yet reserved resources to support the selected alternative, it shall reserve the resources. If, on the other hand, it already reserved resources for the termination addressed (because of a prior exchange with ReserveValue and/or ReserveGroup equal to "True"), it shall release any excess resources it reserved previously. Finally, the MG shall send a reply to the MGC containing the alternatives for the Local and/or Remote Descriptor that it selected. If the MG does not have sufficient resources to support any of the alternatives specified, it shall respond with Error Code 510 ("Insufficient resources").
+
+The default value of ReserveValue and ReserveGroup is "False". More information on the use of the two Reserve Properties is provided in clause 7.1.8.
+--
+
+. *Descriptor usage*
++
+--
+A new setting of the LocalControl Descriptor completely replaces the previous setting of that descriptor in the MG. Thus, to retain information from the previous setting, the MGC must include that information in the new setting. If the MGC wishes to delete some information from the existing descriptor, it merely resends the descriptor (in a Modify Command) with the unwanted information stripped out.
+
+NOTE: The Mode Property is also known as "StreamMode" in the encoding definitions in Annexes A and B. These terms are interchangeable within ITU-T H.248.
+--
+
+[align=center]
+*_&#91;End Correction]_*
+
+
+[align=center]
+*_&#91;Begin Correction]_*
+
+*7.1.8.2.3 Resource reservation rules for ReserveValue and ReserveGroup properties*
+
+Subject to the above rules, subsequent action depends on the values of the ReserveValue and ReserveGroup Properties in LocalControl.
+
+*7.1.8.2.3.1 ReserveValue = "False" AND ReserveGroup = "True"*
+
+If ReserveGroup is "True", the MG reserves the resources required to support as many as possible of the requested property group alternatives that it can currently support.
+
+*7.1.8.2.3.2 ReserveValue = "True" AND ReserveGroup = "False"*
+
+If ReserveValue is "True", the MG reserves the resources required to support as many as possible of the requested property value alternatives that it can currently support.
+
+[strike]#NOTE:# [strike]#If a Local or Remote Descriptor contains multiple groups of properties, and ReserveGroup is "True", then the MG is requested to reserve resources so that it can decode or encode the media stream according to any of the alternatives. For instance, if the Local Descriptor contains two groups of properties, one specifying packetized ITU-T G.711 A-law audio and the other ITU-T G.723.1 audio, the MG reserves resources so that it can decode one audio stream encoded in either ITU-T G.711 A-law format or ITU-T G.723.1 format. The MG does not have to reserve resources to decode two audio streams simultaneously, one encoded in ITU-T G.711 A-law and one in ITU-T G.723.1. The intention for the use of ReserveValue is analogous.#
+
+*7.1.8.2.3.3 ReserveValue = "True" OR ReserveGroup = "True"*
+
+If ReserveGroup is "True" or ReserveValue is "True", then the following rules apply:
+
+* If the MG has insufficient resources to support all alternatives requested by the MGC, and the MGC requested resources in both Local and Remote, the MG should reserve resources to support at least one alternative each within Local and Remote.
+* If the MG has insufficient resources to support at least one alternative within a Local (Remote) Descriptor received from the MGC, it shall return an empty Local (Remote) in response.
+* In its response to the MGC, when the MGC included Local and Remote Descriptors, the MG shall include Local and Remote Descriptors for all groups of properties and property values it reserved resources for. If the MG is incapable of supporting at least one of the alternatives within the Local (Remote) Descriptor received from the MGC, it shall return an empty Local (Remote) Descriptor.
+* If the Mode Property of the LocalControl Descriptor is "RecvOnly", "SendRecv", or "LoopBack", the MG must be prepared to receive media encoded according to any of the alternatives included in its response to the MGC.
+
+[underline]#NOTE:# [underline]#If a Local or Remote Descriptor contains multiple groups of properties, and ReserveGroup is "True", then the MG is requested to reserve resources so that it can decode or encode the media stream according to any of the alternatives. For instance, if the Local Descriptor contains two groups of properties, one specifying packetized ITU-T G.711 A-law audio and the other ITU-T G.723.1 audio, the MG reserves resources so that it can decode one audio stream encoded in either ITU-T G.711 A-law format or ITU-T G.723.1 format. The MG does not have to reserve resources to decode two audio streams simultaneously, one encoded in ITU-T G.711 A-law and one in ITU-T G.723.1. The intention for the use of ReserveValue is analogous.#
+
+*7.1.8.2.3.4 ReserveValue = "False" AND ReserveGroup = "False"*
+
+If ReserveGroup is "False" and ReserveValue is "False", then the MG should apply the following rules to resolve Local and Remote to a single alternative each:
+
+* The MG chooses the first alternative in Local for which it is able to support at least one alternative in Remote.
+* If the MG is unable to support at least one Local and one Remote alternative, it returns Error Code 510 ("Insufficient resources").
+* The MG returns its selected alternative in each of Local and Remote.
+
+NOTE: The above rules allow the MG to prioritize the selection of the same codec in both the Local and Remote Descriptors; however, it also permits the MG to choose different codecs in each descriptor.
+
+A new setting of a Local or Remote Descriptor completely replaces the previous setting of that descriptor in the MG. Thus, to retain information from the previous setting, the MGC must include that information in the new setting. If the MGC wishes to delete some information from the existing descriptor, it merely resends the descriptor (in a Modify Command) with the unwanted information stripped out.
+
+[align=center]
+*_&#91;End Correction]_*
+
+== Technical and Editorial Corrections to H.248.9 (12/2009)
+
+=== Updated ABNF reference
+
+[%unnumbered]
+|===
+h| Issue: | H.248.9 contains a reference to RFC4234 for ABNF syntax. This RFC has been obsoleted. The latest definition of ABNF is RFC 5234 which is also known as STD 68. The updates to the RFC are mainly with regards to its use with email. There are no changes that effect H.248 encoding.
+h| Reference: | Discussions resulting from H.248.66 (http://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-0351[COM16-C.351]).
+|===
+
+[align=center]
+*_&#91;Begin Correction]_*
+
+[align=center]
+*Bibliography*
+
+[b-IETF RFC 2279]:: IETF RFC 2279 (1998), UTF-8, _a transformation format of ISO 10646_.
+[b-IETF RFC 2326]:: IETF RFC 2326 (1998), _Real Time Streaming Protocol (RTSP)_.
+[b-IETF RFC 2805]:: IETF RFC 2805 (2000), _Media Gateway Control Protocol Architecture and Requirements_.
+[b-IETF RFC [strike\]#4234# [underline\]#5234#]:: IETF RFC [strike]#4234# [underline]#5234# ([strike]#2005# [underline]#2008#), _Augmented BNF for Syntax Specifications: ABNF_.
+[b-UN M.49]:: United Nations (1999), _Standard Country or Area Codes for Statistical Use_ Revision 4 Sales No. 98.XVII.9.
+[b-W3C EMMA]:: W3C (2009), _EMMA: Extensible Multimodal Annotation markup language_.
+
+[align=center]
+*_&#91;End Correction]_*
+
+NOTE: For brevity the changes to the references inside H.248.1 have not been included. The references to [IETF RFC 4234] in clause 6.4.5.3 shall be changed to [IETF RFC 5234].
+
+== Technical and Editorial Corrections to H.248.40 (03/2013)
+
+=== Packet types subject to detection logic
+
+[%unnumbered]
+|===
+h| Issue: a| The context of H.248.40 usage was apparently fairly straightforward when H.248.40 was developed in 2006/07. Since that time some weaknesses (from specification perspective) have been observed, primarily related to following three items:
+
+* The definition of the _adid/ipstop_ event itself (in clause 6.2.1) is lacking the precise semantics related to the detection condition. This information is contained in the scope section (clause 1).
+* Notion of "_application data_", leading to the question that there might be potentially application (protocol) specific detection conditions.
+* Notion of "_IP data packet_", hence there are obviously also IP control packets? Is there any relation to H.248 media flow and H.248 control flow components?
+These should be clarified.
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4426.zip[AVD-4426]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*1 Scope*
+
+This Recommendation allows a media gateway controller to request the media gateway to detect that after a certain period of time no Internet protocol application data has flowed on a particular termination/stream. The ability to detect if Internet protocol application data flow has stopped or has not started is useful to avoid dead lock in latching scenarios and also may be of use to detect hanging bearers.
+
+This Recommendation defines an event which is related to one or more IP 2-tuples[strike]#&nbsp;#. An individual 2-tuple is given by <IP address, IP port> of an IP flow of a H.248 stream or termination. The set of conditions for inactivity detection is related to IP packet arrival and/or departure events for all 2-tuples of a stream/termination. The condition of packet arrivals or departures respectively is controlled via a dedicated parameter (called "_direction_").
+
+[underline]#It has to be noted that there might be typically more detection conditions on top of the pure observation of "IP transport endpoint" (given by IP 2-tuple) activity. The entire detection conditions are effectively given by the stream/termination specific _lookup key_ (clause 3.1.2/[ITU-T H.248.79]), which defines the particular packet-to/from-Context delivery process, according clause 6/[ITU-T H.248.79]. Appendix IV provides some examples for traffic components which would match (or not) such lookup keys.#
+
+The flexibility of inactivity detection logic configurations allows the usage of H.248.40 for various applications (see also appendices [underline]#I to III#).
+
+*6 Application data inactivity detection package*
+
+*Package Name*:: Application data inactivity detection package
+*Package ID*:: adid (0x009c)
+*Description*:: This package enables the MGC to be notified when the MG has detected that no IP application data flow has been detected on a termination/stream. +
+[underline]#The condition of packet arrivals or departures respectively is controlled via a dedicated parameter (called "direction").#
+*Version*:: 1
+*Extends*:: None
+
+[align=center]
+*_..._*
+
+[align=center]
+[underline]#*Appendix IV*#
+
+[align=center]
+[underline]#*Examples for IP application data traffic*# +
+[underline]#(This appendix does not form an integral part of this Recommendation)#
+
+[underline]#The _ipstop_ event related detection logic for _application data inactivity_ is based on the observation of the n-tuple, given by stream/termination specific lookup key.#
+
+Such a condition comprises following IP traffic components, such as:
+
+* ALL IP packets related to a H.248 media flow and H.248 control flow components
+* Bearer and service specific examples:
+
+** RTP session: RTCP and RTP, and not only RTP
+** T.38 session: e.g. all UDPTL/UDP packets in case of T.38-over-UDP
+** XoTCP: all TCP packets
+** WWW services: all HTTP/TCP packets
+** Streaming service: e.g., RTSP, RTP, RTCP
+** WebRTC service: all UDP packets (for audio, video, text, data, security key exchange, RTCP XR, etc)
+
+Out stem:[color(red)("of the")] scope of _adid_ logic are:
+
+* ICMP/IP packets
+* IP packets related to IP routing protocols (e.g., OSPF/IP packets)
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.53 (03/2009)
+
+=== Rate policing clarifications
+
+[%unnumbered]
+|===
+h| Issue: a| H.248.53 does not specifically discuss relevant traffic components of an IP flow as part (or not) of traffic policy, e.g. when considering IP bearer traffic policing (clause 9.4/H.248.53 and applied packages from clauses 7 and 8). +
+Following basic issue was observed: A single or multiple IP flow(s) associated to an H.248 stream/termination could be basically divided in two IP traffic portions: +
+IP application data traffic related to the communication application itself, i.e., with end-to-end significance; and +
+IP-based control traffic along the bearer path, with purpose of NAT traversal, authentication procedures, bearer control protocol for (segmented) IP transport connections (e.g., TCP segment), bearer control protocol for (segmented) IP security sessions, etc., i.e., without end-to-end significance (rather type hop-to-hop). +
+Both traffic portions provide following difference from H.248 Context point of view: the e2e traffic (1) is going through the Context, and traffic (2) is terminated by a SEP. +
+That's an important distinction concerning traffic policing, which has originally only e2e traffic (1) in scope, but not (2) (in our understanding).
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4427.zip[AVD-4427]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*6 Traffic management package*
+
+*Package name*:: Traffic management package
+*Package ID*:: tman (0x008d)
+*Description*:: This package allows traffic descriptors to be defined for a stream and allows policing to be explicitly enabled. Version 1 is defined for a single traffic flow per H.248 stream. Version 2 supports multiple traffic flows per H.248 stream. +
+[underline]#Traffic related to the control (establishment, maintenance or release) of a H.248 flow is excluded from traffic policing. E.g. RTCP flows are still included.#
+*Version*:: 2
+*Extends*:: None.
+
+[align=center]
+*_..._*
+
+*8 Packet size package*
+
+*Package name*:: Packet size package
+*Package ID*:: pacs (0x00c9)
+*Description*:: This package defines a property for the maximum allowed packet size. Such a traffic parameter may be used for traffic policing. This package is typically used for "media-agnostic" ephemeral terminations (Note 1), and/or when provisioning is insufficient (Note 2).
++
+--
+NOTE: The MG may not be aware of the media type/format behind an IP termination (e.g., a MG implementing the ETSI_BGF profile according to [b-ETSI ES 283 018]). It is impossible for such a MG to derive or estimate the maximum possible packet size from information elements of the media descriptor.
+
+NOTE: The provisioning possibility is excluded for multimedia applications with different packet size distribution functions for the various media components. +
+This package defines also a property for the minimum policed unit, which is also typically used for traffic policing.
+
+[underline]#Traffic related to the control (establishment, maintenance or release) of a H.248 flow is excluded from traffic policing. E.g. RTCP flows are still included.#
+--
+
+*Version*:: 1
+*Extends*:: tman version 1
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.69 (03/2009)
+
+=== Superfluous reference
+
+[%unnumbered]
+|===
+h| Issue: | ITU-T H.248.69 contains a reference to IETF RFC 4976 however it is not used in the main text. Therefore the reference can be removed.
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4397.zip[AVD-4397]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*2 References*
+
+The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
+
+[ITU-T H.248.1]:: Recommendation ITU-T H.248.1 (2005), Gateway control protocol: Version 3.
+[ITU-T H.248.7]:: Recommendation ITU-T H.248.7 (2004), Gateway control protocol: Generic announcement package.
+[ITU-T H.248.9]:: Recommendation ITU-T H.248.9 (2005), Gateway control protocol: Advanced media server packages.
+[ITU-T H.248.19]:: Recommendation ITU-T H.248.19 (2004), Gateway control protocol: Decomposed multipoint control unit, audio, video and data conferencing packages.
+[ITU-T H.248.43]:: Recommendation ITU-T H.248.43 (2008), Gateway control protocol: Packages for gate management and gate control.
+[ITU-T H.248.47]:: Recommendation ITU-T H.248.47 (2008), Gateway control protocol: Statistic conditional reporting package.
+[IETF RFC 2822]:: IETF RFC 2822 (2001), Internet Message Format.
+[IETF RFC 3339]:: IETF RFC 3339 (2002), Date and Time on the Internet: Timestamps.
+[IETF RFC 3860]:: IETF RFC 3860 (2004), Common Profile for Instant Messaging (CPIM).
+[IETF RFC 3862]:: IETF RFC 3862 (2004), Common Presence and Instant Messaging (CPIM): Message format.
+[IETF RFC 3986]:: IETF RFC 3986 (2005), Uniform Resource Identifier (URI): Generic Syntax.
+[IETF RFC 4021]:: IETF RFC 4021 (2005), Registration of Mail and MIME Header Fields.
+[IETF RFC 4975]:: IETF RFC 4975 (2007), The Message Session Relay Protocol (MSRP).
+[strike]#[IETF RFC 4976]#:: [strike]#IETF RFC 4976 (2007), Relay Extensions for the Message Session Relay Protocol (MSRP).#
+[IETF RFC 5228]:: IETF RFC 5228 (2008), Sieve: An Email Filtering Language.
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.80 (01/2014)
+
+=== Updated reference
+
+[%unnumbered]
+|===
+h| Issue: | The remaining IETF draft < draft-ietf-mmusic-sdp-cs-21> in the Bibliography has been published as RFC and could be corrected in the Recommendation.
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1411_Seo/AVD-4650.zip[AVD-4650]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*1 Scope*
+
+Recommendation ITU-T H.248.80 describes the interworking of the SDP described by the "Revised SDP Offer/Answer (O/A) model" with ITU-T H.248. The "Revised SDP Offer/Answer model" is characterized by the following documents:
+
+* SDP capability negotiation (SDPCapNeg) defined in [IETF RFC 5939]
+* SDP media capabilities negotiation (MediaCapNeg) defined in [IETF RFC 6871]
+
+NOTE: The support of miscellaneous capabilities negotiation in the Session Description document [b-IETF RFC 7006] and Extension for PSTN bearers [b-IETF [strike\]#SDPCS# [underline\]#RFC 7195#] is for further study.
+
+This Recommendation describes the relationship between the ITU-T H.248 group concept and the revised SDP offer/answer model concepts of actual and potential configurations. It provides guidelines for the inter-working between SDPCapNeg and normal ITU-T H.248.1 procedures. Rather than focussing on the SDPCapNeg procedures in the context of session handling, this Recommendation concentrates on mapping the between ITU-T H.248.1 and the SDP Capability negotiation framework SDP syntax. For interactions between the functions of SDPCapNeg and different SDP attributes, see [IETF RFC 5939] and associated IETF documents.
+
+This Recommendation also discusses the support of [IETF RFC 6871] by ITU-T H.248.
+
+In order to address several deficiencies in interworking between SDPCapNeg and [IETF RFC 6871] and ITU-T H.248 this Recommendation defines two packages that allow a more optimized support of the revised SDP offer/answer procedures on MGCs that also support ITU-T H.248.
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+[align=center]
+*Bibliography*
+
+[b-ITU-T G.711]:: Recommendation ITU-T G.711 (1988), _Pulse code modulation (PCM) of voice frequencies._
+[b-ITU-T G.729]:: Recommendation ITU-T G.729 (1996), _Coding of speech at 8 kbit/s using conjugate-structure algebraic-code-excited linear prediction (CS-ACELP)._
+[b-ITU-T H.263]:: Recommendation ITU-T H.263 (2005), _Video coding for low bit rate communication._
+[b-ITU-T H.264]:: Recommendation ITU-T H.264 (2012), _Advanced video coding for generic audiovisual services._
+[b-ITU-T V.152]:: Recommendation ITU-T V.152 (2010), _Procedures for supporting voice-band data over IP networks._
+[b-IETF RFC 3264]:: IETF RFC 3264 (2002), _An Offer/Answer Model with the Session Description Protocol (SDP)._
+[b-IETF RFC 7006]:: IETF RFC 7006 (2013), _Miscellaneous Capabilities Negotiation in the Session Description Protocol (SDP)._
+[b-IETF [strike\]#SDPCS# [underline\]#RFC 7195#]:: IETF [underline]#RFC 7195 (2014)# [strike]#draft-ietf-mmusic-sdp-cs-21 (2013)#, _Session Description Protocol (SDP) Extension for Setting up Audio and Video Media Streams over Circuit-Switched Bearers In The Public Switched Telephone Network (PSTN)._ [strike]#http://tools.ietf.org/html/draft-ietf-mmusic-sdp-cs-23#
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.83 (02/2012)
+
+=== Incorrect reference
+
+[%unnumbered]
+|===
+h| Issue: | ITU-T H.248.83, clause 1 makes reference to a 3GPP reference point. The named the reference point "Mn" provides a reference to [b-3gpp TS 29.232] which is in fact the specification for the "Mc" reference point. The reference point name needs to be corrected.
+h| Reference: | http://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-0470[COM16-C.470]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*1 Scope*
+
+There has been a trend towards virtualized or cloud-based networks where a physical device or network hosts several virtual instances meeting the needs of different customers. Different service models exist, usually utilizing the terminology "x – as a service (xASS)", e.g., platform as a service (PAAS) and infrastructure as a service (IAAS).
+
+A common aspect of the different cloud service models is that a certain set of resources is allocated (via an operations and maintenance (O&M) system) based on a set of customer requirements. These requirements may detail the applications, libraries, data, memory, processing resources, storage, and associated configuration settings.
+
+One of the main concepts of ITU-T H.248 is the use of the virtual media gateway (VMG). This allows multiple VMG instances per physical media gateway (MG). Each VMG is treated as a separate MG instance and thus has its own control association and set of resources, configurations, etc. Thus, it has similarities to cloud virtualization concepts.
+
+ITU-T H.248 is largely silent on provisioning resources for VMGs, apart from clause 11.1 of [ITU-T H.248.1], which states that the mechanism for allocating terminations to VMGs is a management method outside the scope of [ITU-T H.248.1]. Whilst the provisioning of terminations is out of the scope of ITU-T H.248, it does have the "ITU-T H.248 Profile" concept. Profiles specify what options associated with [ITU-T H.248.1] have been used. Appendix III of [ITU-T H.248.1] provides an example profile template showing the information that can be derived from the profile ID. ITU-T H.248 profiles, when used by a virtual media gateway (VMG), indicate what ITU-T H.248 elements can be used. Profiles have been defined by several standards development organizations (e.g., 3GPP, ETSI TISPAN, MSF) and several vendors to define the ITU-T H.248 functionality of certain interfaces.
+
+ITU-T H.248 provides an abstraction model for an MGC to access and control physical resources on an MG without having to address these physical resources. The concepts of Contexts, Terminations, Streams and Descriptors are used. Whilst terminations are typically statically provisioned, the underlying resources may be statically or dynamically allocated between the VMGs. The physical resources may relate to the central processing unit (CPU), digital signal processor (DSP), memory, storage, or power use. So whilst the ITU-T H.248 options defined by an ITU-T H.248 Profile are related to these resources, there is not a one–to-one mapping due to the abstraction layer. Some form of provisioning is required to assign the physical resources to a VMG instance.
+
+ITU-T H.248 allows an MG and MGC to negotiate the use of a certain profile (functionality set) via the use of the _ServiceChangeProfile_ parameter (see clause 7.2.8.1.5 of [ITU-T H.248.1]). An example profile is the _Mc_ [underline]#reference point# [strike]#_n_ interface# (profile name: _threegbicsn_) defined by [b-3GPP TS 29.232]. However, this does not identify a particular resource profile. The MGC cannot deduce from the profile name how resources are provisioned on the (V)MG. The set of provisioned resources could be tied to the media gateway identity (ITU-T H.248 Mid) but this unnecessarily ties the transport network configuration to the MG hardware configuration. Many ITU-T H.248 packages specify a default of "provisioned" for the elements defined by the package. It is assumed that these are co-ordinated via other provisioning means (e.g., SNMP MIBs). As an ITU-T H.248 MG can be provisioned with different sets of resources per ITU-T H.248 Profile Name and/or Mid another form of correlation identity between the MGC and MG to coordinate what has been provisioned is required.
+
+This identifier can be used by network operators as a pointer to a set of provisioned configuration data. Upon reception of the identifier, the MGC can uniquely identify the provisioned defaults and other configuration data and then request (V)MG resources accordingly.
+
+This Recommendation defines functionality that allows an MG to indicate to an MGC what media gateway instance is in use. It also allows an MGC to audit an MG to determine the MG instance in use. This Recommendation utilises a ServiceChangeExtension parameter that allows the MG instance to be reported during an initial ServiceChange command exchange. An ITU-T H.248 package is defined to allow an MGC to audit packages to determine if the MG instance functionality is supported. It also allows the auditing of a root Termination property to determine the MG instance.
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.87 (01/2014)
+
+=== Updated reference
+
+[%unnumbered]
+|===
+h| Issue | Two of the IETF drafts in the Bibliography have been published as IETF RFCs. The references should be updated.
+h| Reference: | http://wftp3.itu.int/av-arch/avc-site/2013-2016/1411_Seo/AVD-4601.zip[AVD-4601]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*III.3.1 RTP-agnostic application level metrics*
+
+Example metrics:
+
+These examples are based on the pure application data stream at receiver side:
+
+* Unimpaired seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
+* Concealed seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
+* Severely concealed seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
+* Unimpaired seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
+* Frame impairment statistics summary [b-IETF RFC 7004].
+
+The following example relates to FAX-over-IP using [ITU-T T.38] in T.38-over-RTP transport mode and an ITU-T H.248 IP termination enabled with the IP FAX package [ITU-T H.248.2]:
+
+* Pages transferred defined by ITU-T H.248 statistic _ipfax/pagestrans_; is an application level metric due to data object 'page' and RTP-agnostic due to independence of RTP header information.
+
+Statistics of RTP application data package [ITU-T H.248.58] (again due to RTP payload relation only (application data) but independence of RTP header information):
+
+* RTP payload octets sent and
+* RTP payload octets received.
+
+*III.3.2 RTP-aware application level metrics*
+
+For these metrics the measurement function must be media format aware based on the RTP payload type codepoint in contrast to the examples of clause III.3.1.
+
+Example metrics:
+
+* MOS value (attributed by MOS type and calculation method) [b-IETF [underline]#RFC 7266# [strike]#rtcp-xr-qoe#]
+* Signal level [IETF RFC 3611]
+* Noise level [IETF RFC 3611]
+* Residual echo return loss [IETF RFC 3611]
+* R factor [IETF RFC 3611]
+* External R factor [IETF RFC 3611]
+* End system delay [b-IETF RFC 6843] (virtual internal round-trip delay in topology RTP end system; it is an application level metric due to inclusion of encoding/decoding delays).
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+[align=center]
+*Bibliography*
+
+[b-ITU-T H.248.xnq]:: (Expired) Draft of Recommendation ITU-T H.248.xnq (2005), _Gateway control protocol: Extended network quality metrics packages for next generation networks (NGNs)_. Document AVD-2773 from WP2/16 Rapporteur Meeting (Geneva 28 November – 2 December 2005). <http://ftp3.itu.int/av-arch/avc-site/2017-2020/0511_Gen/AVD-2773.zip>
+
+*_..._*
+
+[b-IETF RFC 7005]:: IETF RFC 7005 (2013), RTP Control Protocol (RTCP) Extended Report (XR) Block for De-Jitter Buffer Metric Reporting.
+
+[b-IETF [strike\]#rtcp-xr-qoe# [underline\]#RFC 7266#]:: IETF [underline]#RFC 7266 (06/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-qoe (expected in 2014)#, RTP Control Protocol (RTCP) Extended Report (XR) Blocks for [underline]#Mean Opinion Score (MOS)# Metric Reporting. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-qoe/>#
+
+[b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]:: IETF [underline]#RFC 7294 (07/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-conceal (expected in 2014)#, RTCP XR Report Block for Concealment metrics Reporting on Audio Applications. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-loss-conceal/>#
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+== Technical and Editorial Corrections to H.248.88 (01/2014)
+
+=== Updated reference
+
+[%unnumbered]
+|===
+h| Issue: | RFC 7667 "RTP topologies" obsoletes RFC 5117, the baseline RFC of H.248.88. RFC 7667 was published after the publication of H.248.88.
+h| Reference: | https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-1054[COM16-C.1054]
+|===
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+*7.2.2 Other RTP topologies*
+
+The high-level RTP topology models according to [b-IETF RFC 5117] have evolved since the publication of this RFC (in 2008) in terms of more detailed information (e.g., semantic clarifications), evaluation of whether the number of existing models can be reduced and the identification of new RTP topology models (see also [b-IETF [strike\]#rtp-topo# [underline\]#RFC 7667#]). This clause provides descriptions of such new/extended models.
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+[align=center]
+*_&#91;Begin Proposed Correction]_*
+
+[align=center]
+*Bibliography*
+
+*_..._*
+
+[b-IETF [strike\]#rtp-topo# [underline\]#RFC 7667#]:: IETF [strike]#draft-ietf-avtcore-rtp-topologies-update# [underline]#IETF RFC 7667#, _RTP Topologies_. <http://tools.ietf.org/html/draft-ietf-avtcore-rtp-topologies-update>
+
+[align=center]
+*_&#91;End Proposed Correction]_*
+
+[appendix,obligation=normative]
+== Defect Report Form for the H.248 Sub-series
+
+[%unnumbered]
+|===
+| DATE: |
+a| CONTACT INFORMATION +
+NAME: +
+COMPANY: +
+ADDRESS: +
+TEL: +
+FAX: +
+E-MAIL: |
+| AFFECTED RECOMMENDATIONS: |
+| DESCRIPTION OF PROBLEM: |
+| SUGGESTIONS FOR RESOLUTION: |
+|===
+
+NOTE: Attach additional pages if more space is required than is provided above.
+
