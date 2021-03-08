@@ -1,0 +1,99 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/T-REC-A.8-200810-I!!MSW-E.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000062): Hanging paragraph in clause
+	<clause id="general" inline-header="false" obligation="normative"><title>General</title><clause id="approval" inline-header="true" obligation="normative"><p id="_fb5abeba-9de8-42af-bd35-3f8bc1004e95">Recommendations of the ITU Telecommunication Standardization Sector (ITU-T) will be approved using this alternative approval process (AAP), except Recommendations that have policy or regulatory implications, which will be approved using the traditional approval process (TAP) found in Resolution 1 of the World Telecommunication Standardization Assembly (WTSA).</p>
+	<p id="_4afb6aad-3e2d-4111-87a4-6d2ae1e6a9b2">The competent study group may also seek approval at a WTSA.</p></clause>
+	<clause id="recommendation_status" inline-header="true" obligation="normative">
+	
+	<p id="_9b02cbb9-eb46-4da8-92f3-cee18f22fbd9">In accordance with the ITU Convention, the status of Recommendations approved is the same for both AAP and TAP methods of approval.</p>
+(XML Line 000068): Hanging paragraph in clause
+	<clause id="process" inline-header="false" obligation="normative">
+	<title>Process</title>
+	<clause id="study_groups_aap" inline-header="true" obligation="normative">
+	
+	<p id="_c3533c07-5344-443a-9f8c-5235ee370bf5">Study groups should apply the AAP described below for seeking the approval of draft new and revised Recommendations as soon as they have been developed to a sufficiently mature state. See <xref target="fig1"/> for the sequence of events.</p>
+(XML Line 000075): Hanging paragraph in clause
+	<clause id="prerequisites" inline-header="false" obligation="normative"><title>Prerequisites</title><clause id="intention_to_apply_aap" inline-header="true" obligation="normative">
+	
+	<p id="_3144ace1-8cb4-49a8-9c96-6994bba1c8be">Upon request of the study group chairman, the Director of the Telecommunication Standardization Bureau (TSB) shall announce the intention to apply AAP and to initiate the last call set out in this Recommendation (see <xref target="last_call_and_additional_review"/> below). Such action shall be based upon consent at a study group or working party meeting or, exceptionally, at a WTSA, that a draft Recommendation is sufficiently mature for such action. At this stage, the draft Recommendation is considered to have "CONSENT". The Director shall include a summary of the draft Recommendation in the announcement. Reference shall be provided to the documentation where the text of the draft new or revised Recommendation to be considered may be found. This information shall be made available to all Member States and Sector Members.</p>
+	</clause>
+	<clause id="draft_availability" inline-header="true" obligation="normative">
+(XML Line 000095): Hanging paragraph in clause
+	<clause id="elaborating_recommendations" inline-header="true" obligation="normative"><p id="_ab1c52f0-fe5a-4b9b-a97a-f703629d5681">Recommendations are to be elaborated in accordance with the Common Patent Policy for<br/>
+	 ITU-T/ITU-R/ISO/IEC available at <link target="http://www.itu.int/ITU-T/ipr/"/>. For example:</p>
+	<clause id="patent_statement_and_licensing_declaration_itu_member" inline-header="true" obligation="normative">
+	
+	<p id="_f22fc812-2498-4c65-b7d0-2613f471feb2">Any party participating in the work of ITU-T should, from the outset, draw the attention of the Director of TSB to any known patent or to any known pending patent application, either of their own or of other organizations. The "Patent Statement and Licensing Declaration" form from the ITU-T website is to be used.</p>
+(XML Line 000107): Hanging paragraph in clause
+	<clause id="last_call_and_additional_review" inline-header="false" obligation="normative"><title>Last call and additional review</title><clause id="last_call_period" inline-header="true" obligation="normative">
+	
+	<p id="_462be440-47a9-4674-96bc-85acd3275b4e">The last call encompasses the four-week time period and procedures beginning with the Director's announcement of the intention to apply the alternative approval process (<xref target="intention_to_apply_aap"/>).</p>
+	</clause>
+	<clause id="intelectual_property" inline-header="true" obligation="normative">
+(XML Line 000119): Hanging paragraph in clause
+	<clause id="revised_recommendation_disapproval" inline-header="true" obligation="normative"><p id="_f4974e73-7343-46ed-a13d-e07aa4c39ed6">During the last call, should any Member State or Sector Member be of the opinion that the draft new or revised Recommendation should not be approved, they should advise their reasons for disapproving and indicate the possible changes that would facilitate further consideration and approval of the draft new or revised Recommendation. TSB will make the comments available to the membership of ITU-T.</p>
+	<clause id="disapproval_due_to_typographical_errors" inline-header="true" obligation="normative">
+	
+	<p id="_9995383d-db6d-473d-92eb-87f2dfb395c8">If no comments, other than comments indicating typographical error(s) (misspelling, syntactical and punctuation mistakes, etc.), are received by the end of the last call, the draft new or revised Recommendation is considered as approved, and the typographical errors are corrected.</p>
+	</clause>
+(XML Line 000142): Hanging paragraph in clause
+	<clause id="additional_review_procedure" inline-header="true" obligation="normative"><p id="_34ee0070-cfb3-4973-9d07-7decd0615aab">The additional review encompasses a three-week time period and will be announced by the Director. The text (including any revisions as a result of comment resolution) of the draft Recommendation in a final edited form and comments from the last call must be made available to TSB at the time that the Director makes the announcement of the additional review. Reference shall be provided to the documentation where the text of the draft Recommendation and last call comments to be considered may be found.</p>
+	<clause id="additional_review_procedure_typographical_errors" inline-header="true" obligation="normative">
+	
+	<p id="_3d6f54bd-3fd6-467b-801c-006c778cfdfd">If no comments, other than comments indicating typographical error(s) (misspelling, syntactical and punctuation mistakes, etc.), are received by the end of the additional review, the Recommendation is considered as approved, and the typographical errors are corrected by TSB.</p>
+	</clause>
+(XML Line 000155): Hanging paragraph in clause
+	<clause id="procedure_at_study_group_meetings" inline-header="false" obligation="normative"><title>Procedure at study group meetings</title><clause id="draft_review_by_the_study_group" inline-header="true" obligation="normative">
+	
+	<p id="_6d958eae-1c13-4be7-98d0-e3497b05f904">The study group should review the text of the draft new or revised Recommendation and the associated comments referred to in <xref target="announcing_attention_of_draft_approval"/> above. The meeting may then accept any corrections or amendments to the draft new or revised Recommendation. The study group should reassess the summary statement in terms of its completeness.</p>
+	</clause>
+	<clause id="procedure_for_changes" inline-header="true" obligation="normative"><p id="_23d25948-94d9-4bc4-807b-b386e10ef64d">Changes may only be made during the meeting as a consequence of written comments as a result of the last call, additional review, contributions, or temporary documents including liaison statements. Where proposals for such revisions are found to be justified but to have a major impact on the intent of the Recommendation or to depart from points of principle agreed at the previous study group or working party meeting, consideration of this approval procedure should not be applied at this meeting. However, in justified circumstances, the approval procedure may still be applied if the chairman of the study group, in consultation with TSB, considers:</p>
+(XML Line 000181): Hanging paragraph in clause
+	<clause id="reaching_decision_during_the_meeting" inline-header="true" obligation="normative"><p id="_8d8c3bb7-ea98-4c65-8897-0d3eb137ef7c">A decision must be reached during the meeting on the basis of a text available in its final form to all participants at the meeting. Exceptionally, but only during the meeting, a Member State may request more time to consider its position for <xref target="not_reaching_unopposed_approval"/> above. Unless the Director of TSB is advised of their opposition within a period of four weeks from the end of the meeting, the Recommendation is approved and the Director shall proceed in accordance with <xref target="notification_of_the_results"/>.</p>
+	<clause id="reaching_decision_during_the_meeting_request_for_more_time" inline-header="true" obligation="normative">
+	
+	<p id="_1adf7dfa-5ada-4892-8336-4f260337867f">A Member State that requested more time to consider its position and that then indicates disapproval within the four-week interval specified in <xref target="reaching_decision_during_the_meeting"/> above is requested to include its reasons and to indicate the possible changes that would facilitate further consideration, if required, for future approval of the draft new or revised Recommendation.</p>
+	</clause></clause>
+(XML Line 000194): Hanging paragraph in clause
+	<clause id="notification" inline-header="false" obligation="normative"><title>Notification</title><clause id="notification_of_the_results" inline-header="true" obligation="normative">
+	
+	<p id="_0c1c3a76-ed0d-4527-afec-e4a963768c7e">The Director of TSB shall promptly notify the membership of the results (indicating approval or non-approval) of the last call and additional review.</p>
+	</clause>
+	<clause id="notification_of_the_results_timeframe" inline-header="true" obligation="normative">
+(XML Line 000223): Hanging paragraph in clause
+	<clause id="correction_of_defects" inline-header="false" obligation="normative">
+	<title>Correction of defects</title>
+	<clause id="defects_in_recommendation" inline-header="true" obligation="normative">
+	
+	<p id="_337812f5-fd59-485c-8220-df04cf8dd5bb">When a study group identifies the need for implementers to be made aware of defects (e.g.,typographical errors, editorial errors, ambiguities, omissions or inconsistencies and technical errors) in a Recommendation, one mechanism that may be employed is an implementers' guide. This guide is a historical document recording all identified defects and their status of correction, from their identification to final resolution. Implementers' guides shall be agreed by the study group, or agreed by one of its working parties with the concurrence of the study group chairman. Implementers' guides shall be made available by posting on the ITU-T website with open access.</p>
+(XML Line 000230): Hanging paragraph in clause
+	<clause id="deletion_of_recommendations" inline-header="false" obligation="normative"><title>Deletion of Recommendations</title><p id="_d6c490d5-cc84-4126-a8c0-1ae9f35b14d8">Study groups may decide in each individual case which of the following alternatives is the most appropriate one.</p>
+	<clause id="deletion_of_recommendations_by_wtsa" inline-header="false" obligation="normative">
+	<title>Deletion of Recommendations by WTSA</title>
+	<p id="_57ab82e3-7d3e-4ffe-a20c-1e7a69db0d7e">Upon the decision of the study group, the chairman shall include in his report to WTSA the request to delete a Recommendation. WTSA may approve this request.</p>
+	</clause>
+(XML Line 000235): Hanging paragraph in clause
+	<clause id="deletion_of_recommendations_between_wtsas" inline-header="false" obligation="normative"><title>Deletion of Recommendations between WTSAs</title><clause id="deletion_of_superseded_and_obsolete_recommendations_between_wtsas" inline-header="true" obligation="normative">
+	
+	<p id="_a876c677-9705-4225-9455-114e45ec9d62">At a study group meeting it may be agreed to delete a Recommendation, i.e. because it has been superseded by another Recommendation or because it has become obsolete. This agreement by the Member States and Sector Members present at the meeting must be unopposed. If unopposed agreement has not been reached, the same criteria as in <xref target="not_reaching_unopposed_approval"/> above are applied. Information about this agreement, including an explanatory summary about the reasons for the deletion, shall be provided by a circular. If no objection to the deletion is received from a Member State or a Sector Member within three months, the deletion will come into force. In the case of objection, the matter will be referred back to the study group.</p>
+	</clause>
+	<clause id="deletion_of_recommendations_between_wtsas_notification" inline-header="true" obligation="normative"><p id="_2fc9a0d1-7b94-4d29-a67f-32ff7e144de7">Notification of the result will be given in another circular, and TSAG will be informed by a report from the Director of TSB. In addition, the Director shall publish a list of deleted Recommendations whenever appropriate, but at least once by the middle of a study period.</p>
+
+
+== Style
+
+(): No Keywords have been provided
+
+
+== Document Attributes
+
+(): resolution is not a recognised document type
+(): published is not a recognised status
+
+
+== Metanorma XML Syntax
+
+(XML Line 000360:16): element "itu-standard" incomplete; missing required element "bibliography"

@@ -1,0 +1,35 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/T-TUT-L-2020-GLR.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000123): Hanging paragraph in clause
+	<clause id="_relationship_with_other_standardization_bodies_on_outside_plant" inline-header="false" obligation="normative"><title>Relationship with other standardization bodies on outside plant</title><clause id="_iec_technical_committee_46_cables_wires_waveguides_r_f_connectors_r_f_and_microwave_passive_components_and_accessories" inline-header="false" obligation="normative"><title>IEC Technical Committee 46 (Cables, wires, waveguides, R.F. connectors, R.F. and microwave passive components and accessories)</title><p id="_3f7bb5c2-fbdd-4c85-9402-729c9b8a01c3">The role of TC 46 is to establish and maintain standards for the terminology, design, characteristics, related test methods and requirements for quality assessment of metallic conductors, wires, waveguide, r.f. connectors, r.f. and microwave passive components and accessories for analogue and digital transmission systems and equipment for communication networks and cabling.<note id="_024bf1ce-9a6f-4818-897d-2e88c9584065">
+	<p id="_3dcde76f-c4cc-45c3-b3aa-f31db62322e5">Magnetic components and ferrite devices covered by the scope of TC 51 are not dealt with by this technical committee (TC).</p>
+	</note></p>
+	
+	<p id="_28e39b96-d6e4-4c48-b728-d8f6b56c1790">Its structure comprises three Subcommittees, three Working Groups and one Joint Working Group:</p>
+(XML Line 002166): Table should have title
+	<table id="_37ae50cd-ccd8-4d1f-a44b-676192035a08" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="center">Acronym</th>
+	<th valign="top" align="center">Version/publication</th>
+(XML Line 002232): Table should have title
+	<table id="_3298537c-f8a9-488e-93b1-9d0327d22934" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="center">Acronym</th>
+	<th valign="top" align="center">Version/publication</th>
+
+
+== Style
+
+(): No Keywords have been provided
+(): ITU-T LSTP-GLSR does not match ITU document identifier conventions
+
+
+== Metanorma XML Syntax
+
+(XML Line 001145:50): element "note" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 002307:16): element "itu-standard" incomplete; missing required element "bibliography"

@@ -1,0 +1,113 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/T-Editing-Guidelines-201602.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000020): Hanging paragraph in clause
+	<clause>
+	      <title>FOREWORD</title>
+	<p id="_03e935d0-a07b-4b9d-8d1c-8461bfe75a0b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+	<p id="_ae2bed4a-58e7-4339-97f3-6e7e639c19d0">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+	<p id="_04cc0398-186c-4e95-914e-d8890a377cb3">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+(XML Line 000226): Hanging paragraph in clause
+	<clause id="Recommendation_number_and_title" inline-header="false" obligation="normative"><title>Recommendation number and title</title><p id="_e26bf864-49a8-451c-af20-b87f201e31a4">Recommendations are identified by their number, date of approval and title.</p>
+	<clause id="Recommendation_number" inline-header="false" obligation="normative"><title>Recommendation number</title><p id="_0db17c5b-e834-4932-8349-dcaf260ab0bd">Each ITU-T Recommendation is identified by a unique Recommendation number. This number is composed of a letter prefix referring to the series, and a number identifying the particular subject in the series. If necessary, this main number may be followed by a suffix number (e.g., Recommendation ITU-T G.108.2). In some exceptional circumstances, a dual number may be considered for a Recommendation when it belongs to more than one series, (e.g., Recommendation ITU-T G.709/Y.1331).</p>
+	<p id="_615cca76-3a58-4336-b657-97977a739e0b">Recommendation numbers are chosen in consultation with the study group chairman and study group counsellor.</p></clause>
+	<clause id="Date_of_approval" inline-header="false" obligation="normative">
+	<title>Date of approval</title>
+(XML Line 000237): Hanging paragraph in clause
+	<clause id="Description_of_introductory_material_to_be_provided_by_the_author" inline-header="false" obligation="normative"><title>Description of introductory material to be provided by the author</title><p id="_8af26887-bfc1-482c-88bc-11d441501fec">Introductory material is not considered as part of the Recommendation. Consequently, it shall not contain any normative requirements. Pages containing introductory material shall be numbered with lower case Roman numerals in the final publication.</p>
+	<clause id="Summary_mandatory" inline-header="false" obligation="normative">
+	<title>Summary (mandatory)</title>
+	<p id="_8406e56b-8b3c-422c-b96e-cd334125e731">This element shall be supplied by the rapporteur or the editor. It is placed before the main body of the Recommendation. It provides a brief overview of the purpose and contents of the Recommendation, thus permitting readers to judge its usefulness for their work.</p>
+	</clause>
+(XML Line 000250): Hanging paragraph in clause
+	<clause id="Description_of_core_material" inline-header="false" obligation="normative"><title>Description of core material</title><p id="_c16d6a91-c67d-42b8-baa9-b6a0a731b137">The Recommendation commences on Arabic numeral page 1 that follows the Roman-numbered pages in the final publication. The Recommendation title will appear at the beginning of page 1, just preceding clause 1, "Scope".</p>
+	<clause id="preScope" inline-header="false" obligation="normative">
+	<title>Scope</title>
+	<p id="_0dbd0b6a-64ea-4a89-9db9-f7a6e6fdb631">This element should appear, as clause 1, at the beginning of every Recommendation, to define, without ambiguity, its intent or object and the aspects covered, thereby indicating the limits of its applicability.</p>
+	</clause>
+(XML Line 000414): Hanging paragraph in clause
+	<clause id="Formatting_indications" inline-header="false" obligation="normative"><title>Formatting indications</title><clause id="General" inline-header="false" obligation="normative"><title>General</title><p id="_aa39fb6a-7cd3-4bb0-8235-63f01e4e44d0">Due to the multiple compatibility problems and the resulting risks of misinterpretation of objects such as equations or figures during the different processing stages, authors should send, when requested by TSB, a stable electronic copy (e.g., a pdf file) that shows the intended layout of figures and equations.</p>
+	<p id="_6f416cac-b63b-4879-8cda-2d0acead21b6">The original publication of this author's guide occurred prior to the creation of the standard template<fn reference="2"><p id="_2b40f768-90e6-4e36-ad92-369a6abd346f">Templates can be found at: <link target="http://www.itu.int/ITU-T/studygroups/templates/index.html"/></p></fn>.] for use in the preparation of ITU-T texts in Microsoft Word. By using the correct template and applying the appropriate "style" to the text, the author avoids the need to know the details of the formatting associated with font sizes and types, indentation, inter-line spacing, etc. Those styles have been used within this author′s guide. Although the template saves the author from the need to know these details, they have been maintained in the guide.</p>
+	<p id="_0cec4cde-ee4e-4d45-abb5-91f2929419b6">Deviations from the styles presented in the standard template should be avoided. In exceptional cases wherein the author requires the use of additional styles, this need shall be indicated explicitly when submitting the text to TSB.</p>
+	<p id="_399aa8dd-55d7-40de-9d70-df550d88da92">Paragraphs of the normal text should start at the left margin.</p></clause>
+	<clause id="Fonts" inline-header="false" obligation="normative"><title>Fonts</title><p id="_c3313fc8-d0c8-4759-88b1-51cc245bd1a9">In general, all Recommendations should use a serif font (e.g., "Times New Roman") with the point size set at 12. Where required, a sans serif font (e.g., "Arial"), a constant width font (e.g., "Courier New"), and a standard mathematical symbol font may also be used. The recommended font is 8pt "Arial" for indicating URIs within the text. The recommended font is 9pt "Courier New" for ASN.1 modules and types, as well as for XML documents and schemas. Unless there are extenuating circumstances, no other special fonts should be used. (As a reminder, using the appropriate template for the particular type of document automatically implements all the special formatting if one selects the correct style for the elements within the document.)</p>
+(XML Line 000421): Hanging paragraph in clause
+	<clause id="Clause_number_and_titles" inline-header="false" obligation="normative"><title>Clause numbers and titles</title><clause id="Clause_numbers" inline-header="false" obligation="normative"><title>Clause numbers</title><p id="_29970cf8-d2f8-4dca-ba05-5ccc7fca790f">Clauses should be numbered with the digits in bold and separated by periods (e.g., <strong>8.3.1</strong>). In the case of a single-numbered clause, no period shall be present.</p>
+	<p id="_8d3c4b5a-ecbd-48a6-99b1-23b0144a6287">The clause number shall appear together with the clause title on a separate line.</p></clause>
+	<clause id="Clause_titles" inline-header="false" obligation="normative">
+	<title>Clause titles</title>
+	<p id="_783258b2-a459-45ec-b246-ec89b5ef1d9c">The title, in bold, indicating the content of the clause shall appear to the right of the clause number. Untitled clauses should be avoided.</p>
+(XML Line 000465): Hanging paragraph in clause
+	<clause id="Mathematical_expressions_and_symbols_formulae_equations_etc" inline-header="false" obligation="normative"><title>Mathematical expressions and symbols (formulae, equations, etc.)</title><clause id="Quantities_units_and_symbols" inline-header="false" obligation="normative">
+	<title>Quantities, units and symbols</title>
+	<p id="_55ca8279-81ec-4ea3-8178-e939e943f69d">Physical quantities, units, symbol names and usage shall follow the International System of Units (SI), as defined by ISO. Letter symbols used to express quantities in an expression shall be listed with their explanations below the expression, or group of expressions, using them.</p>
+	</clause>
+	<clause id="Equations_and_formulae" inline-header="false" obligation="normative"><title>Equations and formulae</title><p id="_416717a2-400a-4b2c-a30a-6bc0e8e7f6f0">Equations and formulae shall be in the mathematically correct form and shall occupy one or more lines with no text, unless text is an integral part of the expression. ITU formats all equations and formulae by means of MathType; to avoid transcription errors within ITU during publication, the use of this tool by the authors is encouraged.</p>
+(XML Line 000473): Hanging paragraph in clause
+	<clause id="Figures_and_tables" inline-header="false" obligation="normative"><title>Figures and tables</title><p id="_bebd7cc1-e869-4d13-a03d-9b970275a302">Each figure and table shall be referred to explicitly within the text.</p>
+	<clause id="Figures" inline-header="false" obligation="normative"><title>Figures</title><p id="_41863362-e2ed-40fe-a616-fccce172f0a4">Figures shall be numbered with Arabic numerals, beginning with 1 (within annexes or appendices, there will be a letter-plus-period or a Roman-numeral-plus-period prefix). This numbering shall normally be independent from the numbering of the clause and of any tables. For Recommendations which are very long or complex, however, the author may number figures sequentially with respect to the single digit clause number. For example, Figure 4-3 denotes the third figure in clause 4 of the Recommendation in which it is contained.</p>
+	<p id="_c0116a3b-fe2f-4d5e-a153-ec3ef9742f76">The number and title shall be placed on the same line and centred, below the figure. The first letter of the title shall be capitalized; all other words shall not be capitalized unless they are special terms that are capitalized throughout the Recommendation in accordance with the conventions given.</p>
+	<p id="_39bec4c4-3413-4936-8e2f-afd10c5e7127">When a figure is in 2 parts (e.g., Figure 6, part a and part b), refer to these parts in the text as follows: Figure 6-a, Figure 6-b. They may be referred to collectively as Figure 6.</p>
+	<p id="_18b117e4-f032-4348-a266-1a7822b965ef">Figures and references to figures should generally be legible and understandable when using greyscale printing. It is helpful to remember that rich colours visible on computer monitors do not appear the same on paper and in the case of greyscale printing they often appear as black. To assure legibility, ITU-T uses 9pt Times New Roman font for text within figures.</p>
+(XML Line 000490): Hanging paragraph in clause
+	<clause id="Notes_and_footnotes" inline-header="false" obligation="normative"><title>Notes and footnotes</title><clause id="Notes_and_footnotes_to_the_main_text" inline-header="false" obligation="normative"><title>Notes and footnotes to the main text</title><p id="_8ffb90e9-e167-42f6-95a9-9a393ca86055">If the text is written in a clear manner, the need for notes should be minimal. If supplementary or complementary information is necessary, notes may be integrated in the text of a Recommendation. They shall normally be placed after the clause or paragraph to which they refer.</p>
+	<p id="_147f055b-5770-4b74-8d4d-253f4b526605">In a numbered clause containing only one note, the note shall start with the word "NOTE", placed at the beginning of the first line of the note and followed by a space and an "em" dash.<note id="_6fab1a9e-f2a4-44cc-8b98-3298a6430d0c">
+	<p id="_49716ec3-2912-44ce-9e97-4c3e1d80b4bd">This note is an example.</p>
+	</note></p>
+	
+(XML Line 000503): Hanging paragraph in clause
+	<clause id="Citing_of_references" inline-header="false" obligation="normative"><title>Citing of references</title><clause id="References_within_the_same_Recommendation" inline-header="false" obligation="normative">
+	<title>References within the same Recommendation</title>
+	<p id="_13fe46d5-1a97-4ce4-a1e0-306abcd84da3">When reference is made to text passages, tables, figures, equations, etc., within the same Recommendation, it is sufficient to cite the appropriate number without the Recommendation number, e.g., "see Table 4", or "see clause 5" or "see clause 5.4.7".</p>
+	</clause>
+	<clause id="References_to_parts_of_another_Recommendation" inline-header="false" obligation="normative">
+(XML Line 000525): Hanging paragraph in clause
+	<annex id="annexB" inline-header="false" obligation="normative"><title>Guidance on the development of definitions</title><clause id="AnnexB_introduction" inline-header="false" obligation="normative">
+	<title>Introduction</title>
+	<p id="_8782c18e-1a7a-442c-bafa-35e8b1dda9e3">A considerable amount of time is spent by study groups on terminology and definitions but the results can be duplicative and of inconsistent quality. Greater consistency is needed in the way definitions are drafted. In addition, consideration needs to be given to ensuring that definitions are drafted in a way that allows for automated compilation and processing of new definitions so that the ITU database of definitions can be more easily maintained. Annex 2 to WTSA Resolution 67 (Johannesburg, 2008) provides basic guidelines for the preparation of terms and definitions. This annex builds on that guidance to help study groups to adopt a consistent approach to terminology and definitions and also to address the requirements for automated updating of the terminology database.</p>
+	</clause>
+	<clause id="Terms_and_definitions" inline-header="false" obligation="normative">
+(XML Line 000533): Hanging paragraph in clause
+	<clause id="Best_practices_for_writing_definitions_within_ITU-T_Recommendations" inline-header="false" obligation="normative"><title>Best practices for writing definitions within ITU-T Recommendations</title><clause id="Use_of_existing_terminology" inline-header="false" obligation="normative"><title>Use of existing terminology</title><p id="_cf91865c-248d-4e9c-a4cd-cff6fe1cb595">Developers of Recommendations spend a great amount of time on terminology development. While it is important that definitions accurately capture the subject concept or term, experience has shown that terminology discussions frequently consume significant technical meeting time. One way to reduce unnecessary discussion is to use already-defined terms.</p>
+	<p id="_4a81d390-615d-4a95-ad12-3283b0c1c906">New terms should not be developed where an acceptable definition already exists. Also, already-existing terms should not be redefined. Existing definitions should be consulted before any new definition is developed to check if the term/concept has already been defined. Only if no satisfactory definition exists should development of a new definition be considered. When defining a new term/concept, the name used for the term should not duplicate the name used for an already-defined term/concept.</p>
+	<p id="_515467db-78a0-4e9f-a207-a91c185c446d">ITU provides an online database, "ITU Terms and Definitions"<fn reference="4"><p id="_d791b25a-3003-4e91-a104-bc67b0ce9c45"><link target="http://www.itu.int/ITU-R/go/terminology-database"/></p></fn>, to assist in discovering existing terms and definitions in ITU-R and ITU-T Recommendations.</p></clause>
+	<clause id="Structure" inline-header="false" obligation="normative"><title>Structure</title><p id="_4e717597-5547-4853-98dd-c02497024774">A formal definition is a concise, logical statement that comprises three essential elements:</p>
+	<ol id="_8dbea78d-b252-401c-ac54-827ffa17dfaf">
+(XML Line 000549): Table should have title
+	<table id="_fc69544b-7cf5-4014-aa44-e1e2add3d596" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="middle" align="center">
+	<strong>cryptographic algorithm:</strong>
+(XML Line 000619): Hanging paragraph in clause
+	<annex id="_uri_naming_scheme_for_the_identification_of_xml_namespaces_defined_in_itu_t_recommendations" inline-header="false" obligation="normative"><title>URI naming scheme for the identification of XML namespaces defined in ITU-T Recommendations</title><clause id="AnnexC_introduction" inline-header="false" obligation="normative"><title>Introduction</title><p id="_30cc0a7d-bc8c-417d-81de-66fcce3ce50d">ITU-T Recommendations increasingly define XML schemas. To answer the growing demand of universal resource identifiers (URIs) for referencing XML namespaces in ITU-T Recommendations, ITU reserved the following URL:<br/></p>
+	<p align="center" id="_cbc054cf-c44d-4e8d-8d9b-898a6d1722b0">
+	<tt>http://www.itu.int/xml-namespace/</tt>
+	</p>
+	<p id="_a08d832e-542b-4727-8ab4-b770d8a32bb2">This annex gives the rules for allocating URIs to XML namespaces defined in ITU-T Recommendations.</p></clause>
+(XML Line 000712): Hanging paragraph in clause
+	<annex id="_presentation_style_of_amendments_and_corrigenda" inline-header="false" obligation="normative"><title>Presentation style of amendments and corrigenda</title><p id="_0c114a39-0be9-4bb0-9564-76e2703f62a2">This annex describes a suggested presentation format for amendments and corrigenda. Editors and rapporteurs are invited to consider the application of the following presentation in the amendments and corrigenda submitted to ITU, in order to help determine the modifications and to facilitate the processing of texts by TSB.</p>
+	<p id="_068f147d-6181-478a-8e91-a77cc145ac66">This proposal applies to ITU-T texts only. The presentation of ITU-T | ISO/IEC common texts is governed by <eref type="inline" bibitemid="ITU-T_A.23" citeas="ITU-T A.23"/>.</p>
+	<clause id="Preferred_presentation_format" inline-header="false" obligation="normative"><title>Preferred presentation format</title><p id="_ecf23187-3940-4c4e-98bf-8f187dd18bff">The principle of the format is to present changes with revision marks and to replace unchanged text with ellipses, keeping only the necessary parts to help locate the modified parts.</p>
+	<p id="_fc219a58-727f-4cea-81e3-2730c257b056">The following fixed header is added in italics to the text:</p>
+	<p id="_8f0b7f96-5e98-4132-b235-532d74b59780">
+(XML Line 000742): Hanging paragraph in clause
+	<clause id="Numbering_new_clauses_tables_and_figures" inline-header="false" obligation="normative"><title>Numbering new clauses, tables and figures</title><p id="_4dad9a13-1634-4f73-8580-8af4bc77eb49">In a corrigendum or an amendment, existing clause, figure and table numbers should not be modified, in order to allow for further non-ambiguous referencing, especially in future amendments and corrigenda to the same version of the Recommendation.</p>
+	<clause id="Deletion_od_a_clause_table_or_figure" inline-header="false" obligation="normative">
+	<title>Deletion of a clause, table or figure</title>
+	<p id="_a9044e59-04f3-460a-a015-a887f1c02810">The subsequent clauses, tables or figures should not be renumbered, and the deleted number should not be reused.</p>
+	</clause>
+
+
+== Style
+
+(): No Keywords have been provided
+(): ITU-T A.1500 (fictitious) does not match ITU document identifier conventions
+
+
+== Metanorma XML Syntax
+
+(XML Line 000109:647): element "fn" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "em", "eref", "hr", "image", "index", "index-xref", "keyword", "link", "note", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000111:20): element "table" not allowed here; expected the element end-tag or element "termexample", "termnote" or "termsource"

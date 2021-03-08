@@ -1,0 +1,21 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/T-REC-J.1108-201901-P.MSW-E-draft.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000020): Hanging paragraph in clause
+	<clause>
+	      <title>FOREWORD</title>
+	<p id="_9ed501c4-cd65-4efa-9740-452e0dc84782">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+	<p id="_45dcb507-b4b7-4fa4-bc2b-040a63fea8a9">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+	<p id="_a1bc7a65-ab94-481d-b234-f8a77054a4c7">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+
+
+== Style
+
+(): No Keywords have been provided
+(XML Line 000075): local clock: term definition does not end with period
+	<term id="term_local_clock"><preferred>local clock</preferred><definition><p id="_d324e066-373c-404a-8b53-8008b9c2ec49">The collection of hardware and software that comprises a local source of time for a system</p></definition>
+	<termsource status="identical">
+	<origin bibitemid="x743" type="inline" citeas="ITU-T X.743"/>
+	</termsource></term>

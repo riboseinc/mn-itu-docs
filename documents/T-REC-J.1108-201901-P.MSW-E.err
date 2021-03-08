@@ -1,0 +1,22 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/T-REC-J.1108-201901-P.MSW-E.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000020): Hanging paragraph in clause
+	<clause>
+	      <title>FOREWORD</title>
+	<p id="_ac73edf5-31a9-415f-8606-75f545826a56">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+	<p id="_552b6fff-3bf0-4b86-b327-8e3f80fff031">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+	<p id="_9b141313-73e2-40d6-9025-d35cdd587e64">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+(XML Line 000064): Table should have title
+	<table id="_dae4e269-3805-4471-9a96-e8c12914f60a" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="center">Edition</td>
+	<td valign="top" align="left">Recommendation</td>
+
+
+== Style
+
+(): No Keywords have been provided

@@ -1,0 +1,40 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/G.191.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000020): Hanging paragraph in clause
+	<clause>
+	      <title>FOREWORD</title>
+	<p id="_05ea0241-5103-4b7d-a56d-4d0349e85e77">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+	<p id="_4f759937-94bb-4755-8826-31b9427a5601">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+	<p id="_495c595b-d14d-4e2d-82d6-41366100b7b5">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+(XML Line 000078): Table should have title
+	<table id="_455d98dd-378a-481c-aeaa-6b65ad203db7" unnumbered="true">
+	<colgroup>
+	<col width="22.2222%"/>
+	<col width="22.2222%"/>
+	<col width="11.1111%"/>
+(XML Line 000234): Hanging paragraph in clause
+	<annex id="annexA" inline-header="false" obligation="normative"><title>List of software tools available</title><p id="_1a608989-82a8-4cbb-aa20-3b9cb79cbc12">This annex contains a list with a short description of the software tools available in the ITU-T Software Tool Library (STL). The 2019 release is referred to in the associated documentation as STL2019. All the routines in the modules are written in C.</p>
+	<clause id="_example_programs_available" inline-header="false" obligation="normative"><title>Example programs available</title><p id="_016258ed-8294-4eae-8101-5b19c86d79e7">Associated header file: <tt>ugstdemo.h</tt></p>
+	<p id="_a45e927c-1775-4eee-be87-a742ceb9f79a">The following programs are examples of the use of the modules.</p>
+	<dl id="_48599fe7-a6ec-4eb2-af3e-99339e13bad6">
+	<dt>
+(XML Line 001040): Hanging paragraph in clause
+	<clause id="_basic_operators" inline-header="false" obligation="normative"><title>Basic operators</title><clause id="_basic_operators_that_use_16_bit_registersaccumulators" inline-header="false" obligation="normative"><title>Basic operators that use 16-bit registers/accumulators</title><p align="left" id="_8c142c97-038a-47b9-9109-dd2481222c27">Name: <tt>basop32.c</tt>, <tt>enh1632.c</tt><br/>
+	Associated header file: <tt>stl.h</tt>, <tt>basop32.h</tt>, <tt>enh1632.h</tt></p>
+	<p id="_a5ddecd4-081d-4b51-8d4d-84ee4bdc8c0c">Variable definitions:</p>
+	<ul id="_bf7d4292-5910-4d71-989d-8c2f6949e1f2">
+	<li>
+(XML Line 002778): Hanging paragraph in clause
+	<annex id="annexB" inline-header="false" obligation="normative"><title>ITU-T software tools General Public Licence</title><p id="_19e6e725-2b63-43df-991d-8a3216c275a6">
+	<strong>Terms and conditions</strong>
+	</p>
+	<clause id="_7e84f331-328a-4e82-836b-f5ff659cdf35" inline-header="false" obligation="normative">
+	
+
+
+== Style
+
+(): No Keywords have been provided

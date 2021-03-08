@@ -1,0 +1,2307 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="1.2.14">
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant</title>
+
+
+
+<docidentifier type="ITU">ITU-T LSTP-GLSR</docidentifier><docidentifier type="ITU-lang">ITU-T LSTP-GLSR-E</docidentifier>
+
+<docnumber>LSTP-GLSR</docnumber>
+<date type="published">
+<on>2020-02</on>
+</date>
+<contributor>
+<role type="author"/>
+<organization>
+<name>International Telecommunication Union</name>
+</organization>
+</contributor>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>International Telecommunication Union</name>
+</organization>
+</contributor>
+
+<language>en</language>
+<script>Latn</script><abstract><p>ITU-T Technical Report "Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant" provides information on the background, development and uses of L-series Recommendations prepared by Working Party 2 of ITU-T Study Group 15.</p>
+<p>These Recommendations are related to the design, construction, maintenance and operation of the optical fibre outside plant.</p>
+<p>The items covered are related to the following areas:</p>
+<ul>
+<li>
+<p>optical fibre cable characteristics, evaluation and installation techniques;</p>
+</li>
+<li>
+<p>construction of optical infrastructure;</p>
+</li>
+<li>
+<p>network design;</p>
+</li>
+<li>
+<p>network maintenance and operation, including disaster management;</p>
+</li>
+<li>
+<p>passive optical components.</p>
+</li>
+</ul>
+<note>
+<p>This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.</p>
+</note></abstract>
+<status>
+<stage>in-force</stage>
+</status>
+<copyright>
+<from>2020</from>
+<owner>
+<organization>
+<name>International Telecommunication Union</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>technical-paper</doctype>
+<editorialgroup>
+<bureau>T</bureau>
+</editorialgroup>
+<ip-notice-received>false</ip-notice-received>
+<structuredidentifier>
+<bureau>T</bureau>
+<docnumber>LSTP-GLSR</docnumber>
+</structuredidentifier>
+</ext>
+</bibdata>
+<boilerplate>
+  
+  <copyright-statement>
+    <clause>
+      <p id="_ce4e0700-e995-49ed-ac8a-445e025dd21e">&#169; ITU 2020</p>
+<p id="_0e4c50c6-3775-49cf-84c4-04496383e165">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+    </clause>
+  </copyright-statement>
+  
+  <legal-statement>
+    <clause>
+      <title>FOREWORD</title>
+<p id="_4a436a23-81fb-45ff-ae1c-8548dd649287">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+<p id="_eeda09ea-9e41-4465-ada1-78fca952c546">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+<p id="_e8364777-fa19-4666-a8a6-1fac6f041cde">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+<p id="_031c66e3-e5e7-4751-ae34-c42a21f773d1">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+
+
+    </clause>
+
+    
+  </legal-statement>
+  
+</boilerplate>
+
+
+
+<preface><abstract id="_summary"><title>Abstract</title><p id="_510468e2-48df-477a-86f4-832f25fda58b">ITU-T Technical Report "Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant" provides information on the background, development and uses of L-series Recommendations prepared by Working Party 2 of ITU-T Study Group 15.</p>
+<p id="_f9591d2e-c397-450d-b92d-b3c3361f0015">These Recommendations are related to the design, construction, maintenance and operation of the optical fibre outside plant.</p>
+<p id="_49c2cf79-8a7f-402e-b0c4-d1cb157bc304">The items covered are related to the following areas:</p>
+<ul id="_3c0b0a20-27a1-423b-afeb-c146128034d9">
+<li>
+<p id="_2b639d02-870a-43d1-b359-caba36840123">optical fibre cable characteristics, evaluation and installation techniques;</p>
+</li>
+<li>
+<p id="_9aedde49-afc9-42e0-b8a6-1347cdb77952">construction of optical infrastructure;</p>
+</li>
+<li>
+<p id="_398ba092-8ab2-40e3-bda3-c40b3eeb0150">network design;</p>
+</li>
+<li>
+<p id="_5445cdd6-55b9-4d04-9171-fc2cc83ca558">network maintenance and operation, including disaster management;</p>
+</li>
+<li>
+<p id="_90b4e352-d4db-4669-8675-cd85ff3f0d95">passive optical components.</p>
+</li>
+</ul>
+<note id="_baed64ca-f2c6-4f25-af32-148a1b55a5f0">
+<p id="_aa410947-4ff1-467c-9746-a94d348478ee">This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.</p>
+</note></abstract><introduction id="_introduction" obligation="informative"><title>Introduction</title><p id="_f14f612a-b871-40d0-a564-efed03f8d716">Working Party 2 of ITU-T Study Group 15 is entitled "Optical technologies and physical infrastructures" and is responsible, among other, for studies covering:</p>
+<ul id="_296b8805-b152-49df-95fb-f229e5d8ab4a">
+<li>
+<p id="_982f5be9-e5f9-44d9-8358-55eabe1711d1">Characteristics of optical splices and connectors as well as other passive optical components that are needed to support outside plant applications (Question 7/15),</p>
+</li>
+<li>
+<p id="_1db28835-c9ad-4e63-8621-f1f3913013c2">Marinized terrestrial optical cables (Question 8/15),</p>
+</li>
+<li>
+<p id="_6cc5f556-91b2-402a-ba44-a9c2d47351ed">Cable construction and optical physical infrastructures, including installation techniques (Question 16/15),</p>
+</li>
+<li>
+<p id="_5250d147-419b-4b99-8e8a-f8f1847b4057">Maintenance and operation of optical fibre cable networks (Question 17/15).</p>
+</li>
+</ul>
+<p id="_2f5fc22e-f6ca-46b4-9363-6a4443d59fb4">Some of the specific subjects to be dealt with in the above four Questions are the following:</p>
+<ul id="_d89db25d-1d37-4704-a586-fa659bb3e2f0">
+<li>
+<p id="_e5d01a0a-1bf2-4c42-941e-68283dd4eca9">Construction of all types of terrestrial cable for public telecommunications, including marinized terrestrial cables and the associated hardware (optical distribution frames, closures, connectors, passive optical components, street cabinets, boxes, poles, etc.),</p>
+</li>
+<li>
+<p id="_73f36358-5e40-411b-bce7-b3c56ab6443c">Construction and maintenance of the telecommunication infrastructure. This includes interoffice, access and related building and home cable and hardware installations,</p>
+</li>
+<li>
+<p id="_c686ab63-37f5-4122-820b-d8cab133b93d">Installation, jointing and termination of cables,</p>
+</li>
+<li>
+<p id="_a446daab-b42d-4eb5-9171-e50976931f53">Procedures for safety of personnel,</p>
+</li>
+<li>
+<p id="_4a85983c-3bfb-4440-96be-2357c774edf7">Disaster recovery.</p>
+</li>
+</ul>
+<p id="_6ffc1da7-926e-4ac7-8e1c-fd11d61ac736">Moreover Questions 16/15 and 17/15, responsible for studies involving all physical aspects of outside plant, have extended their scope to also cover building and home installations, construction, installation and maintenance of the cable plant, including internal cabling and hardware for termination purposes.</p>
+<p id="_3a5a9560-b006-4c88-b6b6-b31d22cbb129">Other subjects for study include reliability and security aspects, cable performance, field deployment and integrity of installations also for mixed transmission media, such as hybrid fibre/copper cables.</p>
+<p id="_ce08d48e-d07d-480f-b4bf-4b567512c073">In this way, the complete chain of cables for interoffice, access and related buildings and home applications are standardized.</p>
+<p id="_2f4e0c2a-5ebe-4ed6-ad45-9ce58e1a65bb">The activity on the construction of infrastructures addresses the investigation and standardization of all new techniques that allow faster, cost-effective and safer cable installation, also taking into account environmental issues such as the reduction of excavation, the problem for traffic, and the generation of noise.</p>
+<p id="_a84b9d51-afee-4f26-b9c5-f1cff004da08">On request of developing countries, where creation of telecom infrastructure is underway to fill up digital divide, a particular effort has been devoted to the study of installation techniques in remote areas with lack of usual infrastructure, taking into account the mitigation of the considerable risks and/or issues to which the optical fibre cable may be exposed.</p></introduction></preface><sections>
+
+<clause id="_trajectory_of_the_activities_on_the_l_series_recommendations" inline-header="false" obligation="normative"><title>Trajectory of the activities on the L-series Recommendations</title><p id="_c6c32101-277e-4f30-8e29-2f5634a1a009">In 1957 CCITT established Study Group 6 under the chairmanship of <strong>Mr H.L. Halstr&#246;m</strong> (Denmark), and with the following mandate "Protection and specifications of cable sheaths and poles".</p>
+<p id="_ab4c74fd-83ac-43cc-a9fc-093224bd808e">In 1961 it was renamed as CCITT Study Group VI. In 1969, <strong>Mr J.R. Walters</strong> (United Kingdom) took over as chairman of the SG, followed in 1977 by <strong>Mr J. Pritchett</strong> (United Kingdom), and in 1981 by <strong>Mr K. Nikolski</strong> (USSR).</p>
+<p id="_5d7b2458-d681-4d1c-88af-1edd825f1375">In 1985, the Study Group (SG) was renamed to "Outside plant", still under Mr Nikolski chairmanship.</p>
+<p id="_5a41b9d8-0b9b-4649-a8df-eddc716aef3b">At the dawn of the CCITT era, the study group became ITU-T SG VI, and retained its title and chairman.</p>
+<p id="_ac6a2aa1-37e8-44e0-885e-c0e1fd871492">In 1997, <strong>Mr Molleda</strong> (Spain) took over the chairmanship until 2000, when he was succeeded by <strong>Mr J.R. Osterfield</strong> (United Kingdom).</p>
+<p id="_424ee55c-21b3-473e-9bb3-847ad085f14a">In 2001, according to the provisions of WTSA 2000 (Montreal), <strong>Mr F. Montalti</strong> (Italy) became the chairman of Study Group 6 that in 2005 changed its name to "Outside plant and related indoor installations".</p>
+<p id="_54d8d554-4118-4f10-93e8-f2174ebd8159">In 2008, according to the decision of WTSA 08 (Johannesburg), Study Group 6 was disbanded and its activities were shared between Study Group 5 and Study Group 15. In Study Group 15 they were grouped in Working Party 2 under the Chairmanship of Mr. F. Montalti.</p>
+<p id="_3ed67ac5-1dff-49aa-9629-32256f5a626c">In 2012 this organization was confirmed by the WTSA 12 (Dubai).</p>
+<p id="_4181af43-a310-4301-a620-5fa39487f640">WTSA 16 (Hamammet) confirmed again this organization under the Chairmanship of <strong>Mr N. Araki (Japan)</strong>.</p>
+<p id="_562a8154-8c1e-4f49-be55-7287b68ad8ab">Since 2016 the new numbering system for technical classification of L-series Recommendations has been adopted.</p></clause>
+<clause id="_relationship_with_other_standardization_bodies_on_outside_plant" inline-header="false" obligation="normative"><title>Relationship with other standardization bodies on outside plant</title><clause id="_iec_technical_committee_46_cables_wires_waveguides_r_f_connectors_r_f_and_microwave_passive_components_and_accessories" inline-header="false" obligation="normative"><title>IEC Technical Committee 46 (Cables, wires, waveguides, R.F. connectors, R.F. and microwave passive components and accessories)</title><p id="_3f7bb5c2-fbdd-4c85-9402-729c9b8a01c3">The role of TC 46 is to establish and maintain standards for the terminology, design, characteristics, related test methods and requirements for quality assessment of metallic conductors, wires, waveguide, r.f. connectors, r.f. and microwave passive components and accessories for analogue and digital transmission systems and equipment for communication networks and cabling.<note id="_024bf1ce-9a6f-4818-897d-2e88c9584065">
+<p id="_3dcde76f-c4cc-45c3-b3aa-f31db62322e5">Magnetic components and ferrite devices covered by the scope of TC 51 are not dealt with by this technical committee (TC).</p>
+</note></p>
+
+<p id="_28e39b96-d6e4-4c48-b728-d8f6b56c1790">Its structure comprises three Subcommittees, three Working Groups and one Joint Working Group:</p>
+<ul id="_1a4d749b-33f1-4308-81b7-d50ac4325d5d">
+<li>
+<p id="_7b12172c-fc02-4f9f-8755-0038fe4a4035">SC 46A Coaxial cables;</p>
+</li>
+<li>
+<p id="_cda448c3-8a3c-4095-9e76-b7e0301f709e">SC 46C Wires and symmetric cables;</p>
+</li>
+<li>
+<p id="_3d728e3c-d5f0-40e8-8544-0c0e13c51927">SC 46F RF and microwave passive components;</p>
+</li>
+<li>
+<p id="_cdb6a49e-a67c-4e55-a403-d5e4190a8130">WG 5: Test methods and limits for the electromagnetic compatibility (EMC) of metallic cables and other passive components, by the measurement of their electromagnetic coupling with the environment;</p>
+</li>
+<li>
+<p id="_1bd26356-f2de-48c8-aea0-f39956a381af">WG 6: Passive Intermodulation Measurement (PIM);</p>
+</li>
+<li>
+<p id="_455843b3-f7f0-4fe6-a18b-24b9a31cb8e1">WG 9: Metallic Cable Assemblies for ICT;</p>
+</li>
+<li>
+<p id="_c3a56f17-bb32-4505-b488-fc75e034b862">JWG 1: Raw Materials and Environmental Issues linked to IECSC86A.</p>
+</li>
+</ul></clause>
+<clause id="_iec_technical_committee_86_fibre_optics" inline-header="false" obligation="normative"><title>IEC Technical Committee 86 (Fibre optics)</title><p id="_11500259-8200-4fc5-9157-3ac0afddb52f">The role of TC 86 is to prepare standards for fibre optic systems, modules, devices and components intended primarily for use with communications equipment. This activity covers terminology, characteristics, related tests, calibration and measurement methods, functional interfaces, optical, environmental and mechanical requirements to ensure reliable system performance.</p>
+<p id="_43bbf006-f54d-4890-8f71-98db8c183ecc">Its structure comprises three Subcommittees, one Working Group and two Joint Working Group:</p>
+<ul id="_e96f7893-1516-4f74-a3ef-91943203c819">
+<li>
+<p id="_1d34759a-bdc4-4866-bc5f-2b0fb1526d6a">SC 86A Fibres and cables:<br/>
+To prepare standards for optical fibres and cables embracing all types of communications applications.</p>
+</li>
+<li>
+<p id="_6d04fee6-af35-41f6-babd-edb894c4c6a6">SC 86B Fibre optic interconnecting devices and passive components:<br/>
+To prepare international standards for fibre optic interconnecting devices and passive components, embracing all types of communications applications.</p>
+</li>
+<li>
+<p id="_b08baafd-65de-47db-8d51-28c223ff6198">SC 86C Fibre optic systems and active devices:<br/>
+To prepare international standards for fibre optic systems and active devices embracing all types of communications and sensor applications.</p>
+</li>
+<li>
+<p id="_ff523f86-2516-4444-91a8-638f5cdf939f">WG 4: Fibre optic test equipment calibration:<br/>
+To review and summarize all the approved test methods developed by TC 86 and its subcommittees for calibration procedures for fibre optic tests equipment.</p>
+</li>
+<li>
+<p id="_211daa0e-349c-4ede-a827-8a098aa4d0aa">JWG 9: Optical functionality for electronic assemblies linked to TC 91:<br/>
+To prepare international standards and specifications for optical circuit boards and optical back planes, intended for use with opto-electronic assemblies.</p>
+</li>
+<li>
+<p id="_ab65e1e9-d950-478b-a846-aadcc857c00e">JWG 10: Laser safety linked to TC 76.</p>
+</li>
+</ul></clause></clause>
+<clause id="_technical_classification_of_itu_t_recommendations_of_the_l_series_related_to_optical_technologies_for_outside_plant" inline-header="false" obligation="normative"><title>Technical classification of ITU-T Recommendations of the L-series related to optical technologies for outside plant</title><p id="_49d97b35-a241-468f-9634-138f2fcb8d52">Along with the new numbering of the ITU-T Recommendation of the L-series in 2016, the existing L-series Recommendations are classified by the following technical area as described in <xref target="table1"/>. The corresponding table of new numbering system for L-series Recommendations are shown in <xref target="table2-1"/> to <xref target="table2-5"/>.</p>
+<table id="table1">
+<name>Technical classification of L-series Recommendations in old number</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="center">Technical area</th>
+<th colspan="4" valign="top" align="center">Assigned Questions</th>
+</tr>
+<tr>
+<td valign="top" align="left"/>
+<th valign="top" align="center">Sub-category</th>
+<th valign="top" align="center">Q7/15</th>
+<th valign="top" align="center">Q8/15</th>
+<th valign="top" align="center">Q16/15</th>
+<th valign="top" align="center">Q17/15</th>
+</tr>
+<tr>
+<td valign="top" rowspan="3" align="left">
+<p id="_ac90670a-c193-4f95-a4df-1281b3eb1edc">Optical fibre cables<br/>
+L.100 &#8211; L.199</p>
+</td>
+<td valign="top" align="left">
+<p id="_6b7ae291-272c-42e8-80b6-3ff7affb70f8">Cable structure and characteristics<br/>
+(L.100-L.124)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_40177d7c-5348-4049-bac6-bf0ae6bdb087">L.10, L.26,<br/>
+L.43, L.58,<br/>
+L.59, L.60,<br/>
+L.67, L.78,<br/>
+L.79, L.87,<br/>
+L.110</p>
+</td>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_8eb9d16d-caae-4c73-b67c-a8abf0b35c79">Cable evaluation<br/>
+(L.125-L.149)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_85011a7f-116a-42f9-b06f-93efe26c371f">L.14<br/>
+(Superseded)<br/>
+L.27</p>
+</td>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_26f03412-47a5-40fd-a825-887e7e321685">Guidance and installation technique<br/>
+(L.150-L.199)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_8d8ef995-85e9-4fd0-b2ed-97a58b541320">L.34, L.35,<br/>
+L.38, L.46,<br/>
+L.48, L.49,<br/>
+L.56, L.57,<br/>
+L.61, L.77,<br/>
+L.82, L.83,<br/>
+L.162, L.163</p>
+</td>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td valign="top" rowspan="2" align="left">
+<p id="_e367b04c-32be-40a9-8f6e-ba518f87d70b">Optical infrastructures<br/>
+L.200 &#8211; L.299</p>
+</td>
+<td valign="top" align="left">
+<p id="_3e0f8c37-b266-41f6-b213-4c5d0991c5cc">Infrastructure including node element (except cables)<br/>
+(L.200-L.249)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_bd36e5f9-455d-46db-845d-17fe50ef13ab">L.11, L.13,<br/>
+L.44, L.50,<br/>
+L.51, L.70,<br/>
+L.206, L.207,<br/>
+L.208</p>
+</td>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_4fed51d8-da4d-454e-b36e-f2d52ea4c5ef">General aspects and network design<br/>
+(L.250-L.299)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_08f48cb1-acfa-45e8-a0e5-6fd5ca2ae23e">L.17<br/>
+(superseded),<br/>
+L.39, L.45,<br/>
+L.47, L.62,<br/>
+L.63, L.72,<br/>
+L.73, L.84,<br/>
+L.86, L.89,<br/>
+L.90, L.94</p>
+</td>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td valign="top" rowspan="4" align="left">
+<p id="_e44696c9-7fde-4cb3-afd4-e842e16553fe">Maintenance and operation<br/>
+L.300 &#8211; L.399</p>
+</td>
+<td valign="top" align="left">
+<p id="_80619058-9cd2-4332-b5a2-746b29d5cf9f">Optical fibre cable maintenance<br/>
+(L.300-L.329)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_f00e7688-1162-4147-9d81-fc39ab33f2e5">L.25, L.40,<br/>
+L.41, L.53,<br/>
+L.66, L.68,<br/>
+L.85, L.93,<br/>
+L.315</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_dd0fc883-a0a2-41b0-b888-f4624dd20b3c">Infrastructure maintenance<br/>
+(L.330-L.349)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_78562981-e871-4dac-a7d5-419a78eaf83f">L.74, L.88</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_44f2494d-4e0c-4d29-8530-9124cb1f8115">Operation support and infrastructure management<br/>
+(L.350-L.379)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_7d147f79-0700-47a7-b5df-1dd08ed2c7db">L.64, L.69,<br/>
+L.80</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<p id="_314772de-9816-46ee-8cca-4417736fb269">Disaster management<br/>
+(L.380-L.399)</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_715c4a2b-d544-424f-82bf-599b4b1a4cdc">L.81, L.92,<br/>
+L.392</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" align="left">
+<p id="_18005e6d-536f-4d64-be25-f0f15c048bfc">Passive optical devices<br/>
+L.400 &#8211; L.429</p>
+</td>
+<td valign="top" align="left">
+<p id="_0f34be04-3970-45e5-8ca5-ab6fd0c7f033">L.12, L.31,<br/>
+L.36, L.37,<br/>
+L.404</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+</tr>
+<tr>
+<td colspan="2" valign="top" align="left">
+<p id="_f3a90b2f-7f98-4a94-90f5-152a7660a0d6">Marinized terrestrial cables<br/>
+L.430 &#8211; L.449</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_d8ae0be0-1da0-48f7-b86e-cb073b7937d4">L.28, L.29,<br/>
+L.30, L.54,<br/>
+L.55</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left"/>
+</tr>
+</tbody>
+<note id="_26e2b04b-e633-4958-be76-10e85651329a">
+<p id="_3e079960-acb3-402e-81ca-4a8942265449">The Recommendations deleted or moved to SG5 are not listed in the Table above.</p>
+</note><note id="_a79b9fe8-20c9-42af-aacc-4dcf8d9cce96">
+<p id="_538ce134-39a9-4e55-843d-28b25640c313">Supplement 40 to ITU-T G-series Recommendations provides information on the background and the specifications of optical fibre and cable ITU-T Recommendations together with their relationship with the IEC Specifications.</p>
+</note><note id="_f0f3ca56-09e8-41e8-8070-e76d4bf39654">
+<p id="_7dbae336-673c-4b02-ae5d-6cb66178f7f0">The superseded Recommendations will still be available for download from the ITU web site.</p>
+</note></table>
+
+
+
+<table id="table2-1">
+<name>Optical fibre cables (ITU-T L.100 - ITU-T L.199)</name>
+<tbody>
+<tr>
+<th colspan="3" valign="top" align="left">L.100 &#8211; L.124: Cable structure and characteristics</th>
+</tr>
+<tr>
+<th valign="top" align="center">New number</th>
+<th valign="top" align="center">Old number</th>
+<th valign="top" align="center">Title</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.100</td>
+<td valign="top" align="left">L.10</td>
+<td valign="top" align="left">
+<p id="_2f06a1ae-56a4-434c-926f-24b316fe65e8">Optical fibre cables for duct and tunnel application</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.101</td>
+<td valign="top" align="left">L.43</td>
+<td valign="top" align="left">
+<p id="_fd2ed7ab-b59b-4811-a6ff-e4ce5715e5b4">Optical fibre cables for buried application</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.102</td>
+<td valign="top" align="left">L.26</td>
+<td valign="top" align="left">
+<p id="_ef0bb23c-f82b-4918-a63e-c16b77a0cc84">Optical fibre cables for aerial application</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.103</td>
+<td valign="top" align="left">L.59</td>
+<td valign="top" align="left">
+<p id="_794895ea-3c9b-4245-995b-599be983d160">Optical fibre cables for indoor applications</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.104</td>
+<td valign="top" align="left">L.67</td>
+<td valign="top" align="left">
+<p id="_df597cae-a70a-4ee9-b814-77e803ac6bd5">Small count optical fibre cables for indoor applications</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.105</td>
+<td valign="top" align="left">L.87</td>
+<td valign="top" align="left">
+<p id="_55a8c807-dd47-43c7-acdd-017a43f4b59f">Optical fibre cables for drop applications</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.106</td>
+<td valign="top" align="left">L.58</td>
+<td valign="top" align="left">
+<p id="_7fdfef82-9ab9-486c-aee7-0b033267a9a6">Optical fibre cables: Special needs for access network</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.107</td>
+<td valign="top" align="left">L.78</td>
+<td valign="top" align="left">
+<p id="_256237f5-18e1-4111-a2ff-ad0a6dc9f39f">Optical fibre cable construction for sewer duct applications</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.108</td>
+<td valign="top" align="left">L.79</td>
+<td valign="top" align="left">
+<p id="_15e1f535-48ac-4d5f-85ba-eb887d58c676">Optical fibre cable elements for microduct blowing-installation application</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.109</td>
+<td valign="top" align="left">L.60</td>
+<td valign="top" align="left">
+<p id="_06ac4006-00f5-45c2-baeb-83ca3701b8bd">Construction of optical/metallic hybrid cables</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.110</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_def7d5be-ba70-4749-80aa-cdd05a30a073">Optical fibre cables for direct surface application</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">L.125 &#8211; L.149: Cable evaluation</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.125</td>
+<td valign="top" align="left">L.14</td>
+<td valign="top" align="left">
+<p id="_ce7c3e85-576c-42d6-8866-7c0250ae1d01">Measurement method to determine the tensile performance of optical fibre cables under load (Superseded)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.126</td>
+<td valign="top" align="left">L.27</td>
+<td valign="top" align="left">
+<p id="_e37ef718-3921-4e37-bb33-8c8733ff171d">Method for estimating the concentration of hydrogen in optical fibre cables</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">L.150 &#8211; L.199: Guidance and installation technique</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.150</td>
+<td valign="top" align="left">L.35</td>
+<td valign="top" align="left">
+<p id="_14a8e821-b0d7-43a4-80bb-7e12dade9837">Installation of optical fibre cables in the access network</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.151</td>
+<td valign="top" align="left">L.34</td>
+<td valign="top" align="left">
+<p id="_d1dd4d62-3b38-45e5-909d-01fdd1043e67">Installation of Optical Fibre Ground Wire (OPGW) cable</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.152</td>
+<td valign="top" align="left">L.38</td>
+<td valign="top" align="left">
+<p id="_6e1b2b9a-7751-4cf7-b464-cad88538babb">Use of trenchless techniques for the construction of underground infrastructures for telecommunication cable installation</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.153</td>
+<td valign="top" align="left">L.48</td>
+<td valign="top" align="left">
+<p id="_35c08f19-7cc4-409f-9597-c709639d148f">Mini-trench installation technique</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.154</td>
+<td valign="top" align="left">L.49</td>
+<td valign="top" align="left">
+<p id="_e734e948-4b7c-4434-b643-06e08307df8f">Micro-trench installation technique</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.155</td>
+<td valign="top" align="left">L.83</td>
+<td valign="top" align="left">
+<p id="_4c9563b0-cbc9-492e-ad9e-ccdecdddeeaf">Low impact trenching technique for FTTx networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.156</td>
+<td valign="top" align="left">L.57</td>
+<td valign="top" align="left">
+<p id="_a8b2ffed-12a8-4a22-9f78-040e6884f533">Air-assisted installation of optical fibre cables</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.157</td>
+<td valign="top" align="left">L.61</td>
+<td valign="top" align="left">
+<p id="_cf579cf2-7052-4e7c-88b2-22dc292b4fb6">Optical fibre cable installation by floating technique</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.158</td>
+<td valign="top" align="left">L.56</td>
+<td valign="top" align="left">
+<p id="_015fdcce-f548-47a5-89e5-fbf4521a4eb0">Installation of optical fibre cables along railways</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.159</td>
+<td valign="top" align="left">L.77</td>
+<td valign="top" align="left">
+<p id="_2e5460d2-a0af-4574-a09e-099c74f37379">Installation of optical fibre cables inside sewer ducts</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.160</td>
+<td valign="top" align="left">L.82</td>
+<td valign="top" align="left">
+<p id="_307f2131-5d90-4f9f-9478-316d706a3663">Optical cabling shared with multiple operators in buildings</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.161</td>
+<td valign="top" align="left">L.46</td>
+<td valign="top" align="left">
+<p id="_071990f7-af2c-4101-ad6c-a4c1b1ebe076">Protection of telecommunication cables and plant from biological attack</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.162</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_1c6b73f1-4263-4279-ba53-7628cef6b2ac">Microduct technology and its application</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.163</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_9cb565b7-2e40-487b-af32-38d2ee5e4ae9">Criteria for optical fibre cable installation with minimal existing infrastructure</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="table2-2">
+<name>Optical infrastructures (ITU-T L.200 - ITU-T L.299)</name>
+<tbody>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.200 &#8211; ITU-T L.249: Infrastructure including node element (except cables)</th>
+</tr>
+<tr>
+<th valign="top" align="center">New number</th>
+<th valign="top" align="center">Old number</th>
+<th valign="top" align="center">Title</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.200</td>
+<td valign="top" align="left">L.51</td>
+<td valign="top" align="left">
+<p id="_ebe7ad14-8a9a-488b-b741-7e250348eb23">Passive node elements for fibre optic networks &#8211; General principles and definitions for characterization and performance evaluation</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.201</td>
+<td valign="top" align="left">L.13</td>
+<td valign="top" align="left">
+<p id="_c08c1456-f156-462f-8a41-98a28426630f">Performance requirements for passive optical nodes: Sealed closures for outdoor environments</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.202</td>
+<td valign="top" align="left">L.50</td>
+<td valign="top" align="left">
+<p id="_0d0d5124-1c01-4b5b-86d4-75f782c3e6c8">Requirements for passive optical nodes: Optical distribution frames for central office environments</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.203</td>
+<td valign="top" align="left">L.44</td>
+<td valign="top" align="left">
+<p id="_31004a7e-e9c0-4b91-a14c-75d85f642e0f">Electric power supply for equipment installed as outside plant</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.204</td>
+<td valign="top" align="left">L.70</td>
+<td valign="top" align="left">
+<p id="_0b2da43c-1821-4867-ae42-6e03e881c966">Managing active electronics in the outside plant</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.205</td>
+<td valign="top" align="left">L.11</td>
+<td valign="top" align="left">
+<p id="_65901b41-88e7-4101-ab16-4cca27d782dc">Joint use of tunnels by pipelines and telecommunication cables, and the standardization of underground duct plans</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.206</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_073cadc8-92ed-4cc6-9199-8cefda2a74a0">Requirements for passive optical nodes &#8211; Outdoor optical cross connect cabinet</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.207</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_85a3542d-df6f-46a8-ac0c-15d2f99e8f1b">Passive node elements with automated ID tag detection</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.208</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_38b933dc-4fcf-4287-a9a3-c142a9404091">Requirements for passive optical nodes &#8211; Fibre distribution box</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.250 &#8211; ITU-T L.299: General aspects and network design</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.250</td>
+<td valign="top" align="left">L.90</td>
+<td valign="top" align="left">
+<p id="_ccab4560-2cde-4f06-8080-2920e31c90f3">Optical access network topologies for broadband services</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.251</td>
+<td valign="top" align="left">L.72</td>
+<td valign="top" align="left">
+<p id="_19d3a24f-6a62-4f51-9a5a-1fce17446826">Databases for optical access network infrastructure</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.252</td>
+<td valign="top" align="left">L.86</td>
+<td valign="top" align="left">
+<p id="_888cbf54-c12f-47b9-8bf2-0f5c6da5b048">Considerations on the installation site of branching components in passive optical networks for fibre to the home</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.253</td>
+<td valign="top" align="left">L.47</td>
+<td valign="top" align="left">
+<p id="_176567c8-3cc8-4880-b100-a28cdd13d4f0">Access facilities using hybrid fibre/copper networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.254</td>
+<td valign="top" align="left">L.62</td>
+<td valign="top" align="left">
+<p id="_b5d4ad95-63e3-4eae-af41-a043a53e4bad">Practical aspects of unbundling services by multiple operators in copper access networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.255</td>
+<td valign="top" align="left">L.17</td>
+<td valign="top" align="left">
+<p id="_8a9dd2da-9953-47a8-a1ee-45d0271951b0">Implementation of connecting customers into the public switched telephone network (PSTN) via optical fibres (Superseded)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.256</td>
+<td valign="top" align="left">L.45</td>
+<td valign="top" align="left">
+<p id="_ac19aee0-3c9b-4d66-a91b-d146fcaaeb1c">Minimizing the effect on the environment from the outside plant in telecommunication networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.257</td>
+<td valign="top" align="left">L.39</td>
+<td valign="top" align="left">
+<p id="_0342504b-1c7e-4e4b-a8df-1cc1103cef5c">Investigation of the soil before using trenchless techniques</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.258</td>
+<td valign="top" align="left">L.63</td>
+<td valign="top" align="left">
+<p id="_31380395-4786-4f95-88f5-648d71d03d20">Safety procedures for outdoor installations</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.259</td>
+<td valign="top" align="left">L.73</td>
+<td valign="top" align="left">
+<p id="_5c3d3d6d-057e-4f97-b8e5-e5ea4eaff152">Methods for inspecting and repairing underground plastic ducts</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.260</td>
+<td valign="top" align="left">L.84</td>
+<td valign="top" align="left">
+<p id="_969e6892-7bc8-4596-84ec-acebc4433cf9">Fast mapping of underground networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.261</td>
+<td valign="top" align="left">L.89</td>
+<td valign="top" align="left">
+<p id="_4f91eabe-54c2-4354-8f09-3c609dd3e2f2">Design of suspension wires, telecommunication poles and guy-lines for optical access networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.262</td>
+<td valign="top" align="left">L.94</td>
+<td valign="top" align="left">
+<p id="_ee0deeee-8e45-4dda-8c17-5b5fdfa4e9d9">Use of global navigation satellite systems to create a referenced network map</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="table2-3">
+<name>Maintenance and operation (ITU-T L.300 &#8211; ITU-T L.399)</name>
+<tbody>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.300 &#8211; ITU-T L.329: Optical fibre cable maintenance</th>
+</tr>
+<tr>
+<th valign="top" align="center">New number</th>
+<th valign="top" align="center">Old number</th>
+<th valign="top" align="center">Title</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.300</td>
+<td valign="top" align="left">L.25</td>
+<td valign="top" align="left">
+<p id="_eb718b15-6538-45c9-b47d-b182eee71b65">Optical fibre cable network maintenance</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.301</td>
+<td valign="top" align="left">L.41</td>
+<td valign="top" align="left">
+<p id="_87339382-8b7d-4f45-b834-22063c60423e">Maintenance wavelength on fibres carrying signals</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.302</td>
+<td valign="top" align="left">L.40</td>
+<td valign="top" align="left">
+<p id="_aae14262-762d-4c6a-acb0-f0b28586f6a7">Optical fibre outside plant maintenance support, monitoring and testing system</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.310</td>
+<td valign="top" align="left">L.53</td>
+<td valign="top" align="left">
+<p id="_85beb3ca-b4e5-476f-9a86-75cd9e89ec30">Optical fibre maintenance depending on topologies of access networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.311</td>
+<td valign="top" align="left">L.93</td>
+<td valign="top" align="left">
+<p id="_2fb8a09e-a082-4ff0-bc2f-e53e8dff6c78">Optical fibre cable maintenance support, monitoring and testing systems for optical fibre trunk networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.312</td>
+<td valign="top" align="left">L.68</td>
+<td valign="top" align="left">
+<p id="_64132373-6bb6-47fc-9ecb-729feb8a6e0d">Optical fibre cable maintenance support, monitoring and testing system for optical fibre cable networks carrying high total optical power</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.313</td>
+<td valign="top" align="left">L.66</td>
+<td valign="top" align="left">
+<p id="_382ce37c-3e45-4e15-930a-9fcb4fedfc62">Optical fibre cable maintenance criteria for in-service fibre testing in access networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.314</td>
+<td valign="top" align="left">L.85</td>
+<td valign="top" align="left">
+<p id="_8afbd293-2809-4496-80d6-eeafc42e4b34">Optical fibre identification for the maintenance of optical access networks</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.315</td>
+<td valign="top" align="left"/>
+<td valign="top" align="left">
+<p id="_4fce7cfb-411f-4637-84b6-6acb2421111c">Water detection in underground closures for the maintenance of optical fibre cable networks with optical monitoring system</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.330 &#8211; ITU-T L.349: Infrastructure maintenance</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.330</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_bc924618-7f22-445c-bb30-3db71e49e95a">(Reserved for the future.)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.340</td>
+<td valign="top" align="left">L.74</td>
+<td valign="top" align="left">
+<p id="_c388c097-05aa-4acf-8c26-320c6cfb6e20">Maintenance of cable tunnels</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.341</td>
+<td valign="top" align="left">L.88</td>
+<td valign="top" align="left">
+<p id="_258834e3-63fd-458b-99b7-95db1c9e7e6e">Management of poles carrying overhead telecommunication lines</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.350 &#8211; ITU-T L.379: Operation support and infrastructure management</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.350</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_12453ef3-773a-404c-8048-129265a1fe31">(Reserved for the future.)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.360</td>
+<td valign="top" align="left">L.80</td>
+<td valign="top" align="left">
+<p id="_d69d6fb2-8de6-4dce-97df-6bc9a8f29125">Operations support system requirements for infrastructure and network elements management using ID technology</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.361</td>
+<td valign="top" align="left">L.64</td>
+<td valign="top" align="left">
+<p id="_0567af6e-8fea-40a6-83c0-e2dd221af518">ID tag requirements for infrastructure and network elements management</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.362</td>
+<td valign="top" align="left">L.69</td>
+<td valign="top" align="left">
+<p id="_913b960e-2545-4b4b-b1c2-f9e99fd74b5f">Personal digital assistant requirements and relevant data structure for infrastructure and network elements management</p>
+</td>
+</tr>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.380 &#8211; ITU-T L.399: Disaster management</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.390</td>
+<td valign="top" align="left">L.92</td>
+<td valign="top" align="left">
+<p id="_6fbb3776-0379-4b44-bd53-c7c51bf3fbf4">Disaster management for outside plant facilities</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.391</td>
+<td valign="top" align="left">L.81</td>
+<td valign="top" align="left">
+<p id="_549aa43f-74d3-4a61-ab0e-eee7248ad950">Monitoring systems for outside plant facilities</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.392</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_ce9afebf-eea8-4e8d-9b89-81bf04106b1a">Disaster management for improving network resilience and recovery with movable and deployable information and communication technology (ICT) resource units</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="table2-4">
+<name>Passive optical devices (ITU-T L.400 &#8211; ITU-T L.429)</name>
+<tbody>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.400 &#8211; ITU-T L.429: Passive optical devices</th>
+</tr>
+<tr>
+<th valign="top" align="center">New number</th>
+<th valign="top" align="center">Old number</th>
+<th valign="top" align="center">Title</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.400</td>
+<td valign="top" align="left">L.12</td>
+<td valign="top" align="left">
+<p id="_7f97d07b-e0aa-4941-aa0c-35bc62598a3f">Optical fibre splices</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.401</td>
+<td valign="top" align="left">L.31</td>
+<td valign="top" align="left">
+<p id="_97c77537-fd51-41e2-a4da-30dd1c75b28e">Optical fibre attenuators</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.402</td>
+<td valign="top" align="left">L.36</td>
+<td valign="top" align="left">
+<p id="_a7687b2f-3a23-4aca-be2f-cd097d40dbd8">Single-mode fibre optic connectors</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.403</td>
+<td valign="top" align="left">L.37</td>
+<td valign="top" align="left">
+<p id="_4acbd17a-67c0-4975-a9fd-312d53656c49">Optical branching components (non-wavelength selective)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.404</td>
+<td valign="top" align="left">&#8211;</td>
+<td valign="top" align="left">
+<p id="_023a4cdb-3b14-4924-b77d-d379135592ab">Field mountable single-mode optical fibre connectors</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="table2-5">
+<name>Marinized terrestrial cables (ITU-T L.430 &#8211; ITU-T L.449)</name>
+<tbody>
+<tr>
+<th colspan="3" valign="top" align="left">ITU-T L.430 &#8211; ITU-T L.449: Marinized terrestrial cables</th>
+</tr>
+<tr>
+<th valign="top" align="center">New number ITU-T</th>
+<th valign="top" align="center">Old number ITU-T</th>
+<th valign="top" align="center">Title</th>
+</tr>
+<tr>
+<td valign="top" align="left">L.430</td>
+<td valign="top" align="left">L.28</td>
+<td valign="top" align="left">
+<p id="_7fe872b7-ff65-46a4-9ca0-44480f51b53f">External additional protection for marinized terrestrial cables</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.431</td>
+<td valign="top" align="left">L.29</td>
+<td valign="top" align="left">
+<p id="_782edfcc-a084-40ee-9fde-77d62a6f0cf1">As-laid report and maintenance/repair log for marinized terrestrial cable installation</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.432</td>
+<td valign="top" align="left">L.30</td>
+<td valign="top" align="left">
+<p id="_6a1913f6-caca-46e3-99e8-36b458ccc89d">Markers on marinized terrestrial cables</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.433</td>
+<td valign="top" align="left">L.54</td>
+<td valign="top" align="left">
+<p id="_0f74284b-d16c-4122-8109-f433fa78e316">Splice closure for marinized terrestrial cables (MTC)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">L.434</td>
+<td valign="top" align="left">L.55</td>
+<td valign="top" align="left">
+<p id="_9884314d-30a2-419e-88c5-f05e1a123339">Digital database for marine cables and pipelines</p>
+</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_brief_description_of_the_application_of_itu_t_recommendations_of_the_l_series_related_to_optical_technologies_for_outside_plant" inline-header="false" obligation="normative"><title>Brief description of the application of ITU-T Recommendations of the L-series related to optical technologies for outside plant</title><table id="_64c29228-9d48-4a3e-b90a-1cc79ca789db" unnumbered="true">
+<name>Optical fibre cables (ITU-T L.100 - ITU-T L.199)</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.100 &#8211; ITU-T L.124: Cable structure and characteristics</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="http://www.itu.int/rec/T-REC-L.100/en">L.100/L.10</link>
+</th>
+<td valign="top" align="left"><p id="_3760ae25-9510-48ec-803c-28145c77c03e"><strong>Optical fibre cables for duct and tunnel application</strong> (08/2015)<br/>
+This Recommendation describes characteristics, construction and test methods of optical fibre cables for duct and tunnel application. First, in order that an optical fibre demonstrates sufficient performance, characteristics that a cable should possess are described. Then, the method of examining whether the cable has the required characteristic is described. Required conditions may differ according to installation environment. Therefore, detailed conditions of experiments need to be agreed upon between a user and a supplier on the basis of the environment where a cable is used.<br/>
+This Recommendation also:</p>
+<ul id="_c310686e-3809-4a39-8aee-a5f22f4c22aa">
+<li>
+<p id="_691772b1-2b3c-4660-90ca-ec105e9392e5">Refers to multi-mode graded index and single-mode optical fibre cables to be used for telecommunication network in ducts and tunnels,</p>
+</li>
+<li>
+<p id="_b69dc654-70ba-4b1c-932a-4f71dbce1bcb">Deals with mechanical and environmental characteristics of the optical fibre cables. The optical fibre dimensional and transmission characteristics, together with their test methods, should comply with the relevant ITU-T G.series fibre Recommendations,</p>
+</li>
+<li>
+<p id="_aee020ab-d814-43fc-9e0d-40758fc1ff60">Deals with fundamental considerations related to optical fibre cable from the mechanical and environmental points of view.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.101/en">L.101/L.43</link>
+</th>
+<td valign="top" align="left"><p id="_feadfcdc-cadd-49ae-ab8a-0e770d14a7c5"><strong>Optical fibre cables for buried application</strong> (08/2015)<br/>
+Optical fibre cables are traditionally used in trunk line networks, but their use is expanding rapidly to access networks. Today, many cables are buried in order to respect the environmental landscape, to reduce network construction costs or to reduce the extension of underground facilities like ducts and tunnels.<br/>
+When they are installed without ducts, tunnels and hard protection, cables should have good resistance characteristics to harsh conditions. Some cables have strong outer armouring, others have outer pipe-systems or special plastic sheaths.<br/>
+This Recommendation:</p>
+<ul id="_0886458f-725e-4198-915d-ff955497aec9">
+<li>
+<p id="_733a3643-e763-4636-8a95-ddc664ad6db5">Refers to multi-mode graded index and single-mode optical fibre cables to be used for telecommunication networks in direct buried installations,</p>
+</li>
+<li>
+<p id="_b2239edc-24d1-4c32-af3c-499bb679ed71">Considers the mechanical and environmental characteristics of the optical fibre cables. The optical fibre dimensional and transmission characteristics, together with their test methods, should comply with the relevant ITU-T G-series fibre Recommendations,</p>
+</li>
+<li>
+<p id="_6d0cfcf7-0f0c-4b23-bc56-016b99802b37">Considers the fundamental aspects related to optical fibre cable from mechanical and environmental points of view.</p>
+</li>
+</ul>
+<p id="_a31938bc-c8b8-48ff-9cbd-c5df19864fcf">In particular, this Recommendation describes characteristics, construction and test methods of optical fibre cables for buried application. First, in order that an optical fibre demonstrates sufficient performance, the characteristics that a cable should have are described. Then, the method of examining whether the cable has the required characteristic is described. Required conditions may differ according to the installation environment. Therefore, detailed conditions of experiments need to be agreed upon between a user and the supplier on the basis of the environment where a cable is used.</p></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.102/en">L.102/L.26</link>
+</th>
+<td valign="top" align="left"><p id="_3b818932-db8c-411b-8721-f4b655a8e4ae"><strong>Optical fibre cables for aerial application</strong> (08/2015)<br/>
+This Recommendation describes characteristics, construction and test methods of optical fibre cables for aerial application but does not apply to optical ground wire (OPGW) cables or metal armour self-supporting (MASS) cables. First, the characteristics affecting the satisfactory performance of optical fibre cables are described. Then, the methods of examining whether the cable have these required characteristics are described. The conditions required may differ according to installation environment. Therefore, detailed conditions of experiments need to be agreed upon between a user and a supplier on the basis of the environment where the cable is used.<br/>
+This Recommendation also:</p>
+<ul id="_21d1bb7b-8598-4572-a516-76db33c1f4f3">
+<li>
+<p id="_a564f656-fd5d-410e-8ef6-6861d95760b7">Refers to single-mode optical fibre cables to be used in telecommunication networks for aerial installations in outside plants, excluding optical ground wire (OPGW) and metal armour self-supporting (MASS) cables,</p>
+</li>
+<li>
+<p id="_b397ddd1-617c-4817-8b17-9a674a582710">Considers the mechanical and environmental characteristics of the aerial optical fibre cable (self-supporting cable and non-self-supporting cable).<br/>
+The optical fibre dimensional and transmission characteristics, together with their test methods, should comply with the relevant ITU-T G.series fibre Recommendations,</p>
+</li>
+<li>
+<p id="_44356d28-1fc1-4819-9ec1-75460e8db59a">Considers fundamental aspects related to optical fibre cable from mechanical and environmental points of view.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.103/en">L.103/L.59</link>
+</th>
+<td valign="top" align="left"><p id="_7b851cc8-1c49-4b34-a715-b9b4d466c0e6"><strong>Optical fibre cables for indoor application</strong> (04/2016)<br/>
+This Recommendation describes characteristics, construction and test methods for optical fibre cables for indoor applications. In order for an optical fibre to perform appropriately, characteristics that a cable should have are described. Also, the method of determining whether or not the cable has the required characteristics is described. Required conditions may differ according to the installation environment. Detailed test conditions need to be agreed upon between a user and a manufacturer for the environment where a cable is to be used.<br/>
+This Recommendation also:</p>
+<ul id="_e99bf592-7227-47e4-8973-1af93821c9f2">
+<li>
+<p id="_3cb53d17-2514-46ce-a8a4-bfd689ce5a18">Refers to multimode and single mode optical fibre cables to be used for telecommunications networks within buildings,</p>
+</li>
+<li>
+<p id="_df2ccc40-94eb-43cd-a57e-a902cae11ff1">Deals with mechanical and environmental characteristics of the optical fibre cables concerned. The optical fibre dimensional and transmission characteristics, together with their test methods, should comply with the relevant ITU-T G.series fibre Recommendations,</p>
+</li>
+<li>
+<p id="_37d3b229-2a65-4a9d-8347-4dab25fac2ae">Deals with fundamental considerations related to optical fibre cable from mechanical and environmental aspects.</p>
+</li>
+</ul>
+<note id="_bb804281-a9e3-4919-9e7e-bcce560c0554">
+<p id="_f438d95a-2952-41bc-83a4-92bee5ec8791">Other types of fibre may be used to meet the intent of cables according to this Recommendation. Specific attributes may differ and require an agreement between the manufacturer and the user.</p>
+</note></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.104/en">L.104/L.67</link>
+</th>
+<td valign="top" align="left">
+<p id="_b1112c74-23cf-4d3d-a1f1-4f19e9bd2448"><strong>Small count optical fibre cables for indoor applications</strong> (10/2006)<br/>
+This Recommendation describes the characteristics, construction and test methods of small count optical fibre cables for indoor applications. Indoor optical fibre cables that contain three or more fibres have been described in [ITU-T L.59]. This Recommendation deals with small count optical fibre cable that contains one or two optical fibre(s). First, the cable characteristics that are required if an optical fibre is to demonstrate sufficient levels of performance is described. Then, a method is described for examining whether a cable has the required characteristics. The required conditions may differ according to the installation environment. Therefore, detailed experimental conditions of experiments must be agreed between a user and a supplier on the basis of the environment in which a cable is to be used.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.105/en">L.105/L.87</link>
+</th>
+<td valign="top" align="left">
+<p id="_6cac0dfb-b7ab-45ad-b9c0-873d9c38a982"><strong>Optical fibre cables for drop applications</strong> (07/2010)<br/>
+This Recommendation describes the characteristics, construction and test methods of optical fibre cables for drop applications. Optical fibre drop cables are used to connect customer and optical access networks. Access points may be located both outdoors and indoors, depending on the access network configuration. When access points are located outdoors, optical drop cables are exposed to both outdoor and indoor environments. In this case the optical drop cable should be designed for both environments.<br/>
+This Recommendation also describes the characteristics that a cable requires for an optical fibre to perform appropriately. Moreover, a method is described for determining whether or not the cable has the required characteristics. The required conditions may differ according to the installation environment. Detailed test conditions must be agreed upon between the user and the manufacturer concerning the environment in which the cable is to be used (particularly in case of applying small bends during and after installation).</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.106/en">L.106/L.58</link>
+</th>
+<td valign="top" align="left"><p id="_b598492a-9594-4c30-8446-d0428748c906"><strong>Optical fibre cables: Special needs for access network</strong> (03/2004)<br/>
+This Recommendation describes characteristics and the construction of optical fibre cables for access networks. Such cables are required to have some additional performance characteristics (e.g., high fibre count, mid-span access) compared with cables for trunk systems. Characteristics, relevant to the appropriate performance of an optical access network cable, are described. Required conditions may differ according to the installation environment and, therefore, detailed conditions of experiments and tests need to be agreed between a user and a supplier on the basis of the environment where a cable is to be used.<br/>
+This Recommendation also:</p>
+<ul id="_723c1b64-64d4-4428-b25a-7a46241b7d73">
+<li>
+<p id="_c7b4b005-6efc-4813-9725-d9ae73035320">Refers to multimode graded index and single-mode optical fibre cables to be used for telecommunication access networks,</p>
+</li>
+<li>
+<p id="_9cb9b2c6-19ff-4e09-a055-194a76e510be">Deals with special characteristics of the optical fibre cables for access networks. The basic characteristics and structure of optical fibre cables are described in ITU-T Recs. L.10, L.26 and L.43 respectively, based on environmental categories,</p>
+</li>
+<li>
+<p id="_bb482235-539a-4f8e-a88b-cca49b04cc30">Deals with fundamental considerations related to optical fibre cables for access networks.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.107/en">L.107/L.78</link>
+</th>
+<td valign="top" align="left">
+<p id="_f4131796-4e5f-4476-bc0b-48eaa1024114"><strong>Optical fibre cable construction for sewer duct applications</strong> (05/2008 + Amd.1 06/2010)<br/>
+With the growth of fibre to the home (FTTH) services, there is an increasing demand for ducts and tunnels in which to install optical fibre cables. However, in metropolitan areas it is difficult to increase the number of ducts and/or tunnels because of the cost that it would involve and interference with traffic. Installing optical fibre cables in sewer ducts is one possible way to solve the duct shortage problem. However, the sewer pipe environment is different from that of ducts designed for telecommunication. Therefore, the required characteristics also differ from those for standard underground cables.<br/>
+This Recommendation describes the characteristics, construction and test methods for optical fibre cables to be installed in sewer ducts and drainpipes. The characteristics that a cable should have for an optical fibre to perform appropriately are described. Also, a method is described for determining whether or not the cable has the required characteristics. The required conditions may differ according to the installation environment. Detailed test conditions need to be agreed upon between the user and the manufacturer concerning the environment in which the cable is to be used.<br/>
+Amendment 1 to this Recommendation provides a new Appendix describing a national experience related to the subject. This Appendix, as the others in the main body of the Recommendation, may be useful for readers who intend to install optical fibre cables into specific sewer ducts (e.g., high water pressure and corrosive materials).</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.108</th>
+<td valign="top" align="left">
+<p id="_c552db66-da6a-4c39-bfa3-e5942198f86b"><strong>Optical fibre cable elements for microduct blowing installation application</strong> (03/2018)<br/>
+Air blowing installation methods are based on viscous drag acting upon a cable within a duct by forcing a continuous high-speed airflow thorough the duct. The velocity of the moving air propels the cable causing it to advance at a typical speed supported by the blowing equipment.<br/>
+When using blowing techniques, there is generally no pulling force at the front end of the cable. The airflow exerts a distributed force along the entire cable. In addition, connection to a pulling cord is not needed.<br/>
+Generally, the blowing force is an order of magnitude lower than the typical force involved in other installation methods, for example pulling techniques, thus reducing installation hazards. Additionally, with this technique, bends in a duct run are of less concern than with pulling techniques, so generally, the installation speed increases, and longer lengths of cable can be installed. Cables are installed with low stress levels, leaving the cable or other elements effectively relaxed in the duct once the installation has been completed.<br/>
+Therefore, cables can be designed with lower tensile capabilities than cables to be pulled. Elements without additional strength members&#8212;such as fibre units, micromodules, and single fibres&#8212;can also be considered.<br/>
+New generation cabling techniques, based on microduct cables, microduct fibre units and microduct systems, offer the possibility of branching without the need for splices. These techniques are extremely flexible and make them possible to grow in accordance with demand. This gives rise to the concept of "fibre on demand", which involves the pre-installation of a multi-microduct system and then the subsequent, incremental installation of fibres based on individual customer demand.<br/>
+To support this "fibre on demand" approach, a fibre cable product must allow the installation of only a few fibres at a time. These types of cable products should take up the smallest possible amount of the service provider's right-of-way (i.e., fit the smallest microduct) so that there is plenty of space to add fibres for future customers. Therefore, usually only a small number of the fibres that are installed are used immediately. The latest fibre technology can also be adopted when required.<br/>
+This Recommendation describes characteristics, construction and test methods for microduct fibre units and microduct cables to be used with the blowing installation technique. The cable characteristics required for a cable to perform appropriately are described. Also, a method is described for determining whether or not the cable has the required characteristics. The required conditions may differ according to the installation environment. Detailed test conditions must be agreed upon between a user and a manufacturer for the environment in which a cable is to be used.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.109/L.60</th>
+<td valign="top" align="left"><p id="_3cc1c7d0-948d-4c86-9234-68c3c0081ebc"><strong>Construction of optical/metallic hybrid cables</strong> (11/2018)<br/>
+An optical/metallic hybrid cable is a cable which contains both optical fibres and metallic wires for telecommunication and/or power feeding. This Recommendation describes cable construction and provides guidance for the use of this type of cable. Technical requirements may differ according to the installation environment. Environmental issues and test methods for cable characteristics are described in other L-series Recommendations.<br/>
+This Recommendation also:</p>
+<ul id="_1fa61215-4cb6-42de-868d-070493777494">
+<li>
+<p id="_c13c2f93-a497-46df-b1ad-49ad813628a1">Deals with optical/metallic hybrid cables for communications systems,</p>
+</li>
+<li>
+<p id="_296bcddf-bdc3-4953-9110-8368b709a006">Deals with the construction of optical/metallic hybrid cables. The optical fibre dimensional and transmission characteristics, together with their test methods, should comply with the relevant ITU-T G.series fibre Recommendations. Dimensional and transmission characteristics of metallic wires and coaxial units for telecommunication, together with their test methods, should comply with [b-ITU-T Technical Report] and Recommendations in ITU-T L-series cable documents,</p>
+</li>
+<li>
+<p id="_0a7b8c7e-5f32-4f22-b25f-019a7a680366">Deals with cables which may be outdoor designs, indoor designs, or indoor-outdoor designs. Cables such as FTTA or DAS cables are examples of such hybrid cables,</p>
+</li>
+<li>
+<p id="_48a6edbd-2b77-4898-956d-32c323f3d6df">Deals with cables for limited powering applications found in communications systems.</p>
+</li>
+<li>
+<p id="_6e58531d-c246-4dbd-8c74-7cb9b09ad872">Deals with keynotes for the use of optical/metallic hybrid cables,</p>
+</li>
+<li>
+<p id="_224da1c5-446c-47d9-bb0f-40034910ea67">Recommends that an optical/metallic hybrid cable should be provided with cable-end sealing and protection during cable delivery and storage, as is usual for metallic and/or optical cables. If splicing components have been factory installed, they should be adequately protected,</p>
+</li>
+<li>
+<p id="_7c29377f-7eb6-4e1a-a17d-4c4012a854fe">Recommends that pulling devices can be fitted to the end of the cable if required.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">L.110</th>
+<td valign="top" align="left">
+<p id="_bde53f7d-9493-4236-9aff-ee9ef663b622"><strong>Optical fibre cables for direct surface application</strong> (08/2017)<br/>
+This Recommendation considers an optical fibre cable for direct surface application, which has a simple protection structure and easy operability needed for some applications, particularly when it is difficult to prepare conventional installation infrastructures, such as duct, pipe, pole and so on. This Recommendation provides requirements for optical, mechanical, and structural characteristics and test methods for optical fibre cables for direct surface application. Optical fibre cables for direct surface application enable the construction of optical network rapidly and/or temporarily. Potential applications include but are not limited to network recovery against natural disaster, rapid network installation into rural and remote areas with insufficient infrastructures.<br/>
+This Recommendation also describes characteristics, construction, and test methods of optical fibre cables for direct surface application. First, in order that an optical fibre demonstrates sufficient performance, characteristics that a cable should have are described. Then, the method of examining whether the cable has the required characteristic is described.</p>
+</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.125 &#8211; ITU-T L.149: Cable evaluation</th>
+</tr>
+<tr>
+<th valign="top" align="left"><link target="https://www.itu.int/rec/T-REC-L.125/en">L.125/L.14</link><br/>
+(Superseded)</th>
+<td valign="top" align="left">
+<p id="_5b661e65-bc18-4352-87a1-1e151bc6eb5f"><strong>Measurement method to determine the tensile performance of optical fibre cables under load</strong> (07/1992)<br/>
+Various cable constructions are based on a concept in which the cable will have a certain strain margin. This Recommendation defines a method for the direct measurement of the tensile performance of optical fibres. This method can provide information on both the maximum allowable pulling force for field installation, as well as information about the strain margin of the cable. The method is based on the phase shift of a modulated signal launched into the fibre.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.126/en">L.126/L.27</link>
+</th>
+<td valign="top" align="left">
+<p id="_2a0e3c44-8be9-41a0-99b5-eb487df207cb"><strong>Method for estimating the concentration of hydrogen in optical fibre cables</strong> (10/1996)<br/>
+Considerable experience has been gained using optical fibre cables in terrestrial and subsea applications showing that optical fibres provide a stable transmission medium and that there are situations where the concentration of hydrogen within a cable can rise to a sufficiently large value to cause the optical loss of the fibre to increase (see Appendix III). Therefore, there is a need to determine the build-up of hydrogen in a cable by considering the ways that hydrogen can be generated within it.<br/>
+If the escape of hydrogen through the polyolefin sheath or the overlap of a moisture barrier balances the hydrogen generated in the cable, the resulting concentrations within the cable do not cause a noticeable change in optical loss (see Appendices I and II).<br/>
+This Recommendation describes methods for estimating the concentration of hydrogen in optical fibre cables.</p>
+</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.150 &#8211; ITU-T L.199: Guidance and installation technique</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.150/en">L.150/L/35</link>
+</th>
+<td valign="top" align="left">
+<p id="_51f8d996-ecc2-4217-a8ba-075ec1e20d3d"><strong>Installation of optical fibre cables in the access network</strong> (10/1998 + Amd.1 11/2007)<br/>
+The Recommendation gives information about the methodologies recommended to install fibre optic cables in the access network. In particular, it gives guidance for installation in ducts, aerial installation and directly buried cables. Appendix I and Amendment 1 provide the experiences of ten countries on this matter.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.151/en">L.151/L.34</link>
+</th>
+<td valign="top" align="left"><p id="_f7fa6e48-b05b-4139-8f65-79a3855241dc"><strong>Installation of Optical Fibre Ground Wire (OPGW) cable</strong> (10/1998)<br/>
+Optical fibres are particularly suitable for use as transmission media by means of the aerial power lines in high-voltage networks.<br/>
+Some of the advantages of optical fibres are:</p>
+<ul id="_5d676271-086c-4f25-8183-51312c48bdf7">
+<li>
+<p id="_dff101a3-4a85-4bbf-b83d-fd7d3b583355">Low attenuation (long distance between repeaters),</p>
+</li>
+<li>
+<p id="_cb186bd5-2493-4a03-aa9e-9ff54b019cf8">Large bandwidth (high transmission capacity),</p>
+</li>
+<li>
+<p id="_3b6a9e84-7a29-4be0-944a-87ee30d2f418">Immunity to electromagnetic influences,</p>
+</li>
+<li>
+<p id="_ef4fb636-5d5f-445f-b883-8a23f31c3eee">No cross-talk.</p>
+</li>
+</ul>
+<p id="_325bdfaf-e8a5-4bd1-bd0f-6c4445fe08c2">For these reasons, they are widely used in high-voltage power lines. There are several types of cable and installation technology.<br/>
+Among them, optical fibre ground wire cable (OPGW) technology is specifically designed for high-voltage power line installations. This technology also has the advantage of using a necessary cable (ground wire) for communications.<br/>
+OPGW also has the advantage of using the ground wire of a power line for communications. However, users of OPGW need to be aware that if the cable fails it may not be repaired quickly. Therefore, an alternative routing for the optical circuits needs to be considered.<br/>
+These cables consist of a nucleus containing optical fibres and an armour generally composed of one or more layers of aluminium wire, Aldrey metallic wire, steel wire or aluminium-coated steel wire. The additional features of these cables compared to other types of cable are basically as follows:</p>
+<ul id="_11df199f-f164-43c2-bd02-3321a3e447dc">
+<li>
+<p id="_c7e9fd8c-d19a-48f8-bbcb-38a51cf2bd27">Greater tensile strength,</p>
+</li>
+<li>
+<p id="_520d5ac3-8555-4ec5-9cc6-e74908b4408a">Protection of fibres against excessively high temperatures when high current densities occur in the cable.</p>
+</li>
+</ul>
+<p id="_3a36f73d-f5db-4fe4-a1cd-0d6d56cf9808">This Recommendation refers to optical fibre ground wire cable (OPGW) installation. It deals with the factors that should be considered in determining the characteristics of this type of cable, the apparatus that should be used, the precautions that should be taken in handling the reels and the method that should be used to string the cable and joint it.</p></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.152/en">L.152/L.38</link>
+</th>
+<td valign="top" align="left"><p id="_4cfe8afa-80fb-4151-88de-5512ab0ffaba"><strong>Use of trenchless techniques for the construction of underground infrastructures for telecommunication cable installation</strong> (09/1999)<br/>
+This Recommendation describes the main techniques which allow installation of underground telecommunication network infrastructures minimizing or eliminating the need for excavation. These techniques, commonly known as trenchless or no-dig techniques, create a horizontal bore below the ground in which the underground infrastructure (ducts, pipes or direct buried cables) can be placed.<br/>
+Trenchless techniques can reduce environmental damage and social costs and at the same time, provide an economic alternative to open-trench methods of installation.<br/>
+After a description of the available techniques, this Recommendation:</p>
+<ul id="_79a57091-448d-40b2-948a-d7de331d3abf">
+<li>
+<p id="_9ec8a670-9401-46e5-8574-ae60b5b5b28c">Makes a classification of different kind of works that are performed,</p>
+</li>
+<li>
+<p id="_e61f1a00-46bb-4f5e-9725-9ad5830316b9">Describes the preliminary operations,</p>
+</li>
+<li>
+<p id="_71145e67-066a-4cbf-9314-e40fc3aa154e">Describes the drilling operation and installation procedures requirements,</p>
+</li>
+<li>
+<p id="_29c9036e-089f-4b5e-9240-4bc841afe07d">Describes situations where trenchless techniques are recommended.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.153/en">L.153/L.48</link>
+</th>
+<td valign="top" align="left"><p id="_6ddc5699-0f4a-45b1-8da7-d2a4a75531d0"><strong>Mini-trench installation technique</strong> (03/2003)<br/>
+This Recommendation describes the so-called mini-trenching technique, that allows the installation in small trenches of underground optical cables in ducts or directly buried copper cables. The advantages of this technique over conventional cable laying technologies lie essentially in its speed of execution, lower cost, significantly lower environmental impact and limited disruption to road traffic and, as a consequence of the previous items, easiness in obtaining permits for the taking over of public area.<br/>
+This Recommendation:</p>
+<ul id="_de649eb9-882d-4f71-a2ad-a4befa7917db">
+<li>
+<p id="_84d5e05b-4b10-4c74-8a74-1150c3fffe25">Gives advice on general requirements of the main phases in which the work can be divided,</p>
+</li>
+<li>
+<p id="_babcb0db-9c97-4a8a-8d04-dc2ff8f7279e">Gives advice on the methods and procedures for performing the works,</p>
+</li>
+<li>
+<p id="_4aeb9d06-aaed-4e93-a24c-2383f30408a5">gives some application criteria.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.154/en">L.154/L.49</link>
+</th>
+<td valign="top" align="left"><p id="_ef2e2fac-b066-43be-a050-b171b90f4a62"><strong>Micro-trench installation technique</strong> (03/2003)<br/>
+This Recommendation describes the so-called micro-trenching technique, that allows installing underground cables at a shallow depth, in small grooves. The advantages of this technique over conventional cable laying technologies lie essentially in its speed of execution, lower cost, significantly lower environmental impact and limited disruption to road and, as a consequence of the previous items, easiness in obtaining permits for the occupation of public area.<br/>
+This Recommendation also:</p>
+<ul id="_8e9077bc-5fe7-4d31-8465-bda5cbd7e979">
+<li>
+<p id="_756372e9-a9ef-41d3-9bd6-654e03d4764d">Gives advice on general requirements of the installation procedure,</p>
+</li>
+<li>
+<p id="_4a99a4d8-e0a5-49bb-bed1-cb0aa9c4282e">Gives some application criteria.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.155/en">L.155/L.83</link>
+</th>
+<td valign="top" align="left">
+<p id="_d893fe91-ab91-452f-b156-1aa32b691a4f"><strong>Low impact trenching technique for FTTx networks</strong> (07/2010)<br/>
+With the miniaturization of the telecommunication infrastructure, i.e., with mini-ducts and mini-cables, it has been possible to use a low impact trenching technique to carry out all the steps of the network construction in one single day, in a less invasive way in terms of time and space, and with a smaller construction site than for the previous trenching technologies. This Recommendation describes this trenching technique, which allows the easy installation, in narrow trenches, of underground optical cables and mini-cables in ducts or mini-ducts or directly buried. This type of narrow trench allows the use of reduced dimension machinery in small sized roads, typically those in cities, producing a lower quantity of waste material and so should be used in urban areas. This technology is mainly characterized by the simultaneous work of a suction machine and a trench saw, which allows for the possibility of opening and closing the work site the same day.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.156</th>
+<td valign="top" align="left">
+<p id="_2b5642f5-a2d3-4803-afaa-3f000c89f9a7"><strong>Air-assisted installation of optical fibre cables</strong> (03/2018)<br/>
+Air-assisted installation is based on forcing a continuous high-speed airflow along the cable with an air source. Moving air force pushes the cable and makes it advance forward at a typical speed supported by the equipment.<br/>
+Generally, the tensile load on the cable is an order of magnitude lower than the typical force involved with other installation methods, like pulling techniques, reducing installation hazards. Additionally, with this technique, bends in duct run are not as important a matter of concern as they are in pulling techniques, so that installation speed increases and longer lengths of cable can be installed. Cables are installed without virtual stress, leaving the cable relaxed in the duct upon completion of the installation.<br/>
+There are several variants of installation: with/without a piston at the front end of the cable, or with a leaking piston. For variants without a piston, there is no pulling force at the front end of the cable: air flow exerts a distributed force along the entire cable. In addition, the connection to a pulling cord is not needed.<br/>
+This Recommendation describes air-assisted methods for installation of optical fibres cables in ducts. These methods can be used to install microcables or microelements into microducts, or jacketed cables into ducts or conduits. Installing conditions and equipment required should be different in each case.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.157/en">L.157/L.61</link>
+</th>
+<td valign="top" align="left"><p id="_40c37bc6-4cc7-4b70-ba32-14c7f967cf73"><strong>Optical fibre cable installation by floating technique</strong> (07/2004)<br/>
+This Recommendation describes the floating technique to install optical fibre cables in ducts. The floating process described in this Recommendation is always performed by means of water. It provides considerations on the equipment to be used, and gives advice on steps to be performed, and on procedures and precautions to be taken during the cable installation.<br/>
+In particular this Recommendation:</p>
+<ul id="_a8b3d42c-9456-4073-9392-25fc778e0a54">
+<li>
+<p id="_07b6a2fd-87fa-4611-95cc-e740eae31b16">Gives a general description of the machine and operations needed in performing the installation of optical cables as defined in ITU-T L.10 inside ducts or conduits by means of floating technique,</p>
+</li>
+<li>
+<p id="_c47a4829-0ff6-4afa-ab7a-b24e3f319605">Provides considerations on infrastructure, floating equipment and setting needed in using such a technique,</p>
+</li>
+<li>
+<p id="_2360968b-486f-4e02-a43d-2d47bacfa343">Gives advice on the preliminary steps that should be performed,</p>
+</li>
+<li>
+<p id="_c846c3c9-a833-48d5-8f68-c797ba7a3636">Gives advice on procedures and precautions to be considered during the cable installation.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.158/en">L.158/L.56</link>
+</th>
+<td valign="top" align="left">
+<p id="_7f0d05ce-5bbd-447b-8059-e497b4b13579"><strong>Installation of optical fibre cables along railways</strong> (05/2003)<br/>
+The current situation of the telecommunication market, and wide use of optical fibres as a transmission media, have contributed to the fact that some companies, apart from the incumbent telecommunication providers, like railway companies, have become interested in laying optical cables along their own infrastructures. These installations could be used for internal communications of the railway companies or be offered to other customers for public telephony.<br/>
+On the other hand, telecommunication companies could use the railway facilities to provide telecommunication services to their clients.<br/>
+Types of cable and infrastructures used in these installations can be very different.<br/>
+This Recommendation describes several possibilities, depending on the installation environment.<br/>
+This Recommendation also summarizes all the answers to the questionnaire prepared and circulated previously.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.159/en">L.159/L.77</link>
+</th>
+<td valign="top" align="left">
+<p id="_1b3d33dd-95e7-41de-b7ab-3134f51898eb"><strong>Installation of optical fibre cables inside sewer ducts</strong> (05/2008)<br/>
+The installation of optical cables inside sewer ducts is basically a trenchless technique.<br/>
+Optical cable installation in sewer ducts presents many advantages compared with traditional trench installation techniques, such as: less time for cable laying, not limited by weather conditions, increased protection of cable against damage, no traffic disruption, no noise pollution, no excavation, no damage to road surfaces and underground installations, no heavy equipment, no inconvenience to businesses or to citizens.<br/>
+In general, there are two categories of sewers: man-accessible and non-man-accessible sewers.<br/>
+The definition of whether a sewer is man-accessible or not depends not only on national regulations, but also on the individual regulations of different sewer network operators.<br/>
+This Recommendation describes methods to install optical cables inside sewer ducts. which applies to both the cable installation and the pre-installation of an infrastructure if requested. This Recommendation covers both man and non-man accessible sewer ducts. This Recommendation is not intended to address all the safety concerns, if any, associated with its use. Therefore, it shall be the responsibility of users of this Recommendation to establish appropriate safety and health practices and to determine the applicability of regulatory limitations, if any, prior to its use.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.160/en">L.160/L.82</link>
+</th>
+<td valign="top" align="left">
+<p id="_137650a7-f5d1-4977-8b9c-dd0713afa440"><strong>Optical cabling shared with multiple operators in buildings</strong> (7/2010 + Amd.1 12/2014)<br/>
+Currently, very high broadband network, especially FTTH (fibre to the home) deployment, is a major challenge for operators. One of the main issues is the terminal part of the network with the introduction of optical fibre cables into building up to the apartment with technical difficulties but also administrative ones. This Recommendation deals with the solutions which could be deployed to try to answer to building owners, operators and customers' needs.<br/>
+This Recommendation also refers to the single mode optical cabling in new and existing buildings. Clauses 5 and 6 explain the main constraints of a common optical infrastructure for several operators, offering FTTH services to customers in the same building. Then, the remainder of this Recommendation describes possible cabling solutions which could be deployed in buildings.<br/>
+The proposed building cabling allows access to each operator to optical fibres in the building. The main goal of the concept is to be able to share the optical building cabling among different optical access providers.<br/>
+The objectives are, on one hand, to reduce fibre installation and maintenance costs in the building (both at the customer premises and in the common parts) and, on the other hand, to reduce disturbance (noise, infrastructure works, dust, etc.) for inhabitants. The goal is also to avoid the possibility for an operator to somewhat "pre-empt" the optical link up to the customer in a building or to avoid cabling duplication if more than one FTTH operator is in a building.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.161/en">L.161/L.46</link>
+</th>
+<td valign="top" align="left">
+<p id="_23b963f0-8db9-4f98-ac1c-37c2588db6fe"><strong>Protection of telecommunication cables and plant from biological attack</strong> (10/2000)<br/>
+There is evidence that the outside of the plant can be damaged from biological attack. Some attacks are localized to particular environments which nurture certain types of infestation. Sometimes movement of the plant away from these areas is enough to avoid damage. More typically, the plant is shielded against attack by preventing penetration of pests, some of which are listed in clause 2 of the Recommendation.<br/>
+This Recommendation describes biological attacks and countermeasures for protection of telecommunication cables. It deals with the kinds of biological attack, weakness of cables, features of damage, and considers alternative ways of protecting the plant including dependence on cable position.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.162</th>
+<td valign="top" align="left">
+<p id="_b7044598-1807-4a9e-a765-8b90e163d19e"><strong>Microduct technology and its application</strong> (11/2016)<br/>
+This Recommendation is about microducts technology and its application mainly in the access network, because of the broad interests of this technique by telecommunication installation companies and operators for the deployment of the FTTx networks in order to reutilize and optimize the space inside existing pipes (e.g., large ducts), as well as minimize the digging activities, the social impact and the cost of the plant. The same technology approach may be utilized for new microduct plant installations.<br/>
+This Recommendation describes the solutions for indoor and/or outdoor installation of microducts in different conditions: directly into the trench, existing pipes, aerial applications, access to buildings.<br/>
+These solutions can be applied in all segments of the telecommunications networks, when existing infrastructure is available for reuse or it is necessary to create a new small size one.<br/>
+The required solution of microducts may differ according to the dimensions and the conditions of existing pipes and the dimensions of microcables to be laid.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.163</th>
+<td valign="top" align="left">
+<p id="_6941cb3e-6d68-468d-82f1-2c53c6dc2ae5"><strong>Criteria for optical fibre cable installation with minimal existing infrastructure</strong> (11/2018)<br/>
+Recommendation ITU-T L.163 describes criteria for the installation of optical fibre cables defined in [ITU-T L.110] in remote areas with lack of usual infrastructure for installation including the procedures of cable-route planning, cable selection, cable-installation scheme selection, cable tension and temperature consideration, and the handling, bend protection and river/lake closing of the cable together with pilot tests and training for installation.<br/>
+This Recommendation also describes how to mitigate the considerable risks and/or issues to which the optical fibre cable may be exposed when infrastructures are minimal during installation, maintenance and operation procedures.<br/>
+This Recommendation considers only point-to-point network architectures.<br/>
+This Recommendation is equally applicable to the developing countries where creation of telecom infrastructure is underway to fill up digital divide and can be extended to cover up the difficult rural areas comprising of high altitudes, sea sides, forest and similarly placed regions of the world. The Recommendation will be very helpful in quick restoration telecom services the same are frequently interrupted by other developmental activities.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="_1c7ed57f-9805-4811-9cbc-7009b6d0fefc" unnumbered="true">
+<name>Optical infrastructures (L.200-L.299)</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.200 &#8211; ITU-T L.249: Infrastructure including node element (except cables)</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="http://www.itu.int/rec/T-REC-L.200/en">L.200/L.51</link>
+</th>
+<td valign="top" align="left">
+<p id="_c133a749-a7ff-4fd3-b417-5ff4c164b659"><strong>Passive node elements for fibre optic networks &#8211; General principles and definitions for characterization and performance evaluation</strong> (04/2003)<br/>
+The quality of an optical network will be determined by the performance of each of its individual components. Nodes in this network are one of the key building blocks of the physical network.<br/>
+A node occurs at each opening or end of a cable jacket. Examples of nodes are optical distribution frames, joint closures for underground and aerial applications, street cabinets, etc. Each node shall be capable of performing its expected function in the network, while exposed to the environment that it is intended to reside in. In order to obtain an end-to-end reliable optical network, it is, necessary to apply a consistent evaluation methodology for all the different types of nodes.+
+This Recommendation defines the fundamental parameters that are relevant to describe passive optical node products in a systematically way and it is recommended to be used as a basis for generating performance requirements for passive optical nodes.<br/>
+This Recommendation also summarizes the general requirements that are applicable for all types of passive nodes throughout the entire optical network.<br/>
+An annex contains a description of the applicable environmental classes, while the appendices contain a description of optical test sample construction, test methods for simulating an intervention at a node and a checklist for facilitating the definition of nodes in optical access networks.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.201/en">L.201/L.13</link>
+</th>
+<td valign="top" align="left"><p id="_978f8621-795b-4828-b0cc-779143698660"><strong>Performance requirements for passive optical nodes: Sealed closures for outdoor environments</strong> (04/2003)<br/>
+A node occurs at each opening or end of a cable sheath. When an optical node resides in an outdoor environment, it is generally contained in a sealed enclosure. This is also commonly referred to as an optical closure, optical cable joint or optical sheath joint. In this Recommendation the term "optical closure" will be used.<br/>
+An optical closure comprises a mechanical structure (closure housing) that is attached to the ends of the sheaths joined and a means (organizer) for containing and protecting the fibres and passive optical devices. The optical closure will:</p>
+<ul id="_3ca22494-0717-428f-814f-6c753a4e6610">
+<li>
+<p id="_c76374cd-540d-4dd1-adfb-c013c08517d3">Restore the integrity of the sheath, including mechanical continuity of strength members when required,</p>
+</li>
+<li>
+<p id="_2e98c6cc-2854-4997-a1fa-fb7d4e19f0ef">Protect the fibres, fibre joints and optical devices from the environment in all types of outdoor plant (aerial, direct buried, in ducts and underwater),</p>
+</li>
+<li>
+<p id="_099f9be7-b945-4455-9646-2bd6b1563887">Provide for the organization of the fibre joints, passive devices and the storage of fibre overlength,</p>
+</li>
+<li>
+<p id="_335481c8-711e-4f37-80e8-b1b0d3847c30">Provide electrical bonding and grounding of the metal parts of the sheath and strength members where required. The method of achieving electrical continuity will vary with the type of cable sheath and the type and location of the strength members. Further information is given in ITU-T K.11, K.25 and ITU-T Manual "Protection of telecommunication lines and equipment against lightning discharges".</p>
+</li>
+</ul>
+<p id="_1f4846ab-da1e-4d06-a115-e5f5afd6dcb2">This Recommendation acknowledges that the cable sheaths used with optical fibre cables are of similar design to those used with copper cables. Thus, the methods used for jointing optical fibre cable sheaths are based on those used in sheath joints for conventional copper cable. Reference may be made to the Handbook "Outside plant technologies for public networks" and L-series Recommendations.<br/>
+This Recommendation refers to passive optical nodes in outdoor environments. It deals with the design of the closure housing as well as the fibre organizer taking into account mechanical and environmental characteristics as well as the characteristics of the optical fibre organizer.<br/>
+Moreover, this Recommendation contains:</p>
+<ul id="_e8e0de5b-7818-4617-9940-c6680987771a">
+<li>
+<p id="_fc2f8244-4461-4913-958f-67667d50acfc">A test plan for the performance evaluation of sealed optical closures in two basic environments: underground (OS) or above ground (OA),</p>
+</li>
+<li>
+<p id="_57dce2e1-d2c0-4885-aa3e-6c4aea90d3e0">The simulation of the effect of interventions related to network maintenance,</p>
+</li>
+<li>
+<p id="_b9611464-5d34-4336-9e44-7eaeaedada8c">A checklist for a systematic product characterization according to ITU-T L.51,</p>
+</li>
+<li>
+<p id="_886fcf19-ee0b-4f4a-83c2-b054dbcb617b">A list of additional requirements to reflect special environments (e.g., tunnels) or local conditions.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.202/en">L.202/L.50</link>
+</th>
+<td valign="top" align="left">
+<p id="_4c409bd6-ffe5-4d39-974f-d748a8bfbc55"><strong>Requirements for passive optical nodes: Optical distribution frames for central office environments</strong> (07/2010)<br/>
+This Recommendation deals with general requirements for individual optical distribution frames (ODF), as well as combined frames (ODCF), in a central office environment, including cable ducting systems between multiple ODFs.<br/></p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.203/en">L.203/L.44</link>
+</th>
+<td valign="top" align="left"><p id="_1d927b1c-2731-4efb-81ce-b64be92eed85"><strong>Electric power supply for equipment installed as outside plant</strong> (10/2000)<br/>
+Some equipment (e.g., repeaters) needing a power supply had existed before optical fibres were installed. At that time, electrical power had been mainly supplied from the central office by using a superimposition technique or by having insulated communication and power conductors in the same cable. After optical fibres were introduced, many kinds of optical/electrical equipment which require a power supply system were installed into a telecommunication network, in order to increase capacity. The problem is that optical fibre cannot be used to directly transmit electrical power.<br/>
+Power is supplied by one of three ways:</p>
+<ul id="_9ebff1af-b7a1-4798-9727-6e5e58cb51b8">
+<li>
+<p id="_7d6cac8b-234f-4528-88f6-39d8ebb1ce4f">To feed power from the central office by using metallic wires: To connect the power supply between the central office and the equipment, individual metallic cables or cables with both fibres and copper conductors may be used,</p>
+</li>
+<li>
+<p id="_c79da699-3382-44ca-9f8a-56a59e3d1948">To use a local power supply: In this method, one power supply provides power to all the equipment located within its area by using metallic cables or cables with both fibres and copper conductors. The number of equipment that can be supported in this way may be from two to several tens,</p>
+</li>
+<li>
+<p id="_349d00cb-9fb7-4faf-ac8c-d388bf63554a">Each equipment has its own power supply.</p>
+</li>
+</ul>
+<p id="_9d4592a0-9604-4ed8-8419-9ed33403afa1">This Recommendation describes the provision of electric power supply for outside plants of telecommunication networks. It deals with the methods of power feeding and backup systems.</p></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.204/en">L.204/L.70</link>
+</th>
+<td valign="top" align="left"><p id="_72c1c60e-87f4-40a7-abed-d2a68d54afea"><strong>Managing active electronics in the outside plant</strong> (11/2007)<br/>
+In order to obtain maximum reliability at a minimal cost, network electronics are generally centralized in locations with controlled environments. This is also typical for the initial lay out of copper networks for plain old telephone service (POTS). However, with the increasing demand for connections and bandwidth, operators often face the need to apply active electronics at remote locations. These active nodes cannot always be located inside buildings. This Recommendation focuses on the aspects of active electronics, located at outside plant locations.<br/>
+Active network nodes in outside plant have a number of characteristics that make their design and maintenance more complex than that of passive nodes:</p>
+<ul id="_29c9233d-d1f6-4048-b600-7e6db59afe02">
+<li>
+<p id="_cfbf14aa-46be-4055-abf2-34bf39f38229">Active nodes perform a transformation between input and output signal,</p>
+</li>
+<li>
+<p id="_33ed3342-7a58-4e88-88bf-a6e19c2a992f">Active nodes require electrical powering,</p>
+</li>
+<li>
+<p id="_c0315c31-99f0-468f-8ec4-dab334c26b62">Active nodes dissipate heat.</p>
+</li>
+</ul>
+<p id="_2cf058b4-b93f-45fa-a62e-4a105fa3ad02">This Recommendation covers the mechanical and environmental protection as well as electrical powering and cooling. It also pays attention to maintenance, security and environmental aspects.</p></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.205/en">L.205/L.11</link>
+</th>
+<td valign="top" align="left">
+<p id="_efe25da8-5595-411f-bbaf-f7d70b29845a"><strong>Joint use of tunnels by pipelines and telecommunication cables, and the standardization of underground duct plans</strong> (11/1988)<br/>
+Duct tunnels and trenches are constructions containing one or generally more ducts belonging to different networks. Tunnels which can be inspected (inspectable tunnels) include one or more gangways for initial assembly work and for subsequent control, maintenance and repair operations. This Recommendation provides guidance applicable to tunnels and their routing, provides elements for the elaboration of an installation safety plan, provides guidance for the construction of tunnels and for the development of standardized plans for underground ducts in tunnels used jointly for pipelines and telecommunication cables</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">L.206</th>
+<td valign="top" align="left"><p id="_e7ec3336-66b6-4119-beec-477c03794d41"><strong>Requirements for passive optical nodes &#8211; Outdoor optical cross connect cabinet</strong> (08/2017)<br/>
+This Recommendation refers to optical cross-connect cabinets deployed as passive optical nodes in outdoor environments. Cabinets are widely used for protection of cross-connection points among multiple cables in outdoor environments.<br/>
+An optical cross-connect cabinet comprises a mechanical structure (cabinet housing) for the mechanical protection and the environmental sealing of the internal systems, a fibre management system for guiding and managing fibres and fibre connections to realize cross-connect function and a cable attachment and termination system for the attachment and termination of the cable ends. Patch-cords, splitters and other passive optical devices are optional accessories of a cabinet.<br/>
+The optical cross-connect cabinet will:</p>
+<ul id="_8023207e-6472-4b7c-b65f-beac497e90e5">
+<li>
+<p id="_e8c20dc5-302f-46d9-bb7e-be57dae5f13d">Work as a cross-connection area in outdoor plant,</p>
+</li>
+<li>
+<p id="_d66f3849-7601-41b4-ad99-51d035e84e5c">Protect the fibres, fibre joints and optical devices from the outdoor environment at ground level (normally on a concrete base) and above ground (for example wall mounted or pole mounted),</p>
+</li>
+<li>
+<p id="_59ec06d4-33db-4951-abbc-f9054151ab38">Provide for the organization of the fibre joints, passive devices and the storage of fibre overlength,</p>
+</li>
+<li>
+<p id="_dc7d8df8-5f56-4447-8d7b-3f2ad1726299">Provide electrical bonding and grounding of the metal parts of the cable sheath and strength members.</p>
+</li>
+</ul>
+<p id="_36cf5b05-0756-4e2b-b597-1c10c439722a">This Recommendation also provides the designs of an optical cross-connect cabinet and the means for characterization and evaluation of the performance of a cabinet according to the principles of [ITU-T L.51]. This includes mechanical integrity and optical stability of the product which simulate the effect of environmental factors, or interventions related to network maintenance and reconfigurations. The Recommendation contains a basic test program for the cabinet which is globally applicable. A checklist for a systematic product characterisation according to [ITU-T L.51] is given in the appendix.</p></td>
+</tr>
+<tr>
+<th valign="top" align="left">L.207</th>
+<td valign="top" align="left"><p id="_d760a4eb-a11c-426c-bec4-36bf17d5f228"><strong>Passive node elements with automated ID tag detection</strong> (03/2018)<br/>
+With the fast growth of FTTx, rapid deployment and effective maintenance of a new passive fibre cable network (i.e., optical distribution network, ODN) have become major challenges for telecommunications network operators. Global communications industry has been developing passive node elements with automated ID tag detection to enable automated information collection on optical fibre connectivity for more efficient installation, operation and maintenance of optical fibre networks.<br/>
+This Recommendation focuses on hardware aspects on this type of passive node elements and the description of the general features, characterization and performance specifications for node elements with automated ID tag detection, including the environmental conditions, functional requirements, performance requirements, and mechanical and electrical/optical interface requirements.<br/>
+A product characterization checklist is included in AppendixIII of the Recommendation.
+The Recommendation also addresses the general features, characterization and performance requirements for passive node elements with ID tag detection which supports automatic information collection on fibre connectivity. This Recommendation focuses on both indoor and outside plant deployment conditions and includes the following:</p>
+<ul id="_99d840d6-3465-4928-a6ce-137a11a23d64">
+<li>
+<p id="_cfccfa36-b01b-4c70-909c-316d8baa8d6b">Functional requirements,</p>
+</li>
+<li>
+<p id="_e7ded565-de16-453c-bd99-4e9192d8e076">Automated ID tag detection performance requirements,</p>
+</li>
+<li>
+<p id="_c5292327-9862-49d0-b636-0058166bb3ac">Mechanical and electrical/optical interface requirements.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">L.208</th>
+<td valign="top" align="left"><p id="_682a471a-eb06-495a-a93b-5cbfa390326a"><strong>Requirements for passive optical nodes &#8211; Fibre distribution boxes</strong> (08/2019)<br/>
+Fibre distribution boxes (FDB) are widely used for the protection of interconnection points between multi-fibre distribution cables and drop cables in access networks. The boxes along with internal functional assemblies can be referred to as fibre distribution boxes. A fibre distribution box comprises a mechanical structure (FDB housing) for mechanical protection and environmental sealing of internal systems, an FDB fibre management system for guiding, storing and managing the fibres and fibre connections inside the node, and a cable attachment and termination system for attaching and terminating cable ends of multi-fibre distribution cables and drop cables. The fibre distribution box will:</p>
+<ul id="_2ea8c873-76b5-4779-83d3-205b95c6694a">
+<li>
+<p id="_bdff48f9-b9cb-4c45-85b6-24cfaec7bfd8">Work as a fibre distribution area near the users in access network,</p>
+</li>
+<li>
+<p id="_b6262818-e789-4cde-b627-9563228d8a51">Protect the fibres, fibre interconnections and optical devices from indoor environment or outdoor environment at above ground level, usually mounted on wall or pole,</p>
+</li>
+<li>
+<p id="_9e06c755-ccee-471c-82e2-01a0b0ee9aec">Provide for the organization of the fibre interconnections, passive devices and the storage of fibre overlength (excess fibre length),</p>
+</li>
+<li>
+<p id="_332ee9cb-58a3-43f1-8174-b8c8130c6833">Provide electrical bonding and grounding of the metal parts of the cable sheath and strength members.</p>
+</li>
+</ul>
+<p id="_8a871bad-ec7c-4cba-924c-63c45f01a50e">This Recommendation provides the requirements of fibre distribution boxes and the means for characterization and evaluation of the performance of boxes according to the principles of [ITU-T L.200]. This includes mechanical performance, sealing performance and optical stability of the product which simulate the effect of environmental factors or interventions related to network maintenance and reconfiguration. It contains a basic test program for the box which is globally applicable. Additional requirements may be agreed between customer and supplier to reflect local or special conditions. All functions and features that a product may contain should be reflected in the mix of test samples that are subjected to the test program.</p></td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">L.250 &#8211; L.299: General aspects and network design</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.250/en">L.250/L.90</link>
+</th>
+<td valign="top" align="left">
+<p id="_b1fbd90a-bec4-4b80-b603-a0371962a4e2"><strong>Optical access network topologies for broadband services</strong> (02/2012)<br/>
+Progress on multimedia technologies has led to the active development of many kinds of broadband services such as data and video communication using access networks. It is important that high-speed broadband networks be developed economically to provide such services to all subscribers. In order to provide these services in a timely way, it is necessary to construct optical access networks quickly, efficiently and cost-effectively. However, recent progress in the application of optical plant technology in local access networks has provided substantial technical and economical experiences in several countries. Considering this, the network design must take into account planning, construction, maintenance and operation.<br/>
+The development of optical fibre access networks for broadband services can largely be divided into four stages based on the increasing number of customers; namely the initial stage, the growth stage, the mature stage and the final stage.<br/>
+Here, an optical access network is defined as a network of optical fibre cables that extend from a carrier's central office to the cabinets, buildings, individual homes, apartment blocks or business offices for broadband services.<br/>
+This Recommendation describes the optical access network to be used in the design and construction of fibre to the home (FTTH). It deals mainly with access network architectures and the upgrading or new deployment of optical fibre to optical access networks.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.251/en">L.251/L.72</link>
+</th>
+<td valign="top" align="left">
+<p id="_55bca04c-43c8-4f4e-8d99-4fc5ac2af40a"><strong>Database for optical access network infrastructure</strong> (01/2008)<br/>
+Progress on communication technologies has led to the active development of many kinds of broadband service such as voice, data and video communication using access networks. It is important to realize high-speed broadband networks to provide such services economically. In order to provide these services in a timely way, optical access networks must be constructed. In addition, there will be a large expansion of the optical access network infrastructure, including optical fibre and optical fibre cable, as the number of customers increases. Therefore, databases for the optical access network infrastructure for network design, maintenance, operation, and administration are important and should be considered.] This Recommendation describes the configuration and functions of databases for optical access network infrastructure to be used in the design, maintenance, operation, and administration of optical access networks.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.252/en">L.252/L.86</link>
+</th>
+<td valign="top" align="left">
+<p id="_fc7571c3-469e-4e42-a344-07a857097742"><strong>Considerations on the installation site of branching components in passive optical networks for fibre to the home</strong> (07/2010)<br/>
+Passive optical networks (PONs) are used to provide a fibre to the home (FTTH) service to subscribers in many regions and countries. The primary feature of a PON is that it realizes FTTH economically by sharing fibre access infrastructures, namely an optical line termination (OLT), fibre cable and branching component, between multiple subscribers. The branching component is one of the most important elements in a PON because its installation site has a powerful effect on both capital expenditures (CAPEX) and operating expenditures (OPEX). Therefore, the branching component installation site is an important consideration in designing this network. This Recommendation proposes considerations for selecting the location of the branching component in the network as a function of the scale of the subscriber density and geographical extent.<br/>
+This Recommendation also describes considerations for determining the installation site of a (fibre optic) branching component in a PON designed to provide FTTH.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.253/en">L.253/L.47</link>
+</th>
+<td valign="top" align="left"><p id="_bd9ec87d-6c42-4fef-abb6-7df6d6a081f5"><strong>Access facilities using hybrid fibre/copper networks</strong> (10/2000)<br/>
+This Recommendation gives information and guidelines about access facilities using hybrid fibre/copper (HFC ) networks.<br/>
+HFC networks are necessary for the future introduction of multimedia services with several broadband applications. HFC networks offer more chances of use as only pure networks for telecommunication or for cable television (CATV ) distribution. Additional services as Pay-TV, Pay-per-View, Video-on Demand, home-banking, -working, -shopping and Internet access can be offered by means of these networks.<br/>
+HFC networks also represent a step in the evolution process to global information infrastructure (GII), which means a connection between CATV, telecommunications, data and mobile networks.<br/>
+AppendixII of the Recommendation provides examples of HFC networks.<br/>
+In particular, this Recommendation:</p>
+<ul id="_28737abf-404d-4d0b-b775-5e6155d84dc5">
+<li>
+<p id="_73d18ce5-9656-42e9-aa75-2ddb09b3ad97">Gives general information on the fundamental types of hybrid fibre/copper networks,</p>
+</li>
+<li>
+<p id="_c107b64a-1ed8-4354-9fc0-1f7757f8efc4">Describes the most important physical elements of HFC networks apart from transmission equipment,</p>
+</li>
+<li>
+<p id="_567b70b6-cd22-4944-a156-201daa573873">Gives general information and guidelines for the installation of HFC networks.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.254/en">L.254/L.62</link>
+</th>
+<td valign="top" align="left">
+<p id="_1129f19f-e6a4-4f86-b580-fc43423411d8"><strong>Practical aspects of unbundling services by multiple operators in copper access networks</strong> (09/2004)<br/>
+In many countries, other licensed operators (OLOs) are allowed to compete with the incumbent operator. This creates an environment where a company must install, operate and maintain its network bearing in mind that other networks exist right beside it, or even at the same location. In several countries, it is also determined that the operators should share some parts of the network with OLOs, in a transparent process to the users. This is called unbundling of network elements or, in short, unbundling, and is a very complex task. Some new issues must be taken into account to allow the accommodation of those operators sharing the same location to do so without problems. To guarantee an environment where operators interact but do not affect the quality of service provided by other operators, legal, regulatory and administrative statements must be followed by the correct technical solutions, which assure the network integrity, easy use of equipment and access to security. This Recommendation is intended to provide the guidelines to achieve these targets for the local loop in copper networks.<br/>
+In particular, this Recommendation describes a number of methods how network elements can be unbundled. Co-location is also described, as it is intrinsically related to unbundling.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left"><link target="https://www.itu.int/rec/T-REC-L.255/en">L.255/L.17</link><br/>
+(Superseded)</th>
+<td valign="top" align="left">
+<p id="_8c7f07f0-bc50-4d47-bca1-5d935b4f6ab1"><strong>Implementation of connecting customers into the public switched telephone network (PSTN) via optical fibres</strong> (06/1995 + Appendix 1 02/1997)<br/>
+This Recommendation provides guidance for the implementation of connecting customers into the public switched telephone network (PSTN) via optical fibres. Appendix 1 gives some examples of possible applications.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.256/en">L.256/L.45</link>
+</th>
+<td valign="top" align="left">
+<p id="_30bd8ac8-0960-4beb-8a56-0b04c721b691"><strong>Minimizing the effect on the environment from the outside plant in telecommunication networks</strong> (10/2000)<br/>
+This Recommendation details the methodology adopted in order to minimize the effects (e.g., energy and CO<sub>2</sub>) caused by the use of outside plant in the environment. This is based on the whole life-cycle analysis using a "cradle to the grave" perspective for cables and equipment. The life cycle is divided into three phases: manufacturing, usage and scrapping.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.257/en">L.257/L.39</link>
+</th>
+<td valign="top" align="left"><p id="_dc43c611-8920-4485-94df-f1374fdffc0f"><strong>Investigation of the soil before using trenchless techniques</strong> (05/2000)<br/>
+This Recommendation describes the main techniques that allow an investigation of the soil in order to get information about the position of buried objects and the nature of the ground. This data is necessary to plan the execution of work using trenchless techniques and to optimize the drilling path thus avoiding the risk of damage to both the existing infrastructures and the drilling equipment; hence preventing drilling failures due to obstacles or ground characteristics.<br/>
+This Recommendation gives advice on general requirements of the three different phases in which the investigation work can be divided: preliminary operations, an on-site survey and the output of utility maps.<br/>
+In particular, this Recommendation:</p>
+<ul id="_53c06e2f-298e-4e78-953f-ae379428ecea">
+<li>
+<p id="_3fb19e2e-5a09-4992-a839-abd16c1f2a23">Describes the preliminary operations that are required before performing a direct on-site investigation,</p>
+</li>
+<li>
+<p id="_3ac033aa-1754-47e3-9913-af10c3af5a8a">Describes the main techniques and methods that can be used to make soil investigation and gives advice on some operational procedures,</p>
+</li>
+<li>
+<p id="_eed1afaf-47c3-41a4-a31d-b62ba22e1a83">Gives advice on how to produce the final map of the investigated area.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="http://www.itu.int/rec/T-REC-L.258/en">L.258/L.63</link>
+</th>
+<td valign="top" align="left">
+<p id="_548f8ddc-a036-4f5c-9ab2-8342f1d450cf"><strong>Safety procedures for outdoor installations</strong> (10/2004)<br/>
+This Recommendation has the objective to provide guidance to administrations on safety practice for personnel and fire protection for outdoors telecommunications installations such as duct systems, manholes, tunnels, aerial, underground and buried networks, subscribers, equipment for outside plant, and networks in sewage infrastructures.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.259/en">L.259/L.73</link>
+</th>
+<td valign="top" align="left">
+<p id="_cf865943-a01d-4fcf-8eba-94e84e088584"><strong>Methods for inspecting and repairing underground plastic ducts</strong> (04/2008)<br/>
+Placing cables in conduits is preferred because it has a principle advantage that the cable placement operation is separated in time from the actual conduit construction phase. The protection of the cable with the passage of time and the possibility of repeated access, cable removal and delayed cable installation make the method of placing cables in ducts more attractive. The method, however, has a disadvantage in that the initial cost of conduit construction is expensive. It is noted that underground ducts are prone to being deformed by the burden of earth pressure, which makes it necessary to check the ducts before cable installation, and to repair defective ducts before placing cables in conduits.<br/>
+This Recommendation deals with inspection methods such as test mandrel and CCTV system to check duct quality, and it also describes various methods that are utilized to repair underground ducts.<br/>
+Repairing methods by trenchless techniques are introduced and traditional repairing method is presented. Additionally, a guideline to select an appropriate repairing method is proposed.<br/>
+This Recommendation is limited to the methods for underground ducts in which no cables are installed, and focused on the methods for underground ducts that have single-way duct unit systems.<br/>
+This Recommendation is used for plastic pipes having a diameter ranging from 90 to 110 mm.<br/>
+It is expected that this Recommendation will provide alternative solutions for inspecting and repairing work.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.260/en">L.260/L.84</link>
+</th>
+<td valign="top" align="left">
+<p id="_048d74db-01b0-467c-85f2-ef3346aef57d"><strong>Fast mapping of underground networks</strong> (07/2010)<br/>
+Nowadays, Georadar (GPR &#8211; ground penetrating radar) is used for the investigation of the soil before using trenchless techniques, in order to detect some utilities below the ground, like gas or water ducts, that intersect the area where the trench should be dug. However, the existing technologies require the post-processing of data, which is time-consuming and requires highly skilled staff.<br/>
+This Recommendation describes a fast solution [GPR3D (ground penetrating radar 3 dimensions)] for mapping underground networks, necessary to plan the execution of work using trenchless or digging techniques and to optimize the path, thus avoiding the risk of damage to both the existing infrastructures and the drilling equipment. This Recommendation gives advice on general requirements about this solution and the output of utility maps.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.261/en">L.261/L.89</link>
+</th>
+<td valign="top" align="left">
+<p id="_b82bfae3-3e3c-494c-9f20-d4996cc32de1"><strong>Design of suspension wires, telecommunication poles and guy-lines for optical access networks</strong> (02/2012)<br/>
+Suspension wires, telecommunication poles and guy-lines that support aerial optical fibre cables are important facilities for providing broadband services. An appropriate design is needed to maintain the reliability of these facilities and services. Moreover, they are big facilities and installed at high position, and so they should be managed in a way that ensures sufficient safety. To realize these requirements, a design is needed that carefully considers facility strength.<br/>
+This Recommendation describes the general requirements and a design guide for suspension wires, telecommunication poles and guy-lines that support aerial cables for optical access networks. This Recommendation also describes loads applied to the infrastructures.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.262/en">L.262/L.94</link>
+</th>
+<td valign="top" align="left">
+<p id="_5848a609-8f5a-42b1-8667-8b54cbb364bf"><strong>Use of global navigation satellite systems to create a referenced network map</strong> (01/2015)<br/>
+This Recommendation provides general implementation guidelines regarding the creation, operation and maintenance of the telecommunication network map by using the global navigation satellite system (GNSS) and geo-referenced systems. This Recommendation also deals with potential information on outdoor infrastructures to be collected, the procedure for creating a geo-referenced map and the operation and maintenance of geo-referenced systems when the network infrastructure is updated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="_47f65c41-86bf-4e27-bb1d-6002ee5d4ab6" unnumbered="true">
+<name>Maintenance and operation (L.300 &#8211; L.399)</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.300 &#8211; ITU-T L.329: Optical fibre cable maintenance</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.300/en">L.300/L.25</link>
+</th>
+<td valign="top" align="left">
+<p id="_6574599b-0a71-4086-9714-f0818f273ad5"><strong>Optical fibre cable network maintenance</strong> (01/2015)<br/>
+This Recommendation deals with general features and definitions for the maintenance and operation of optical fibre cable networks for use in telecommunication services. This version is intended to be appropriate for the current situation with respect to optical fibre cable network maintenance and related Recommendations.<br/>
+In particular, the objective of this Recommendation is to identify the general functions of optical fibre cable network maintenance, and to provide information on relevant Recommendations in the field of maintenance and operation of optical fibre cable networks.<br/>
+This Recommendation also deals with non-gas pressurized cable networks. The maintenance and operation of the transmission equipment and facility management are not dealt with in this Recommendation. Submerged optical fibre cable such as that used in submarine systems is also not dealt with in this Recommendation, which is described in, for example, [ITU-T G.979].]</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.301/en">L.301/L.41</link>
+</th>
+<td valign="top" align="left">
+<p id="_f5f94491-4985-47e3-8e85-55e000490a25"><strong>Maintenance wavelength on fibres carrying signals</strong> (05/2000)<br/>
+This Recommendation deals with maintenance wavelength on fibres carrying signals without in-line optical amplifiers.<br/>
+ITU-T Recommendation L.25 "Optical fibre cable network maintenance" defines comprehensive guidelines to maintain optical fibre and suitable wavelength should be used for preventive maintenance as defined by this Recommendation.<br/>
+Maintenance systems which use wavelengths in a vacant window of optical fibre carrying signals are being operated currently and it should be taken into account that in-service maintenance of optical fibre should not interfere with the normal operation and expected performance of the information channels.<br/>
+In particular, this Recommendation assigns the wavelengths for fibre identification, fault location and maintenance monitoring that may be used to manage the physical plant. The maintenance wavelength assignment has a close relationship with the transmission wavelength assignment indicated in Supplement 39 to the ITU-T G-series Recommendations.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.302/en">L.302/L.40</link>
+</th>
+<td valign="top" align="left">
+<p id="_34ef5b94-aa90-4c69-8ee9-123398eec610"><strong>Optical fibre outside plant maintenance support, monitoring and testing system</strong> (10/2000)<br/>
+Outdoor optical fibre maintenance is important to create networks and to maintain their reliability. As traffic increases, higher capacity fibre cables are installed. Recently, optical fibre cables with over 100 cores have become common, so many transmission systems use the same optical fibre cable. Minimal levels of maintenance and testing are required to provide high reliability and quick response.<br/>
+After a cable is installed, functions like fibre monitoring and control must be done without interfering with the data transmission signals. By monitoring dark fibres (that is, without signal traffic) an indication is given of the performance of the in-service fibres as the degradation and breaks that a cable undergoes affects all fibres in the same way. Nevertheless, greater reliability is achieved by monitoring the fibres with traffic. Also, fibre identification is important to control fibre networks because several fibres may have to be chosen from within a cable, even if the cable has many fibres in-service.<br/>
+This Recommendation deals with outdoor optical fibre maintenance support, monitoring and testing systems for both trunk and access optical fibre cable networks. It describes fundamental requirements, principles, and architecture to develop a suitable guide to design systems.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.310/en">L.310/L.53</link>
+</th>
+<td valign="top" align="left">
+<p id="_37418db4-1524-4ad5-b030-60ece760575b"><strong>Optical fibre maintenance depending on topologies of access networks</strong> (04/2016)<br/>
+The point-to-multipoint and ring network architectures are very important in terms of constructing optical fibre networks both effectively and inexpensively. However, some considerations on the testing and maintenance method are required for the point-to-multipoint and ring network architectures in addition to conventional single star architecture.<br/>
+This Recommendation deals with optical fibre maintenance depending on topologies of access networks. It describes the fundamental requirements, maintenance section, testing and maintenance items, and methods for developing a suitable guide to maintaining point-to-multipoint and ring optical networks, respectively.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.311/en">L.311/L.93</link>
+</th>
+<td valign="top" align="left">
+<p id="_f4661d03-683d-44c9-a076-6d09bc76d69a"><strong>Optical fibre cable maintenance support, monitoring and testing systems for optical fibre trunk networks</strong> (05/2014)<br/>
+Trunk line communication traffic is increasing rapidly. An optical fibre line testing system is essential for reducing maintenance costs and improving service reliability in optical fibre networks. Some technologies that are used in trunk lines (e.g., WDM systems and EDFA) require additional functions and procedures for optical fibre line testing systems. The system requirements described in this Recommendation help to achieve reliable maintenance of optical cables for trunk lines.<br/>
+This Recommendation deals with optical fibre maintenance support, monitoring and testing systems for trunk optical fibre cable networks. It describes fundamental requirements, functions, and test procedures for use in maintenance operations. It applies to the test equipment and methods, configuration and optical devices, such as test access modules for connecting the test equipment to the communication line, which are components of the maintenance system.<br/>
+The aspects related to active monitoring to detect communication signal degradation and the status of the transmission equipment are described in [ITU-T G.697]. The functional architecture and parameters specialized for submarine applications are described in [ITU-T G.979].</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.312/en">L.312/L.68</link>
+</th>
+<td valign="top" align="left">
+<p id="_6be2bd78-fe49-42de-b54a-6d188456eba7"><strong>Optical fibre cable maintenance support, monitoring and testing system for optical fibre cable networks carrying high total optical power</strong> (10/2007)<br/>
+Broadband optical access services are now commercially available. The number of FTTx subscribers is increasing rapidly. Trunk line communication traffic is also growing quickly due to the expansion of FTTx services. To meet the demand for increased transmission capacity, wavelength division multiplexing (WDM) and distributed Raman amplifier (DRA), technologies have been employed in trunk line transmission systems, and consequently high power communication signals and high pump powers have been introduced into optical fibre cables. If reliable optical cable networks are to be maintained, the study of optical fibre cable maintenance systems that can be applied to optical fibre cable carrying a high total optical power must be undertaken.<br/>
+When DRA technology is applied to WDM systems, a high-power light is launched into optical fibres and fibre-optic components. The intensity of that optical power reaches several watts, and such a high-power light may induce damage in optical fibres or fibre-optic components.<br/>
+During maintenance work, network operators must handle optical fibres or fibre-optic components carefully in central offices that employ high power systems with a view to preventing accidental eye or fire hazards. Since the light with the highest optical power is launched into the optical fibre distribution systems and the maintenance systems in a central office, clarify the effect that it has on the fibre-optic components in these systems must be clarified.<br/>
+This Recommendation describes the functional requirements for optical fibre cable maintenance systems for optical fibre cable carrying a high total optical power. It also considers safety procedures and guidelines for the maintenance of outside optical fibre plant carrying a high total optical power.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.313/en">L.313/L.66</link>
+</th>
+<td valign="top" align="left">
+<p id="_26cf6fea-2133-470f-84a8-7ddb71e00dfb"><strong>Optical fibre cable maintenance criteria for in-service fibre testing in access networks</strong> (05/2007)<br/>
+In the FTTx era, effective and efficient maintenance must be provided for optical cable networks. With a view to realizing a highly reliable optical cable network that transports WDM signals with a wide spectral bandwidth, maintenance criteria must be established for testing in-service fibre lines without interfering with optical communication signals in the access network.<br/>
+This Recommendation provides guidance on the use of an out-of-band remote test system. An alternative approach is to monitor key parameters of the transmission equipment, such as the OLT transmitted power and the ONU received power, but this approach is not examined in this Recommendation.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.314/en">L.314/L.85</link>
+</th>
+<td valign="top" align="left"><p id="_55ee2c23-44a3-4492-9c04-8f61cc312e71"><strong>Optical fibre identification for the maintenance of optical access networks</strong> (11/2018)<br/>
+[The demand for broadband access services has increased throughout the world in recent years. The number of FTTx and mobile subscribers is increasing rapidly, and a large number of optical fibre cables are being installed daily to meet the current demand. During the installation and maintenance of optical fibre communication networks, field engineers must first correctly identify a specific fibre from a bundle of fibres to avoid the incorrect cutting and/or connection of an optical fibre at a worksite. In particular, engineers should distinguish "live" (signal-carrying) and all dark fibres, since service reliability must be maintained. Therefore, it is very important to employ optical tests that distinguish a fibre for identification in an in-service optical fibre cable with no degradation in transmission quality even if the field engineer selects the wrong fibre.]<br/>
+This Recommendation deals with important considerations with respect to the requirements for an optical fibre identification technique used for construction and maintenance work in optical access networks by detection of leaky light waves.<br/>
+This Recommendation:</p>
+<ul id="_d3ef5b42-977f-4ab0-ac28-77fba5089078">
+<li>
+<p id="_bb157f9b-d791-4a5b-94a8-c362fbea690d">Describes functional requirements and methods for optical fibre identification for the construction and maintenance of optical access networks,</p>
+</li>
+<li>
+<p id="_13d8928d-f1bf-4e00-8564-0224ccca8679">Deals with an optical fibre identification technique that functions by measuring certain optical characteristics. It also considers the procedures and requirements for optical fibre identification, including in-service fibre lines, without interfering with optical communication signals in access networks,</p>
+</li>
+<li>
+<p id="_f63c5ca9-1aed-45ef-b033-a2210e4d6bc5">Describes the optical fibre identification technology that can be applied to different topologies of optical access networks.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">L.315</th>
+<td valign="top" align="left"><p id="_4bbaf9bc-bf73-45cb-9cc4-d0b62a4c58c1"><strong>Water detection in underground closures/cabinets for the maintenance of optical fibre cable networks with optical monitoring system</strong> (03/2018)<br/>
+Widely used underground optical fibre cables employ water-blocking materials and are maintenance free as regards water penetration. However, the water penetrated into the closures/cabinets would increase risk of significant degradation of the optical fibres and/or connectors. Recommendation ITU-T L.315 describes the methodology for water detection in splice closures/cabinets, the fundamental requirements for a water sensor and technical considerations as regards the OTDR based water ingress monitoring and location system design<br/>
+This Recommendation covers:</p>
+<ul id="_b50a7971-5975-46d2-8b04-e4d74a399068">
+<li>
+<p id="_45f39b87-e3a4-42c7-ba17-0c5e3acb3d7a">Water detection system in splice closures/cabinets to ensure the reliability of underground optical fibre cable networks,</p>
+</li>
+<li>
+<p id="_e8bc1f49-b936-487f-bf0a-dbd8c1c47f02">Fundamental requirements for water sensor attached to non-active optical fibre dedicated for maintenance use,</p>
+</li>
+<li>
+<p id="_efd89f0f-a6e5-4bb4-9eb4-f15a10cf5f97">Technical considerations for the design of an optical fibre cable maintenance support, monitoring and testing system to monitor and locate water penetration.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.330 &#8211; ITU-T L.349: Infrastructure maintenance</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="http://www.itu.int/rec/T-REC-L.340/en">L.340/L.74</link>
+</th>
+<td valign="top" align="left">
+<p id="_59440c99-ac31-4b80-bfde-4f3de997de6b"><strong>Maintenance of cable tunnels</strong> (04/2008)<br/>
+Like other public infrastructures such as buildings, bridges and roads, cable tunnels are deteriorating. For example, cracks and water leakages happen and these phenomena degrade the safety and serviceability of the cable tunnel.<br/>
+Notwithstanding how well a cable tunnel is constructed, it will require preventive maintenance to preserve its integrity and to prolong its life.<br/>
+This Recommendation describes the needs and procedures of regular and detailed inspections. Typical inspection items are presented according to the type of cable tunnels and typical inspection technologies including non-destructive testing (NDT) are described.<br/>
+Appropriate countermeasures against deteriorations such as cracks and water leakage are presented. Finally, the Korean experience is attached to Appendix I to provide examples of inspection frequency and comprehensive monitoring sheets for cable tunnel maintenances.<br/>
+It is expected that this Recommendation provides better understandings of various deteriorations and can be utilized for cable tunnel maintenances.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.341/en">L.341/L.88</link>
+</th>
+<td valign="top" align="left">
+<p id="_153801b5-1ce6-4d59-a988-b630caf4b663"><strong>Management of poles carrying overhead telecommunication lines</strong> (07/2010)<br/>
+A telecommunication pole is one of the most important network infrastructures used to carry overhead telecommunication lines. In wooden poles, as support of communication lines, the wood, when the antiseptic efficiency of the preservative treatment has decreased below the threshold, is subjected to the attack of biological agents that cause its destruction.<br/>
+Healthy wood of poles must preserve the mechanical strength that line security requires.<br/>
+The heavy cost of wooden poles as well as of pole replacement requires conservation to extend the life of the poles, while paying sufficient attention to worker safety and the expected lifetime of the poles. This can be achieved by means of different systems such as reimpregnation, lowering, recover and reclassification.<br/>
+Another material used in common utility poles is concrete. These poles are planted into the ground, but in some cases, they lean or are overturned by forces such as strong wind. This phenomenon is mainly due to a foundation failure.<br/>
+This Recommendation deals with integrity testing for telecommunication pole foundation.</p>
+</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.350 &#8211; ITU-T L.379: Operation support and infrastructure management</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.360/en">L.360/L.80</link>
+</th>
+<td valign="top" align="left">
+<p id="_b8a716d5-1ec2-4a57-95ff-0b68d50881c5"><strong>Operations support system requirements for infrastructure and network elements management using ID technology</strong> (05/2008)<br/>
+Telecommunication networks require proper allocation of network elements and planned periodical maintenance to deliver services quickly and efficiently, to minimize out-of-service risk and to guarantee service level agreement satisfaction. It is particularly important to focus on the issue of optical-fibre-based infrastructures and the large amount of related transmitted information. Network elements that undergo allocation and maintenance operations can be of several types and can differ in terms of position, dimensions, services, field work and scheduled times for periodical planned maintenance.<br/>
+Identification data (ID) technology can be applied to solutions that focus on the proper management of infrastructure and network elements. The ID uniquely identifies an element of interest in terms of its allocation and maintenance.<br/>
+This Recommendation deals with support systems for infrastructure and network elements management using ID technology for telecommunication networks. In particular, it describes system architecture and points out functional requirements for data transmission, database access and interoperability for an operations support system (OSS) that enables operations, administration and maintenance of network elements.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.361/en">L.361/L.64</link>
+</th>
+<td valign="top" align="left">
+<p id="_bb970412-1693-412b-826c-c39a32bd1918"><strong>ID tag requirements for infrastructure and network elements management</strong> (10/2012)<br/>
+Telecommunication networks require proper allocation of network elements and planned periodical maintenance to deliver services quickly and efficiently, to minimize out-of-service risk and to guarantee service level agreement satisfaction. It is particularly important to focus on the issue of optical-fibre-based infrastructures and the large amount of related transmitted information. Network elements that undergo allocation and maintenance operations can be of several types and can differ in terms of position, dimensions, services, field work and scheduled times for periodical planned maintenance.<br/>
+Identification data (ID) technology can be applied to solutions that focus on the proper management of infrastructure and network elements. The ID uniquely identifies an element of interest in terms of its allocation and maintenance.<br/>
+This Recommendation deals with support systems for infrastructure elements management using ID technology and provides the criteria for ID tag design.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.362/en">L.362/L.69</link>
+</th>
+<td valign="top" align="left">
+<p id="_888a29c1-3646-4530-97b2-c72fffb92f28"><strong>Personal digital assistant requirements and relevant data structure for infrastructure and network elements management</strong> (06/2007)<br/>
+Telecommunication networks require at least planned periodical maintenance to minimize out-of-service risk and guarantee service level agreement satisfaction. Focusing on optical fibre-based infrastructures and the large amount of related information transmitted, the issue is even more critical. Network elements that are subjected to maintenance actions can be several and different according to position, dimensions, in field work and scheduled times for periodical planned maintenance.<br/>
+This Recommendation deals with telecommunication networks maintenance support system. In particular, it points out requirements for personal digital assistant (PDA) equipment used in field activities and data structure for information storage. PDA supports operators for paperless data collection and automatic database upgrade.</p>
+</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.380 &#8211; ITU-T L.399: Disaster management</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.390/en">L.390/L.92</link>
+</th>
+<td valign="top" align="left">
+<p id="_c27b057a-76f6-4f50-91e1-4f55d4644933"><strong>Disaster management for outside plant facilities</strong> (10/2012)<br/>
+Recently, natural disasters such as earthquake and flood have occurred more frequently. Outside plant facilities such as manholes and poles are occasionally damaged by these disasters, and as a result, telecommunication services are interrupted. In order to minimize damage and/or to protect outside plant facilities safely, appropriate disaster management is needed.<br/>
+This Recommendation gives an overview of the technical considerations for protecting outside plant facilities from natural disasters. Disaster management for outside plant facilities such as cables, poles and manholes are introduced, and countermeasures for natural disasters such as earthquakes, strong winds and floods are described. In the appendices, Korean and Japanese experiences of disaster management are respectively introduced. Answers to a related questionnaire are also included to provide basic information about natural disasters around the world. The objective of this Recommendation is to share observations, knowledge, experiences and practices internationally, so that local engineering practices can be adopted to improve the disaster resistance performance of outside plant facilities.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.391/en">L.391/L.81</link>
+</th>
+<td valign="top" align="left"><p id="_fbee6497-61b2-40ec-9463-e39b85412d08"><strong>Monitoring systems for outside plant facilities</strong> (11/2009)<br/>
+Natural disasters such as those caused by strong wind, flood, landslide, and earthquake happen more frequently than ever and their damage is increasing. Human-caused disasters such as those caused by fire, explosion, and collapse also happen on a large scale. Outside plant facilities including telecommunication buildings are exposed to these disasters and may be affected adversely, which implies that preventive measures are needed. This Recommendation deals with monitoring systems to mitigate damage and to secure outside plant facilities against disasters.<br/>
+In particular, this Recommendation:</p>
+<ul id="_b3bfef8f-5eae-4be2-90ae-c2330599c98d">
+<li>
+<p id="_ebc731e0-4abd-4b62-a187-8f2550600044">Describes typical emergency management for outside plant facilities,</p>
+</li>
+<li>
+<p id="_e684f5ee-d988-4927-b2dc-0ba062c280c0">Describes monitoring systems for outside plant facilities using wireless or wired network,</p>
+</li>
+<li>
+<p id="_c74fdb03-1676-4947-81b0-180e0b9b5b0a">Provides an overview of disaster monitoring systems for outside plant facilities,</p>
+</li>
+<li>
+<p id="_6ba4d973-5f70-4176-a1e2-e1af127ba79d">Provides design considerations for disaster monitoring systems for outside plant facilities.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.392/en">L.392</link>
+</th>
+<td valign="top" align="left">
+<p id="_41fc9f18-5fd5-4c03-9ad6-88e1d194f66b"><strong>Disaster management for improving network resilience and recovery with movable and deployable ICT resource units</strong> (04/2016)<br/>
+This Recommendation introduces an approach to improve network resilience against disasters and to assist network recovery after disasters by physically mobilizing units and facilities that package movable and instantaneously deployable resources for information and communication technologies (ICT).<br/>
+The movable and deployable ICT resource unit (MDRU) is a collection of ICT resources that are packaged as an identifiable physical unit, movable by any of multiple transportation modalities, act as a stand-in (substitute) for damaged network facilities, and reproduce and extends their functionalities. The MDRU also brings extra ICT resources to meet the explosion in communication demands expected in disaster areas.<br/>
+Focusing on the use of the units as a substitute for local nodes, this Recommendation reviews target objectives of disaster management and gives high-level requirements for both operations and facilities as a guideline. To shorten deployment time, which is the primary objective of network recovery with substitute, this Recommendation shows how to optimize the process that starts with equipment preparation in daily operation to service offering at the site of the disaster.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table id="_25afefc6-1577-4207-90b9-0749f07d35ac" unnumbered="true">
+<name>Passive optical devices (ITU-T L.400 &#8211; ITU-T L.429)</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.400 &#8211; ITU-T L.429: Passive optical devices</th>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.400/en">L.400/L.12</link>
+</th>
+<td valign="top" align="left">
+<p id="_2ccd29ac-9223-4a27-b8b7-e7772001e15f"><strong>Optical fibre splices</strong> (03/2008)<br/>
+Splices are critical points in the optical fibre network, as they strongly affect not only the quality of the links, but also their lifetime. In fact, the splice shall ensure high quality and stability of performance with time. High quality in splicing is usually defined as low splice loss and tensile strength near that of the fibre proof-test level. Splices shall be stable over the design life of the system under its expected environmental conditions.<br/>
+At present two technologies, fusion and mechanical, can be used for splicing glass optical fibres and the choice between them depends upon the expected functional performance and considerations of installation and maintenance. These splices are designed to provide permanent connections.<br/>
+This Recommendation deals with the application of splices of single-mode and multimode optical fibres. It describes a suitable procedure for splicing that shall be carefully followed in order to obtain reliable splices between optical fibres or ribbons. This procedure applies both to single fibres or ribbons (mass splicing). In addition, this Recommendation advises on the optical, mechanical and environmental testing methods required for the splice system design and equipment qualification.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.401/en">L.401/L.31</link>
+</th>
+<td valign="top" align="left">
+<p id="_0d7228ab-c1b4-4961-bda8-b40a2a72e42b"><strong>Optical fibre attenuators</strong> (10/1996)<br/>
+This Recommendation describes the main features of optical attenuators, in terms of types, field of application and configurations.<br/>
+Moreover, this Recommendation examines the optical, mechanical and environmental characteristics of optical fibre attenuators, advising on general requirements and testing methods.<br/>
+This Recommendation refers to single-mode optical fibre attenuators only because this fibre is mostly used in present telecommunication systems.</p>
+</td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.402/en">L.402/L.36</link>
+</th>
+<td valign="top" align="left"><p id="_541e34f8-bd0d-49b1-81e7-37f532ce3c09"><strong>Single mode fibre optic connectors</strong> (01/2015)<br/>
+This Recommendation describes the main features of fibre optic connectors, in terms of types, fields of application, configurations and technical aspects. Further, this Recommendation examines the optical, mechanical and environmental characteristics of fibre optic connectors, advising on general requirements and test methods.<br/>
+While taking into account Recommendation ITU-T G.671 as far as the transmission parameters are concerned, this Recommendation is based on the most recent work carried out within IEC SC86B Working Groups 4 and 6, namely the IEC 61300 and IEC 61753-series.<br/>
+In particular, this Recommendation:</p>
+<ul id="_bb3ac950-8baf-40f7-9588-d94e3b9c215a">
+<li>
+<p id="_ff3b55c8-883e-4dcd-9527-f22059d2f95d">Gives general information on fundamental types of fibre optic connectors, their field of application and the main requirements about their characteristics in terms of optical, mechanical and environmental behaviour,</p>
+</li>
+<li>
+<p id="_03d94419-922a-4ee7-a922-decbaace1fc1">Makes a classification of these components in terms of the configurations used into fibre optic plants,</p>
+</li>
+<li>
+<p id="_e6b8a7cd-cda8-4bc9-ad4c-b07acdb5847c">Gives a general description of the basic principles of operation and of technologies of fabrication of fibre optic connectors,</p>
+</li>
+<li>
+<p id="_fbf81241-5336-420f-9bbc-8fdf6c1e32b7">Describes all the most important optical parameters and gives general specifications on the optical, mechanical, and environmental performances of fibre optic connectors,</p>
+</li>
+<li>
+<p id="_97401258-4431-41db-a8ed-58fd1819f619">Describes the main test methods of fibre optic connectors,</p>
+</li>
+<li>
+<p id="_642090ef-ee35-4bff-8026-bccf7e6d675d">Is limited to factory installed connectors; these are connectors that have been applied to the fibre and/or cable in a controlled factory environment. Field mountable connectors, which are to be applied to the fibre and/or cable by an installer in field conditions, are outside the scope of this Recommendation.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.403/en">L.403/L.37</link>
+</th>
+<td valign="top" align="left"><p id="_96320550-b667-44a9-891c-1b1aa882013c"><strong>Optical branching components (non-wavelength selective)</strong> (02/2007)<br/>
+This Recommendation describes the main features of fibre optic branching devices in terms of types, field of application, configurations, and technical aspects.<br/>
+Furthermore, this Recommendation describes the requirements of the mechanical, environmental, and physical performance and reliability for optical branching components, which are stipulated in Recommendation ITU-T G.671 with regard to the optical performance of PONs, advising on general requirements and test methods.
+This Recommendation applies to optical branching components (non-wavelength selective) to bl.403e used for passive optical networks (PONs).<br/>
+In particular, this Recommendation:</p>
+<ul id="_23072b57-cedb-48d7-ae8b-ad2bedab77dd">
+<li>
+<p id="_7f746445-14ec-4d6b-8a62-3aee43698344">Gives general information on fundamental types of optical branching components, and their field of application,</p>
+</li>
+<li>
+<p id="_808e56c9-add1-47ff-b9ec-8c3aff51ed74">Classifies optical branching components into types and configurations.</p>
+</li>
+<li>
+<p id="_4601db1b-f3d4-4f21-9c44-02774abcecfb">provides a general description of the basic operating principle and the fabrication technologies,</p>
+</li>
+<li>
+<p id="_ddfe6ad8-9a80-4309-b4b9-e61cb4d460f0">Describes the application environments of optical branching components for PONs,</p>
+</li>
+<li>
+<p id="_d7f6f640-6cac-47a2-a3a9-10cf654278fc">Reports the performance and outlines reliability test methods for optical branching components for PONs.</p>
+</li>
+</ul></td>
+</tr>
+<tr>
+<th valign="top" align="left">L.404</th>
+<td valign="top" align="left"><p id="_6a85b2d7-fd1d-42de-9d08-ba79d9eac7aa"><strong>Field mountable single-mode optical fibre connectors</strong> (08/2017)<br/>
+This Recommendation covers field mountable single-mode connectors without an external fibre tail that are applied directly to the fibre by an installer in the field. The attachment of the fibre to this type of connector is fully inside the connector assembly (including the boot if present).<br/>
+This Recommendation covers connectors with one fibre per ferrule or one fibre per connection and:</p>
+<ul id="_2acabb4b-405d-4074-8868-6a3980d78731">
+<li>
+<p id="_1729ead5-5b46-4c7e-88dc-e440563d67eb">Gives a general description of the basic principles of operation and of technologies of fabrication of field mountable single-mode optical fibre connectors,</p>
+</li>
+<li>
+<p id="_a432646c-2aa8-4efa-8b90-87a91321b569">Gives classification and information on fundamental types of field mountable single-mode optical fibre connectors, and the main requirements for their optical, mechanical and environmental characteristics,</p>
+</li>
+<li>
+<p id="_958a6351-27f8-492e-86ec-74e9025c8e91">Lists the main test methods of field mountable single-mode optical fibre connectors.</p>
+</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table id="_84b6f310-1a76-444d-bcd7-78a5666a6384" unnumbered="true">
+<name>Marinized terrestrial cables (L.430 &#8211; L.449)</name>
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">ITU-T L.430 &#8211; ITU-T L.449: Marinized terrestrial cables</th>
+</tr>
+<tr>
+<td valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.430/en">L.430/L.28</link>
+</td>
+<td valign="top" align="left"><strong>External additional protection for marinized terrestrial cables</strong> (10/2002)<br/>
+This Recommendation describes the external protection devices which can be utilized during/after the laying or during/after the reparation of marinized terrestrial cables (MTC). A marinized terrestrial cable is an underwater optical fibre cable, based on a conventional multi-fibre terrestrial cable core construction and protected to withstand the marine environment. It is designed for unrepeatered applications, that is, without underwater line amplifiers, hence without the need of power feeding for submerged equipment and has been tested for use in non-aggressive shallow waters, with a varying repair capability. The difference with respect to a repeaterless submarine cable can be found in the definitions given in ITU-T G.972.<br/>
+Cables are designed with a predicted lifetime, taking into account either cable replacement or a certain number of repairs. For shallow-water cables, the probability of failures is higher than for deep-water application due to environmental phenomena (for example, sea-wave motion, underwater earthquakes and landslides, etc.) and human activities affecting the seabed (for example, fishing, laying and maintenance of other services and cables).<br/>
+In addition to the various armour usually adopted for the cable construction &#8211; for example rocky armour (RA), steel wire armouring such as single armour (SA) or double armour (DA), additional external protections could be adopted if needed. Such protections can be applied both approaching the coast in shallow water and on shore in the portion between the water edge and the beach joint, or along the cable route where external factors or seabed features could damage the cables.</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.431/en">L.431/L.29</link>
+</td>
+<td valign="top" align="left"><strong>As-laid report and maintenance/repair log for marinized terrestrial cable installation</strong> (01/2002)<br/>
+This Recommendation describes the documentation/information that companies, involved in the installation, maintenance/repair of marinized terrestrial cables, should provide to the purchasers. In proximity of the landing points there are often many cables coming from various routes. In the shore-end portions, the cables and related protections such as burials, articulated steel pipes, etc. are closer and closer. Moreover, often the actual route is quite different from that foreseen as the laying reference route, as designed according to the various surveys, and the related documents are not updated. This situation could negatively affect subsequent installations and maintenance operations of cables and other services. In order to update charts, the national hydrographical institute, or any other local authority, has to be provided with the as-laid and as-built cable route information both after completion of the installation works, and after any repair if significant route changes occur. This will enable the proper design of project routes for future underwater services and cables and allow safe maintenance activities over existing lines so that overlaying and plants damage can be avoided.<br/>
+The companies in charge of the installation of cables in shallow waters, especially close to the landing points of sea, lake and river shores, should provide the purchasers with an as-laid report after the completion of the work and a maintenance/repair log after any repair or replacement.</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.432/en">L.432/L.30</link>
+</td>
+<td valign="top" align="left"><strong>Markers on marinized terrestrial cables</strong> (11/2007)<br/>
+A marinized terrestrial cable is an underwater optical fibre cable construction, based on a conventional multi-fibre terrestrial cable core protected to withstand the marine environment, designed for unrepeated applications, that is, without underwater line amplifiers, hence without the need to carry electrical power and tested for use in non-aggressive shallow waters, with a varying repair capability.<br/>
+The difference with respect to a repeaterless submarine cable can be found in the definition given, for such a cable, in [ITU-T G.972].<br/>
+The purpose of establishing uniform marking techniques and procedures is to facilitate repairs and restoration of telecommunications in the event of an accidental cable break or natural disasters. As such, markings and procedures contribute to the overall security of the MTC links.<br/>
+This Recommendation describes the types of markers that can be applied on marinized terrestrial cables (MTC) and related land cables (considered as part of MTC) in order to warn of approaching joints, transitions and/or any relevant variation on the cable that can be useful for future inspections, cable protection and/or repairing.<br/>
+Both the materials and colours used for markers and their application points, are described.</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.433/en">L.433/L.54</link>
+</td>
+<td valign="top" align="left"><strong>Splice closure for marinized terrestrial cables (MTC)</strong> (02/2004)<br/>
+An important part of any installed underwater optical cable system is the jointing between different cable spans.<br/>
+In fact, it is very important that a splice closure utilized for an underwater (i.e., MTC) optical cable system is manufactured in order to guarantee not only a good quality of transmission during the expected lifetime, but also cost savings for maintenance purposes.<br/>
+A splice closure comprises a mechanical structure (closure housing) that is attached to the ends of two or more underwater cables, and a set of boxes (organizers) for containing and protecting the fibres and passive optical devices (if any).<br/>
+As a rule, the closure housing and the armour terminations, generally designed for a whole MTC family, should be dimensioned for the strongest cable designed for that particular link (maximum tensile strength and maximum pressure resistance).<br/>
+Splice closures for MTC applications may contain fibre splices, mass splices and passive devices.<br/>
+Moreover, since such closures are typically mounted on the cable before it is installed, it should also be designed to withstand all handling and loads that occur during cable installation.<br/>
+This Recommendation refers to both the design and the main characteristics that an underwater splice closure for MTC should have in order to be suitable for this application, as well as to guarantee the expected lifetime of the whole transmission link.<br/>
+This Recommendation also provides the tests for characterization and evaluation of the underwater splice closures performance, including mechanical integrity and optical stability of the product simulating the effect of the environment (water), as well as interventions related to installation and network maintenance.</td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<link target="https://www.itu.int/rec/T-REC-L.434/en">L.434/L.55</link>
+</td>
+<td valign="top" align="left"><strong>Digital database for marine cables and pipelines</strong> (11/2003)<br/>
+This Recommendation describes the nature of the information regarding marine cables and pipelines that should be maintained by national or regional government agencies which are responsible for marine shorelines, and the cable or pipeline installations that may either be present or added.<br/>
+Information about marine cable and pipeline installations can affect the cost of future installations or maintenance, including their environmental impact. At present, there is no global authority to maintain such information and the responsibility rests with individual countries. Given that information from multiple shoreline databases is necessary in designing new cable links, a standardization of the information that should be maintained will assist all participating parties. Such information is also useful in managing shoreline infrastructure when cables and pipelines are decommissioned, thereby allowing the possibility of reusing the space.</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_list_of_handbooks_and_technical_reports_related_to_the_recommendations_of_the_l_series_related_to_optical_technologies_for_the_outside_plant" inline-header="false" obligation="normative">
+<title>List of Handbooks and Technical Reports related to the Recommendations of the L-series related to optical technologies for the outside plant</title>
+<table id="_37ae50cd-ccd8-4d1f-a44b-676192035a08" unnumbered="true">
+<thead>
+<tr>
+<th valign="top" align="center">Acronym</th>
+<th valign="top" align="center">Version/publication</th>
+<th valign="top" align="center">Title</th>
+<th valign="top" align="left">Summary</th>
+<th valign="top" align="center">Availability/status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th valign="top" align="center">OUT.05</th>
+<td valign="top" align="center">1992</td>
+<td valign="top" align="left">
+<p id="_bd2b074d-6da2-4318-a5db-16d6cab8d77e">Outside plant technologies for public networks</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="center">Valid</td>
+</tr>
+<tr>
+<th valign="top" align="center">
+<link target="http://itu.int/pub/T-HDB-OUT.09-2001/en">OUT.09</link>
+</th>
+<td valign="top" align="center">2001/2002</td>
+<td valign="top" align="left">
+<p id="_50d9e31d-8777-4d00-afa7-6be89277da8d">Marinized terrestrial cables</p>
+</td>
+<td valign="top" align="left">The use of underwater optical cables, considered as coming under the heading of terrestrial links, has dramatically increased in recent years.<br/>
+This handbook describes the characteristics, including the installation methods and testing, of a particular type of underwater cable known as marinized terrestrial cable (MTC), which, based on a conventional multiple fibre terrestrial cable core, is protected to withstand the shallow water environment and designed for specific repeaterless applications.</td>
+<td valign="top" align="center">Valid</td>
+</tr>
+<tr>
+<th valign="top" align="center">
+<link target="https://www.itu.int/pub/T-TUT-HOME-2015-OFCS">TR-OFCS</link>
+</th>
+<td valign="top" align="center">2015</td>
+<td valign="top" align="left">
+<p id="_ab60320d-f897-43d0-bde0-7c8e12ce2716">Technical Report on optical fibre cables and systems</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="center">Valid</td>
+</tr>
+<tr>
+<th valign="top" align="center">
+<link target="http://www.itu.int/pub/T-TUT-HOME-2011">IMPL.10</link>
+</th>
+<td valign="top" align="center">2011</td>
+<td valign="top" align="left">
+<p id="_8f612d47-b5f2-4646-bcc8-c3a69a864479">ITU-T Technical Paper "Wireline broadband access networks and home networking"</p>
+</td>
+<td valign="top" align="left"/>
+<td valign="top" align="center">Valid</td>
+</tr>
+<tr>
+<th valign="top" align="center"/>
+<td valign="top" align="center">2012</td>
+<td valign="top" align="left">ITU Handbook "Telecommunication outside plants in areas frequently exposed to natural disasters"</td>
+<td valign="top" align="left"/>
+<td valign="top" align="center">Valid</td>
+</tr>
+</tbody>
+</table>
+</clause>
+<clause id="_list_of_supplements_related_to_the_recommendations_of_the_l_series_related_to_optical_technologies_for_the_outside_plant" inline-header="false" obligation="normative">
+<title>List of Supplements related to the Recommendations of the L-series related to optical technologies for the outside plant</title>
+<table id="_3298537c-f8a9-488e-93b1-9d0327d22934" unnumbered="true">
+<thead>
+<tr>
+<th valign="top" align="center">Acronym</th>
+<th valign="top" align="center">Version/publication</th>
+<th valign="top" align="center">Title</th>
+<th valign="top" align="left">Summary</th>
+<th valign="top" align="center">Availability/status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th valign="top" align="center">Suppl.35 to ITU-T L-300 series Recommendations</th>
+<td valign="top" align="center">2017</td>
+<td valign="top" align="left">
+<p id="_985b2a9c-e8f4-4116-9ac4-bf7e6be74f03">Framework of disaster management for network resilience and recovery</p>
+</td>
+<td valign="top" align="left">
+<p id="_99f0385d-f5c5-4be8-9735-ed2f3326daf7">Network resilience, and the robustness of the network infrastructure, should ensure the continuity of telecommunication services against any damage caused by disasters. Network recovery is restoration of the network infrastructure and telecommunication services to their original status or a certain level of availability, even temporarily, to provide the users with an adequate grade of services after the disaster.<br/>
+This Supplement provides a framework of disaster management for improving network resilience and recovery (NRR) by reviewing high-level objectives of NRR against disasters, identifying several approaches (i.e., redundancy, congestion control, repair, substitute, and robustness) that meet the objectives, and clarify the approaches with regard to the effective time frame (i.e., phase) for disaster recovery. Based on the identified approaches with effective disaster recovery phases, information about relevant technologies, including already available ones and emerging ones, is also provided.</p>
+</td>
+<td valign="top" align="center">Valid</td>
+</tr>
+</tbody>
+</table>
+</clause></sections>
+</itu-standard>
