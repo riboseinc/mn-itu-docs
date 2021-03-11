@@ -6,6 +6,7 @@ metanorma:
       - sources/G.650.1-201803.adoc
       - sources/T-REC-A.8-200810-I!!MSW-E.adoc
       - sources/T-REC-H.782-201811-I.MSW-E.adoc
+      - sources/T-REC-H.Imp248-201710-I.adoc
       - sources/T-REC-J.1108-201901-P.MSW-E-draft.adoc
       - sources/T-REC-J.1108-201901-P.MSW-E.adoc
       - sources/T-REC-P.1203-201710-I.MSW-E.adoc
